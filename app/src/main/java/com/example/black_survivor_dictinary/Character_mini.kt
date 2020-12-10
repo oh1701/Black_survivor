@@ -1,8 +1,14 @@
 package com.example.black_survivor_dictinary
 
+import android.app.ActionBar
 import android.content.Intent
+import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
+import androidx.constraintlayout.widget.ConstraintLayout
+import androidx.constraintlayout.widget.ConstraintSet
+import androidx.constraintlayout.widget.Constraints
 import com.example.black_survivor_dictinary.databinding.ActivityCharacterMiniBinding
 
 class Character_mini : AppCompatActivity() {
@@ -49,15 +55,17 @@ class Character_mini : AppCompatActivity() {
             binding.vi3.text = "8"
             binding.vi4.text = "-"
 
-            binding.skillInformation
-            binding.movie
-            binding.stats
-            binding.root
 
-            binding.textWeapon
-            binding.chWeapon1.resources
-            binding.chWeapon2
-            binding.chWeapon3
+            binding.chWeapon1.setImageResource(R.drawable.sniper)
+            binding.chWeapon2.setImageResource(R.drawable.revolber)
+            binding.chWeapon3.setImageResource(R.drawable.overheat)
+            binding.chWeaName1.setText("스나이퍼")
+            binding.chWeaName2.setText("권총")
+            binding.chWeaName3.setText("돌격소총")
+            binding.recommend
+            binding.skillInformation
+            binding.notarget
+            binding.movie
         }
 
         else if(intent.hasExtra("fiora"))
@@ -172,6 +180,13 @@ class Character_mini : AppCompatActivity() {
             binding.vi2.text = "8"
             binding.vi3.text = "8"
             binding.vi4.text = "-"
+
+            binding.chWeapon1.setImageResource(R.drawable.glove)
+            binding.chWeapon2.setImageResource(R.drawable.tonpa)
+            binding.chWeaName1.setText("글러브")
+            binding.chWeaName2.setText("톤파")
+            binding.chWeaName3.setText("없음")
+            binding.chWeaName3.setBackgroundColor(0)
         }
         else if(intent.hasExtra("adriana"))
         {
