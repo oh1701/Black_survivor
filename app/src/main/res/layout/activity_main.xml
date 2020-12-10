@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/Image"
+            android:layout_width="match_parent"
+            android:layout_height="253dp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/black"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/Character"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="캐릭터"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/Item"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="10dp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/Item"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="아이템"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/Character"
+                app:layout_constraintRight_toLeftOf="@id/Map"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="10dp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/Map"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="맵"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/Item"
+                app:layout_constraintRight_toLeftOf="@id/Weapon_skill"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="10dp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/Weapon_skill"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="무기스킬"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/Map"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/Tip"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="팁 게시판"
+                app:layout_constraintTop_toBottomOf="@id/Character"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/Lank"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="30dp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/Lank"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="랭킹"
+                app:layout_constraintTop_toBottomOf="@id/Item"
+                app:layout_constraintLeft_toRightOf="@id/Tip"
+                app:layout_constraintRight_toLeftOf="@id/patch"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="1dp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/patch"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="패치 노트"
+                app:layout_constraintTop_toBottomOf="@id/Map"
+                app:layout_constraintLeft_toRightOf="@id/Lank"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="30dp"/>
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+</ScrollView>
