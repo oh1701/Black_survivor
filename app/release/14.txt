@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="140dp">
+
+
+        <ImageButton
+            android:id="@+id/imagebutton1"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintBottom_toTopOf="@id/name1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/imagebutton2"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@drawable/image_color"/>
+
+        <ImageButton
+            android:id="@+id/imagebutton2"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintBottom_toTopOf="@id/name2"
+            app:layout_constraintLeft_toRightOf="@id/imagebutton1"
+            app:layout_constraintRight_toLeftOf="@id/imagebutton3"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@drawable/image_color"/>
+
+        <ImageButton
+            android:id="@+id/imagebutton3"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintBottom_toTopOf="@id/name3"
+            app:layout_constraintLeft_toRightOf="@id/imagebutton2"
+            app:layout_constraintRight_toLeftOf="@id/imagebutton4"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@drawable/image_color"/>
+
+        <ImageButton
+            android:id="@+id/imagebutton4"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            app:layout_constraintBottom_toTopOf="@id/name4"
+            app:layout_constraintLeft_toRightOf="@id/imagebutton3"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@drawable/image_color"/>
+
+        <TextView
+            android:id="@+id/name1"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="임시"
+            android:textColor="@color/black"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/name2"
+            app:layout_constraintTop_toBottomOf="@id/imagebutton1"/>
+
+        <TextView
+            android:id="@+id/name2"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="임시"
+            android:textColor="@color/black"
+            app:layout_constraintLeft_toRightOf="@id/name1"
+            app:layout_constraintRight_toLeftOf="@id/name3"
+            app:layout_constraintTop_toBottomOf="@id/imagebutton2" />
+
+        <TextView
+            android:id="@+id/name3"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="임시"
+            android:textColor="@color/black"
+            app:layout_constraintLeft_toRightOf="@id/name2"
+            app:layout_constraintRight_toLeftOf="@id/name4"
+            app:layout_constraintTop_toBottomOf="@id/imagebutton3" />
+
+        <TextView
+            android:id="@+id/name4"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:text="임시"
+            android:textColor="@color/black"
+            app:layout_constraintLeft_toRightOf="@id/name3"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imagebutton4" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
