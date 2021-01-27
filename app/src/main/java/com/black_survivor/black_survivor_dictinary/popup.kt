@@ -1,10 +1,10 @@
-package com.example.black_survivor_dictinary
+package com.black_survivor.black_survivor_dictinary
 
 import android.app.Application
 import android.os.Bundle
 import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
-import com.example.black_survivor_dictinary.databinding.ActivityPopupBinding
+import com.black_survivor.black_survivor_dictinary.databinding.ActivityPopupBinding
 
 open class Mypopup : Application() {
     private companion object {

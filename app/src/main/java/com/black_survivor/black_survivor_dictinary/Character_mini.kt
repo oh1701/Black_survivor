@@ -1,11 +1,11 @@
-package com.example.black_survivor_dictinary
+package com.black_survivor.black_survivor_dictinary
 
 import android.app.AlertDialog
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
-import com.example.black_survivor_dictinary.databinding.ActivityCharacterMiniBinding
+import com.black_survivor.black_survivor_dictinary.databinding.ActivityCharacterMiniBinding
 import com.google.android.gms.ads.AdRequest
 import com.google.android.gms.ads.AdView
 import com.google.android.gms.ads.MobileAds
@@ -18,8 +18,9 @@ class Character_mini : AppCompatActivity() {
         val binding = ActivityCharacterMiniBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        MobileAds.initialize(this,"ca-app-pub-8417791108068506~7524991405")
+
         var adview = findViewById<AdView>(R.id.adView6)
-        MobileAds.initialize(this) {}
         val adRequest = AdRequest.Builder().build()
         adview.loadAd(adRequest)
 
@@ -818,8 +819,8 @@ class Character_mini : AppCompatActivity() {
             binding.Image4.visibility = View.GONE
 
             binding.at2.text = "33"
-            binding.at3.text = "69.1"
-            binding.at4.text = "1.9"
+            binding.at3.text = "74.8"
+            binding.at4.text = "2.2"
             binding.hp2.text = "550"
             binding.hp3.text = "2241"
             binding.hp4.text = "94"

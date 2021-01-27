@@ -1,6 +1,5 @@
-package com.example.black_survivor_dictinary
+package com.black_survivor.black_survivor_dictinary
 
-import android.content.Intent
 import android.os.Bundle
 import android.widget.ImageView
 import android.widget.TextView
@@ -18,6 +17,8 @@ class map_explan : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_map_explan)
 
+        MobileAds.initialize(this,"ca-app-pub-8417791108068506~7524991405")
+
         var gotcha = findViewById<TextView>(R.id.gotcha)
         var creature = findViewById<TextView>(R.id.creature)
         var rvmap = findViewById<RecyclerView>(R.id.rv_mapitem)
@@ -31,7 +32,6 @@ class map_explan : AppCompatActivity() {
         var title = findViewById<TextView>(R.id.map_title)
 
         var adview = findViewById<AdView>(R.id.adView1)
-        MobileAds.initialize(this) {}
         val adRequest = AdRequest.Builder().build()
         adview.loadAd(adRequest)
 
@@ -839,19 +839,6 @@ class map_explan : AppCompatActivity() {
             text2.setText("")
             animal3.setImageResource(0)
             text3.setText("")
-        }
-
-        animal1.setOnClickListener {
-            val intent = Intent(this, com.example.black_survivor_dictinary.creature::class.java)
-            startActivity(intent)
-        }
-        animal2.setOnClickListener {
-            val intent = Intent(this, com.example.black_survivor_dictinary.creature::class.java)
-            startActivity(intent)
-        }
-        animal3.setOnClickListener {
-            val intent = Intent(this, com.example.black_survivor_dictinary.creature::class.java)
-            startActivity(intent)
         }
     }
 }

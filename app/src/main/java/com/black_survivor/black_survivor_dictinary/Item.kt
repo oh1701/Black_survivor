@@ -1,4 +1,4 @@
-package com.example.black_survivor_dictinary
+package com.black_survivor.black_survivor_dictinary
 
 import android.content.Context
 import android.os.Bundle
@@ -11,7 +11,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.black_survivor_dictinary.databinding.ActivityItemBinding
+import com.black_survivor.black_survivor_dictinary.databinding.ActivityItemBinding
 import com.google.android.gms.ads.AdRequest
 import com.google.android.gms.ads.AdView
 import com.google.android.gms.ads.MobileAds
@@ -303,8 +303,9 @@ open class Item : AppCompatActivity(), TextWatcher {
         val binding = ActivityItemBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        var adview = findViewById<AdView>(R.id.adView9)
         MobileAds.initialize(this) {}
+
+        var adview = findViewById<AdView>(R.id.adView9)
         val adRequest = AdRequest.Builder().build()
         adview.loadAd(adRequest)
 

@@ -1,8 +1,8 @@
-package com.example.black_survivor_dictinary
+package com.black_survivor.black_survivor_dictinary
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.example.black_survivor_dictinary.databinding.ActivityProfileBinding
+import com.black_survivor.black_survivor_dictinary.databinding.ActivityProfileBinding
 import com.google.android.gms.ads.AdRequest
 import com.google.android.gms.ads.AdView
 import com.google.android.gms.ads.MobileAds
@@ -14,8 +14,9 @@ class profile : AppCompatActivity() {
         val binding = ActivityProfileBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        MobileAds.initialize(this,"ca-app-pub-8417791108068506~7524991405")
+
         var adview = findViewById<AdView>(R.id.adView2)
-        MobileAds.initialize(this) {}
         val adRequest = AdRequest.Builder().build()
         adview.loadAd(adRequest)
 

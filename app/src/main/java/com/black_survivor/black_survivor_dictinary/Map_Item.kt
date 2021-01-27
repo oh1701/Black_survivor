@@ -1,5 +1,4 @@
-package com.example.black_survivor_dictinary
-
+package com.black_survivor.black_survivor_dictinary
 import android.app.Dialog
 import android.graphics.Bitmap
 import android.graphics.drawable.BitmapDrawable

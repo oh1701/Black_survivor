@@ -49,6 +49,7 @@
                 android:textSize="18.5sp"
                 android:textStyle="bold"
                 android:gravity="center"
+                android:autoSizeTextType="uniform"
                 android:textColor="@color/white"
                 android:layout_marginBottom="5dp"
                 android:layout_marginRight="16dp"
@@ -77,6 +78,7 @@
                 <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/avility"
                     android:text="능력치"
+                    android:autoSizeTextType="uniform"
                     android:textColor="@color/white"
                     android:background="@drawable/ability"
                     android:layout_span="4"
@@ -96,16 +98,19 @@
                     android:background="@drawable/ability_bottom"
                     android:gravity="center"
                     android:text="레벨1"
+                    android:autoSizeTextType="uniform"
                     android:textColor="@color/white" />
                 <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/level20"
                     android:text="레벨20"
                     android:textColor="@color/white"
+                    android:autoSizeTextType="uniform"
                     android:background="@drawable/ability_bottom"
                     android:gravity="center" />
                 <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/ability_point"
                     android:text="성장치"
+                    android:autoSizeTextType="uniform"
                     android:textColor="@color/white"
                     android:background="@drawable/ability_bottom"
                     android:gravity="center" />
@@ -119,16 +124,14 @@
                 <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/at1"
                     android:layout_width="match_parent"
-
                     android:background="@drawable/ability_bottom"
+                    android:autoSizeTextType="uniform"
                     android:gravity="center"
                     android:text="공격력"
                     android:textColor="@color/white" />
 
                 <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/at2"
-                    android:autoSizeMaxTextSize="14sp"
-                    android:autoSizeMinTextSize="10sp"
                     android:autoSizeTextType="uniform"
                     android:background="@drawable/ability_bottom"
                     android:gravity="center"
@@ -147,9 +150,6 @@
 
                 <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/at4"
-                    android:autoSizeMaxTextSize="14sp"
-
-                    android:autoSizeMinTextSize="10sp"
                     android:autoSizeTextType="uniform"
                     android:background="@drawable/ability_bottom"
                     android:gravity="center"
@@ -163,23 +163,27 @@
                     android:id="@+id/hp1"
                     android:text="체력"
                     android:gravity="center"
+                    android:autoSizeTextType="uniform"
                     android:textColor="@color/white"
                     android:background="@drawable/ability_bottom"/>
                 <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/hp2"
                     android:text=""
+                    android:autoSizeTextType="uniform"
                     android:gravity="center"
                     android:textColor="@color/white"
                     android:background="@drawable/ability_bottom"/>
                 <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/hp3"
                     android:text=""
+                    android:autoSizeTextType="uniform"
                     android:gravity="center"
                     android:textColor="@color/white"
                     android:background="@drawable/ability_bottom"/>
                 <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/hp4"
                     android:text=""
+                    android:autoSizeTextType="uniform"
                     android:gravity="center"
                     android:textColor="@color/white"
                     android:background="@drawable/ability_bottom"/>
@@ -190,24 +194,28 @@
                 <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/hpr1"
                     android:text="체력 재생"
+                    android:autoSizeTextType="uniform"
                     android:gravity="center"
                     android:textColor="@color/white"
                     android:background="@drawable/ability_bottom"/>
                 <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/hpr2"
                     android:text=""
+                    android:autoSizeTextType="uniform"
                     android:gravity="center"
                     android:textColor="@color/white"
                     android:background="@drawable/ability_bottom"/>
                 <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/hpr3"
                     android:text=""
+                    android:autoSizeTextType="uniform"
                     android:gravity="center"
                     android:textColor="@color/white"
                     android:background="@drawable/ability_bottom"/>
                 <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/hpr4"
                     android:text=""
+                    android:autoSizeTextType="uniform"
                     android:gravity="center"
                     android:textColor="@color/white"
                     android:background="@drawable/ability_bottom"/>
@@ -218,24 +226,28 @@
                 <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/st1"
                     android:text="스태미너"
+                    android:autoSizeTextType="uniform"
                     android:gravity="center"
                     android:textColor="@color/white"
                     android:background="@drawable/ability_bottom"/>
                 <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/st2"
                     android:text=""
+                    android:autoSizeTextType="uniform"
                     android:gravity="center"
                     android:textColor="@color/white"
                     android:background="@drawable/ability_bottom"/>
                 <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/st3"
                     android:text=""
+                    android:autoSizeTextType="uniform"
                     android:gravity="center"
                     android:textColor="@color/white"
                     android:background="@drawable/ability_bottom"/>
                 <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/st4"
                     android:text=""
+                    android:autoSizeTextType="uniform"
                     android:gravity="center"
                     android:textColor="@color/white"
                     android:background="@drawable/ability_bottom"/>
@@ -246,24 +258,28 @@
                 <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/str1"
                     android:text="스태미너 재생"
+                    android:autoSizeTextType="uniform"
                     android:gravity="center"
                     android:textColor="@color/white"
                     android:background="@drawable/ability_bottom"/>
                 <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/str2"
                     android:text=""
+                    android:autoSizeTextType="uniform"
                     android:gravity="center"
                     android:textColor="@color/white"
                     android:background="@drawable/ability_bottom"/>
                 <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/str3"
                     android:text=""
+                    android:autoSizeTextType="uniform"
                     android:gravity="center"
                     android:textColor="@color/white"
                     android:background="@drawable/ability_bottom"/>
                 <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/str4"
                     android:text=""
+                    android:autoSizeTextType="uniform"
                     android:gravity="center"
                     android:textColor="@color/white"
                     android:background="@drawable/ability_bottom"/>
@@ -274,24 +290,28 @@
                 <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/def1"
                     android:text="방어력"
+                    android:autoSizeTextType="uniform"
                     android:gravity="center"
                     android:textColor="@color/white"
                     android:background="@drawable/ability_bottom"/>
                 <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/def2"
                     android:text=""
+                    android:autoSizeTextType="uniform"
                     android:gravity="center"
                     android:textColor="@color/white"
                     android:background="@drawable/ability_bottom"/>
                 <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/def3"
                     android:text=""
+                    android:autoSizeTextType="uniform"
                     android:gravity="center"
                     android:textColor="@color/white"
                     android:background="@drawable/ability_bottom"/>
                 <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/def4"
                     android:text=""
+                    android:autoSizeTextType="uniform"
                     android:gravity="center"
                     android:textColor="@color/white"
                     android:background="@drawable/ability_bottom"/>
@@ -302,24 +322,28 @@
                 <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/ats1"
                     android:text="공격 속도"
+                    android:autoSizeTextType="uniform"
                     android:gravity="center"
                     android:textColor="@color/white"
                     android:background="@drawable/ability_bottom"/>
                 <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/ats2"
                     android:text=""
+                    android:autoSizeTextType="uniform"
                     android:gravity="center"
                     android:textColor="@color/white"
                     android:background="@drawable/ability_bottom"/>
                 <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/ats3"
                     android:text=""
+                    android:autoSizeTextType="uniform"
                     android:gravity="center"
                     android:textColor="@color/white"
                     android:background="@drawable/ability_bottom"/>
                 <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/ats4"
                     android:text=""
+                    android:autoSizeTextType="uniform"
                     android:gravity="center"
                     android:textColor="@color/white"
                     android:background="@drawable/ability_bottom"/>
@@ -330,18 +354,21 @@
                 <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/cri1"
                     android:text="치명타"
+                    android:autoSizeTextType="uniform"
                     android:gravity="center"
                     android:textColor="@color/white"
                     android:background="@drawable/ability_bottom"/>
                 <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/cri2"
                     android:text=""
+                    android:autoSizeTextType="uniform"
                     android:gravity="center"
                     android:textColor="@color/white"
                     android:background="@drawable/ability_bottom"/>
                 <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/cri3"
                     android:text=""
+                    android:autoSizeTextType="uniform"
                     android:gravity="center"
                     android:textColor="@color/white"
                     android:background="@drawable/ability_bottom"/>
@@ -349,6 +376,7 @@
                     android:id="@+id/cri4"
                     android:text=""
                     android:gravity="center"
+                    android:autoSizeTextType="uniform"
                     android:textColor="@color/white"
                     android:background="@drawable/ability_bottom"/>
             </TableRow>
@@ -358,24 +386,28 @@
                 <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/sp1"
                     android:text="이동속도"
+                    android:autoSizeTextType="uniform"
                     android:gravity="center"
                     android:textColor="@color/white"
                     android:background="@drawable/ability_bottom"/>
                 <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/sp2"
                     android:text=""
+                    android:autoSizeTextType="uniform"
                     android:gravity="center"
                     android:textColor="@color/white"
                     android:background="@drawable/ability_bottom"/>
                 <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/sp3"
                     android:text=""
+                    android:autoSizeTextType="uniform"
                     android:gravity="center"
                     android:textColor="@color/white"
                     android:background="@drawable/ability_bottom"/>
                 <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/sp4"
                     android:text=""
+                    android:autoSizeTextType="uniform"
                     android:gravity="center"
                     android:textColor="@color/white"
                     android:background="@drawable/ability_bottom"/>
@@ -386,24 +418,28 @@
                 <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/vi1"
                     android:text="시야"
+                    android:autoSizeTextType="uniform"
                     android:gravity="center"
                     android:textColor="@color/white"
                     android:background="@drawable/ability_bottom" />
                 <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/vi2"
                     android:text=""
+                    android:autoSizeTextType="uniform"
                     android:gravity="center"
                     android:textColor="@color/white"
                     android:background="@drawable/ability_bottom"/>
                 <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/vi3"
                     android:text=""
+                    android:autoSizeTextType="uniform"
                     android:gravity="center"
                     android:textColor="@color/white"
                     android:background="@drawable/ability_bottom"/>
                 <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/vi4"
                     android:text=""
+                    android:autoSizeTextType="uniform"
                     android:gravity="center"
                     android:textColor="@color/white"
                     android:background="@drawable/ability_bottom"/>
@@ -437,6 +473,8 @@
             app:layout_constraintLeft_toLeftOf="parent"
             android:textColor="#CFBD13"
             android:background="#2B2B2B"
+            android:autoSizeTextType="uniform"
+            android:autoSizeMaxTextSize="14sp"
             android:text="\u003c해당 캐릭터의 사용 무기\u003e"/>
         </androidx.constraintlayout.widget.ConstraintLayout>
         </LinearLayout>
@@ -568,6 +606,8 @@
                     android:background="@drawable/white_text"
                     android:textColor="@color/white"
                     android:textStyle="bold"
+                    android:autoSizeTextType="uniform"
+                    android:autoSizeMaxTextSize="14sp"
                     android:text="없음"/>
 
                 <androidx.appcompat.widget.AppCompatTextView
@@ -585,6 +625,8 @@
                     android:gravity="center"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
+                    android:autoSizeTextType="uniform"
+                    android:autoSizeMaxTextSize="14sp"
                     android:text="없음"/>
 
                 <androidx.appcompat.widget.AppCompatTextView
@@ -602,6 +644,8 @@
                     android:gravity="center"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
+                    android:autoSizeTextType="uniform"
+                    android:autoSizeMaxTextSize="14sp"
                     android:text="없음"/>
                 <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/ch_wea_name4"
@@ -637,7 +681,6 @@
             android:id="@+id/profile"
             android:layout_width="0dp"
             android:layout_height="40dp"
-            android:textSize="16sp"
             app:layout_constraintTop_toTopOf="parent"
             android:layout_marginTop="40dp"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -645,13 +688,14 @@
             app:layout_constraintRight_toLeftOf="@id/movie"
             app:layout_constraintBottom_toTopOf="@id/recommend"
             android:background="@drawable/practi"
+            android:autoSizeTextType="uniform"
+            android:autoSizeMaxTextSize="16sp"
             android:text="기본 프로필"/>
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/movie"
             android:layout_width="0dp"
             android:layout_height="40dp"
-            android:textSize="16sp"
             android:text="소개 영상"
             app:layout_constraintTop_toTopOf="parent"
             android:layout_marginTop="40dp"
@@ -660,13 +704,14 @@
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintBottom_toTopOf="@id/skill_information"
             android:layout_marginRight="10dp"
+            android:autoSizeTextType="uniform"
+            android:autoSizeMaxTextSize="16sp"
             android:background="@drawable/practi"/>
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/recommend"
             android:layout_width="0dp"
             android:layout_height="40dp"
-            android:textSize="16sp"
             android:text="인벤 추천 공략"
             app:layout_constraintTop_toBottomOf="@id/profile"
             android:layout_marginTop="40dp"
@@ -674,6 +719,8 @@
             app:layout_constraintRight_toLeftOf="@id/skill_information"
             app:layout_constraintBottom_toBottomOf="parent"
             android:layout_marginLeft="20dp"
+            android:autoSizeTextType="uniform"
+            android:autoSizeMaxTextSize="16sp"
             android:background="@drawable/practi"/>
 
 
@@ -682,7 +729,6 @@
                 android:id="@+id/skill_information"
                 android:layout_width="0dp"
                 android:layout_height="40dp"
-                android:textSize="16sp"
                 android:text="스킬 정보"
                 app:layout_constraintTop_toBottomOf="@id/movie"
                 android:layout_marginTop="40dp"
@@ -691,6 +737,8 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
+                android:autoSizeTextType="uniform"
+                android:autoSizeMaxTextSize="16sp"
                 android:background="@drawable/practi"/>
         </androidx.constraintlayout.widget.ConstraintLayout>
     </LinearLayout>
@@ -704,12 +752,12 @@
         <com.google.android.gms.ads.AdView
             xmlns:ads="http://schemas.android.com/apk/res-auto"
             android:id="@+id/adView6"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             ads:layout_constraintBottom_toBottomOf="parent"
             ads:layout_constraintRight_toRightOf="parent"
             ads:layout_constraintLeft_toLeftOf="parent"
             ads:adSize="SMART_BANNER"
-            ads:adUnitId="ca-app-pub-3940256099942544/6300978111"/>
+            ads:adUnitId="ca-app-pub-8417791108068506/8286077143"/>
     </LinearLayout>
 </LinearLayout>

@@ -1,4 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/me1"
+            android:title="[ 소식 ]" >
+
+        <menu>
+            <item
+                android:id="@+id/me1_1"
+                android:icon="@drawable/right_24"
+                android:title="공지사항"/>
+            <item
+                android:id="@+id/me1_2"
+                android:icon="@drawable/right_24"
+                android:title="업데이트"/>
+        </menu>
+        </item>
+
+    <item
+        android:id="@+id/me2"
+        android:title="[ 게임설명 ]" >
+        <menu>
+            <item
+                android:id="@+id/me2_1"
+                android:icon="@drawable/right_24"
+                android:title="캐릭터"/>
+            <item
+                android:id="@+id/me2_2"
+                android:icon="@drawable/right_24"
+                android:title="아이템"/>
+            <item
+                android:id="@+id/me2_3"
+                android:icon="@drawable/right_24"
+                android:title="인벤 공략"/>
+            <item
+                android:id="@+id/me2_4"
+                android:icon="@drawable/right_24"
+                android:title="무기 스킬"/>
+
+            <item
+                android:id="@+id/me2_5"
+                android:icon="@drawable/right_24"
+                android:title="루트 [DAK.GG]" />
+        </menu>
+    </item>
+    <item
+        android:id="@+id/me3"
+        android:title="[ 전적 사이트 ]">
+        <menu
+            android:checkableBehavior="single">
+        <item
+            android:id="@+id/me3_1"
+            android:icon="@drawable/right_24"
+            android:title="블랙서바이벌 공식"/>
+        <item
+            android:id="@+id/me3_2"
+            android:icon="@drawable/right_24"
+            android:title="DAK.GG"/>\
+        </menu>
+    </item>
+<item
+    android:id="@+id/me4"
+    android:title="[ 커뮤니티 사이트 ]">
+    <menu
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/me4_1"
+            android:icon="@drawable/right_24"
+            android:title="블서 인벤"/>
+        <item
+            android:id="@+id/me4_2"
+            android:icon="@drawable/right_24"
+            android:title="블서 갤러리"/>\
+    </menu>
+</item>
+    </group>
 </menu>

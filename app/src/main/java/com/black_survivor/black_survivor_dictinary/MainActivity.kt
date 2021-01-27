@@ -1,4 +1,4 @@
-package com.example.black_survivor_dictinary
+package com.black_survivor.black_survivor_dictinary
 
 import android.content.Intent
 import android.os.Build
@@ -32,6 +32,8 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        MobileAds.initialize(this,"ca-app-pub-8417791108068506~7524991405")
+
         var ch = findViewById<Button>(R.id.Character)
         var item = findViewById<Button>(R.id.Item)
         var menu = findViewById<ImageView>(R.id.menu)
@@ -53,8 +55,8 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         webview.settings.javaScriptEnabled = true
         webview.webViewClient = WebViewClient()
         webview.webChromeClient = WebChromeClient()
+
         var adview = findViewById<AdView>(R.id.adView)
-        MobileAds.initialize(this) {}
         val adRequest = AdRequest.Builder().build()
         adview.loadAd(adRequest)
 
@@ -128,7 +130,8 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
         naviView.setNavigationItemSelectedListener(this)
 
-        var maplist = arrayListOf(map_listclass("골목길") ,map_listclass("절"),
+        var maplist = arrayListOf(
+                map_listclass("골목길") ,map_listclass("절"),
                 map_listclass("번화가"),
                 map_listclass("연못"),
                 map_listclass("병원"),

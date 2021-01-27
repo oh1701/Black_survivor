@@ -1,5 +1,4 @@
-package com.example.black_survivor_dictinary
-
+package com.black_survivor.black_survivor_dictinary
 import android.os.Bundle
 import android.webkit.WebChromeClient
 import android.webkit.WebView
@@ -13,13 +12,18 @@ class internet : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_internet)
+
+
+        MobileAds.initialize(this,"ca-app-pub-8417791108068506~7524991405")
+
+
         val webview = findViewById<WebView>(R.id.webview2)
         webview.settings.javaScriptEnabled = true
         webview.webViewClient = WebViewClient()
         webview.webChromeClient = WebChromeClient()
 
+
         var adview = findViewById<AdView>(R.id.adView11)
-        MobileAds.initialize(this) {}
         val adRequest = AdRequest.Builder().build()
         adview.loadAd(adRequest)
 

@@ -1,16 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:fillViewport="true"
     tools:context=".Character">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="20">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="18.5">
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#EE000000">
-
         <androidx.appcompat.widget.AppCompatImageButton
             android:layout_width="0dp"
             android:layout_height="200dp"
@@ -25,7 +35,7 @@
 
         <androidx.appcompat.widget.AppCompatTextView
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="30dp"
             android:id="@+id/aya_name"
             android:text="아야"
             android:textSize="20sp"
@@ -34,6 +44,7 @@
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toLeftOf="@id/fiora_name"
             app:layout_constraintBottom_toTopOf="@id/hyonwoo"
+            android:autoSizeTextType="uniform"
             android:textColor="#ffffff"
             android:background="@drawable/white_text"/>
 
@@ -52,7 +63,7 @@
 
         <androidx.appcompat.widget.AppCompatTextView
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="30dp"
             android:id="@+id/fiora_name"
             android:text="피오라"
             android:textSize="20sp"
@@ -61,6 +72,7 @@
             app:layout_constraintLeft_toRightOf="@id/aya_name"
             app:layout_constraintRight_toLeftOf="@id/jackie_name"
             app:layout_constraintBottom_toTopOf="@id/adriana"
+            android:autoSizeTextType="uniform"
             android:textColor="#ffffff"
             android:background="@drawable/white_text"
             />
@@ -80,7 +92,7 @@
 
         <androidx.appcompat.widget.AppCompatTextView
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="30dp"
             android:id="@+id/jackie_name"
             android:text="재키"
             android:textSize="20sp"
@@ -89,6 +101,7 @@
             app:layout_constraintLeft_toRightOf="@id/fiora_name"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintBottom_toTopOf="@id/chiara"
+            android:autoSizeTextType="uniform"
             android:textColor="#ffffff"
             android:background="@drawable/white_text"/>
 
@@ -106,7 +119,7 @@
 
         <androidx.appcompat.widget.AppCompatTextView
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="30dp"
             android:id="@+id/hyonwoo_name"
             android:text="현우"
             android:textSize="20sp"
@@ -114,6 +127,7 @@
             app:layout_constraintTop_toBottomOf="@id/hyonwoo"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toLeftOf="@id/adriana_name"
+            android:autoSizeTextType="uniform"
             android:textColor="#ffffff"
             android:background="@drawable/white_text"/>
 
@@ -131,7 +145,7 @@
 
         <androidx.appcompat.widget.AppCompatTextView
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="30dp"
             android:id="@+id/adriana_name"
             android:text="아드리아나"
             android:textSize="20sp"
@@ -139,6 +153,7 @@
             app:layout_constraintTop_toBottomOf="@id/adriana"
             app:layout_constraintLeft_toRightOf="@id/hyonwoo_name"
             app:layout_constraintRight_toLeftOf="@id/chiara_name"
+            android:autoSizeTextType="uniform"
             android:textColor="#ffffff"
             android:background="@drawable/white_text"/>
 
@@ -156,7 +171,7 @@
 
         <androidx.appcompat.widget.AppCompatTextView
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="30dp"
             android:id="@+id/chiara_name"
             android:text="키아라"
             android:textSize="20sp"
@@ -164,6 +179,7 @@
             app:layout_constraintTop_toBottomOf="@id/chiara"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintLeft_toRightOf="@id/adriana_name"
+            android:autoSizeTextType="uniform"
             android:textColor="#ffffff"
             android:background="@drawable/white_text"/>
 
@@ -181,11 +197,12 @@
 
         <androidx.appcompat.widget.AppCompatTextView
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="30dp"
             android:id="@+id/hart_name"
             android:text="하트"
             android:textSize="20sp"
             android:gravity="center"
+            android:autoSizeTextType="uniform"
             app:layout_constraintTop_toBottomOf="@id/hart"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toLeftOf="@id/hyejin_name"
@@ -206,11 +223,12 @@
 
         <androidx.appcompat.widget.AppCompatTextView
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="30dp"
             android:id="@+id/hyejin_name"
             android:text="혜진"
             android:textSize="20sp"
             android:gravity="center"
+            android:autoSizeTextType="uniform"
             app:layout_constraintTop_toBottomOf="@id/hyejin"
             app:layout_constraintLeft_toRightOf="@id/hart_name"
             app:layout_constraintRight_toLeftOf="@id/isol_name"
@@ -231,11 +249,12 @@
 
         <androidx.appcompat.widget.AppCompatTextView
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="30dp"
             android:id="@+id/isol_name"
             android:text="아이솔"
             android:textSize="20sp"
             android:gravity="center"
+            android:autoSizeTextType="uniform"
             app:layout_constraintTop_toBottomOf="@id/isol"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintLeft_toRightOf="@id/hyejin_name"
@@ -256,11 +275,12 @@
 
         <androidx.appcompat.widget.AppCompatTextView
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="30dp"
             android:id="@+id/li_dailin_name"
-            android:text="리 다일린"
+            android:text="리 다이린"
             android:textSize="20sp"
             android:gravity="center"
+            android:autoSizeTextType="uniform"
             app:layout_constraintTop_toBottomOf="@id/li_dailin"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toLeftOf="@id/magnus"
@@ -268,24 +288,25 @@
             android:background="@drawable/white_text"/>
 
         <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/magnus"
             android:layout_width="0dp"
             android:layout_height="200dp"
-            android:id="@+id/magnus"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/image_color"
+            android:scaleType="fitXY"
             android:src="@drawable/magnus_model"
-            app:layout_constraintTop_toBottomOf="@id/hyejin_name"
             app:layout_constraintLeft_toRightOf="@id/li_dailin"
             app:layout_constraintRight_toLeftOf="@id/nadine"
-            android:background="@drawable/image_color"
-            android:layout_marginTop="10dp"
-            android:scaleType="fitXY"/>
+            app:layout_constraintTop_toBottomOf="@id/hyejin_name" />
 
         <androidx.appcompat.widget.AppCompatTextView
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="30dp"
             android:id="@+id/magnus_name"
             android:text="매그너스"
             android:textSize="20sp"
             android:gravity="center"
+            android:autoSizeTextType="uniform"
             app:layout_constraintTop_toBottomOf="@id/magnus"
             app:layout_constraintLeft_toRightOf="@id/li_dailin_name"
             app:layout_constraintRight_toLeftOf="@id/nadine"
@@ -306,11 +327,12 @@
 
         <androidx.appcompat.widget.AppCompatTextView
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="30dp"
             android:id="@+id/nadine_name"
             android:text="나딘"
             android:textSize="20sp"
             android:gravity="center"
+            android:autoSizeTextType="uniform"
             app:layout_constraintTop_toBottomOf="@id/nadine"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintLeft_toRightOf="@id/magnus_name"
@@ -331,11 +353,12 @@
 
         <androidx.appcompat.widget.AppCompatTextView
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="30dp"
             android:id="@+id/shoichi_name"
             android:text="쇼이치"
             android:textSize="20sp"
             android:gravity="center"
+            android:autoSizeTextType="uniform"
             app:layout_constraintTop_toBottomOf="@id/shoichi"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toLeftOf="@id/silvia"
@@ -356,11 +379,12 @@
 
         <androidx.appcompat.widget.AppCompatTextView
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="30dp"
             android:id="@+id/silvia_name"
             android:text="실비아"
             android:textSize="20sp"
             android:gravity="center"
+            android:autoSizeTextType="uniform"
             app:layout_constraintTop_toBottomOf="@id/silvia"
             app:layout_constraintLeft_toRightOf="@id/shoichi_name"
             app:layout_constraintRight_toLeftOf="@id/sissela_name"
@@ -381,11 +405,12 @@
 
         <androidx.appcompat.widget.AppCompatTextView
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="30dp"
             android:id="@+id/sissela_name"
             android:text="시셀라"
             android:textSize="20sp"
             android:gravity="center"
+            android:autoSizeTextType="uniform"
             app:layout_constraintTop_toBottomOf="@id/sissela"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintLeft_toRightOf="@id/silvia_name"
@@ -406,11 +431,12 @@
 
         <androidx.appcompat.widget.AppCompatTextView
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="30dp"
             android:id="@+id/xiukai_name"
             android:text="쇼우"
             android:textSize="20sp"
             android:gravity="center"
+            android:autoSizeTextType="uniform"
             app:layout_constraintTop_toBottomOf="@id/xiukai"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toLeftOf="@id/yuki_name"
@@ -431,11 +457,12 @@
 
         <androidx.appcompat.widget.AppCompatTextView
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="30dp"
             android:id="@+id/yuki_name"
             android:text="유키"
             android:textSize="20sp"
             android:gravity="center"
+            android:autoSizeTextType="uniform"
             app:layout_constraintTop_toBottomOf="@id/yuki"
             app:layout_constraintLeft_toRightOf="@id/xiukai_name"
             app:layout_constraintRight_toLeftOf="@id/zahir_name"
@@ -456,19 +483,122 @@
 
         <androidx.appcompat.widget.AppCompatTextView
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="30dp"
             android:id="@+id/zahir_name"
             android:text="자히르"
             android:textSize="20sp"
             android:gravity="center"
+            android:autoSizeTextType="uniform"
             app:layout_constraintTop_toBottomOf="@id/zahir"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintLeft_toRightOf="@id/yuki_name"
             android:textColor="#ffffff"
             android:background="@drawable/white_text"/>
 
+                <androidx.appcompat.widget.AppCompatImageButton
+                    android:layout_width="0dp"
+                    android:layout_height="200dp"
+                    android:id="@+id/emma"
+                    android:src="@drawable/emma"
+                    app:layout_constraintTop_toBottomOf="@id/xiukai_name"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toLeftOf="@id/lenox"
+                    app:layout_constraintBottom_toTopOf="@id/emma_name"
+                    android:background="@drawable/image_color"
+                    android:layout_marginTop="10dp"
+                    android:scaleType="fitXY"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/emma_name"
+                    android:text="엠마"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:autoSizeTextType="uniform"
+                    app:layout_constraintTop_toBottomOf="@id/emma"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toLeftOf="@id/lenox_name"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:textColor="#ffffff"
+                    android:background="@drawable/white_text"/>
+
+                <androidx.appcompat.widget.AppCompatImageButton
+                    android:layout_width="0dp"
+                    android:layout_height="200dp"
+                    android:id="@+id/lenox"
+                    android:src="@drawable/c_lenox"
+                    app:layout_constraintTop_toBottomOf="@id/yuki_name"
+                    app:layout_constraintLeft_toRightOf="@id/emma"
+                    app:layout_constraintRight_toLeftOf="@id/rozzi"
+                    app:layout_constraintBottom_toTopOf="@id/lenox_name"
+                    android:background="@drawable/image_color"
+                    android:layout_marginTop="10dp"
+                    android:scaleType="fitXY"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/lenox_name"
+                    android:text="레녹스"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:autoSizeTextType="uniform"
+                    app:layout_constraintTop_toBottomOf="@id/lenox"
+                    app:layout_constraintLeft_toRightOf="@id/emma_name"
+                    app:layout_constraintRight_toLeftOf="@id/rozzi_name"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:textColor="#ffffff"
+                    android:background="@drawable/white_text"/>
 
 
+                <androidx.appcompat.widget.AppCompatImageButton
+                    android:layout_width="0dp"
+                    android:layout_height="200dp"
+                    android:id="@+id/rozzi"
+                    android:src="@drawable/c_rozzi"
+                    app:layout_constraintTop_toBottomOf="@id/zahir_name"
+                    app:layout_constraintLeft_toRightOf="@id/lenox"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintBottom_toTopOf="@id/rozzi_name"
+                    android:background="@drawable/image_color"
+                    android:layout_marginTop="10dp"
+                    android:scaleType="fitXY"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/rozzi_name"
+                    android:text="로지"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:autoSizeTextType="uniform"
+                    app:layout_constraintTop_toBottomOf="@id/rozzi"
+                    app:layout_constraintLeft_toRightOf="@id/lenox_name"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:textColor="#ffffff"
+                    android:background="@drawable/white_text"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-</ScrollView>
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5">
+
+
+            <com.google.android.gms.ads.AdView
+                xmlns:ads="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/adView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                ads:layout_constraintBottom_toBottomOf="parent"
+                ads:layout_constraintRight_toRightOf="parent"
+                ads:layout_constraintLeft_toLeftOf="parent"
+                ads:adSize="SMART_BANNER"
+                ads:adUnitId="ca-app-pub-8417791108068506/8286077143"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,4 +1,4 @@
-package com.example.black_survivor_dictinary
+package com.black_survivor.black_survivor_dictinary
 
 import android.app.Dialog
 import android.graphics.Bitmap
@@ -7,9 +7,7 @@ import android.graphics.drawable.Drawable
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
-import android.view.View.FOCUS_UP
 import android.widget.ImageView
-import android.widget.ScrollView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -23,8 +21,9 @@ class creature : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_creature)
 
+        MobileAds.initialize(this,"ca-app-pub-8417791108068506~7524991405")
+
         var adview = findViewById<AdView>(R.id.adView8)
-        MobileAds.initialize(this) {}
         val adRequest = AdRequest.Builder().build()
         adview.loadAd(adRequest)
 
@@ -40,7 +39,7 @@ class creature : AppCompatActivity() {
 
 
         val dlg = Dialog(this)
-        dlg.setContentView(item.aview)
+        dlg.setContentView(aview)
 
         var animalItem = arrayListOf(
             animal_Item_list(R.drawable.a_chicken, "닭"),
@@ -50,7 +49,9 @@ class creature : AppCompatActivity() {
             animal_Item_list(R.drawable.a_wolf, "늑대"),
             animal_Item_list(R.drawable.a_bear, "곰"),
         )
+
         val name: TextView = aview.findViewById(R.id.te1)
+
         val im1: ImageView = aview.findViewById(R.id.im1)
         val dropte1: TextView = aview.findViewById(R.id.imup_text1)
         val dropte2: TextView = aview.findViewById(R.id.imup_text2)

@@ -1,4 +1,4 @@
-package com.example.black_survivor_dictinary
+package com.black_survivor.black_survivor_dictinary
 
 import android.app.Dialog
 import android.graphics.Bitmap
@@ -1263,8 +1263,10 @@ class material(val material_Item: ArrayList<material_Item_list>) : RecyclerView.
                                 item.imaup2.setImageResource(falselist[j].Image1)
                                 item.uptext2.text = falselist[j].name1
                             }
-                            item.imaup3.setImageResource(0)
-                            item.uptext3.text = ""
+                            if (falselist[j].name1 == "스파이의 우산") {
+                                item.imaup3.setImageResource(falselist[j].Image1)
+                                item.uptext3.text = falselist[j].name1
+                            }
                             item.imaup4.setImageResource(0)
                             item.uptext4.text = ""
                             item.imaup5.setImageResource(0)
@@ -1832,7 +1834,7 @@ class material(val material_Item: ArrayList<material_Item_list>) : RecyclerView.
 
             if (material_Item[i].name1 == "독약") {
                 item.te("독약", "", "[제작] 재 + 물, 늑대, 곰\n파란색 항공 보급", "희귀")
-                item.up("독침", "슈뢰딩거의 상자", "푸른색 단도", "스파이의 우산", "")
+                item.up("독침", "슈뢰딩거의 상자", "푸른색 단도", "", "")
                 item.down("재", "물", "", "", "")
             }
 

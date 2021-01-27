@@ -1,4 +1,4 @@
-package com.example.black_survivor_dictinary
+package com.black_survivor.black_survivor_dictinary
 
 import android.app.Dialog
 import android.graphics.Bitmap
@@ -479,7 +479,7 @@ class consume(val consume_Item: ArrayList<consume_Item_list>) : RecyclerView.Ada
                 item.down("붕어", "뜨거운 물", "", "", "")
             }
             if (consume_Item[i].name1 == "감자튀김") {
-                item.te("감자튀김", "체력 재생 +600", "[제작] 감자 + 뜨거운 오일\n파란색 항공 보급", "희귀")
+                item.te("감자튀김", "체력 재생 +700", "[제작] 감자 + 뜨거운 오일\n파란색 항공 보급", "희귀")
                 item.up("피쉬 앤 칩스", "", "", "", "")
                 item.down("감자", "뜨거운 오일", "", "", "")
             }
@@ -594,7 +594,7 @@ class consume(val consume_Item: ArrayList<consume_Item_list>) : RecyclerView.Ada
                 item.down("생라면", "얼음물", "", "", "")
             }
             if (consume_Item[i].name1 == "대환단") {
-                item.te("대환단", "체력 재생 +850", "[제작]한방침 + 보약\n파란색 항공 보급", "희귀")
+                item.te("대환단", "체력 재생 +900", "[제작]한방침 + 보약\n파란색 항공 보급", "희귀")
                 item.up("", "", "", "", "")
                 item.down("한방침", "보약", "", "", "")
             }

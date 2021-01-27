@@ -1,4 +1,4 @@
-package com.example.black_survivor_dictinary
+package com.black_survivor.black_survivor_dictinary
 
 import android.os.Bundle
 import android.view.Window
@@ -18,7 +18,7 @@ class close_app : AppCompatActivity() {
         requestWindowFeature(Window.FEATURE_NO_TITLE)
         setContentView(R.layout.activity_close_app)
         val adView: BannerAdView = findViewById(R.id.kakao_View)
-        adView.setClientId("DAN-b80L9be9oCS3qfjV")  // 할당 받은 광고 단위(clientId) 설정
+        adView.setClientId("DAN-vH40oM1xdrny04Lo")  // 할당 받은 광고 단위(clientId) 설정
         adView.setAdListener(object : AdListener {  // optional :: 광고 수신 리스너 설정
             override fun onAdLoaded() {
                 // 배너 광고 노출 완료 시 호출

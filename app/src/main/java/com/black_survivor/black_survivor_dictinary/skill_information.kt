@@ -1,4 +1,4 @@
-package com.example.black_survivor_dictinary
+package com.black_survivor.black_survivor_dictinary
 
 import android.graphics.Color
 import android.os.Bundle
@@ -7,7 +7,7 @@ import android.text.Spanned
 import android.text.style.ForegroundColorSpan
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
-import com.example.black_survivor_dictinary.databinding.ActivitySkillInformationBinding
+import com.black_survivor.black_survivor_dictinary.databinding.ActivitySkillInformationBinding
 import com.google.android.gms.ads.AdRequest
 import com.google.android.gms.ads.AdView
 import com.google.android.gms.ads.MobileAds
@@ -19,8 +19,9 @@ class skill_information : AppCompatActivity() {
         val binding = ActivitySkillInformationBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        MobileAds.initialize(this,"ca-app-pub-8417791108068506~7524991405")
+
         var adview = findViewById<AdView>(R.id.adView3)
-        MobileAds.initialize(this) {}
         val adRequest = AdRequest.Builder().build()
         adview.loadAd(adRequest)
         var a = -1
@@ -167,7 +168,7 @@ class skill_information : AppCompatActivity() {
             binding.qExeplan1.text = "재키가 지정한 방향으로 무기를 두 번 휘둘러서 피해를 입힙니다.\n" +
                     "피해를 입은 대상은 5초 동안 '출혈' 에 걸려 추가 피해를 입습니다.\n"
             binding.qExeplan2.text = "1타 피해량 : 20/40/60/80/100(+0.45 공격력)\n" +
-                    "2타 피해량: 30/50/70/90/110(+0.65 공격력)\n" +
+                    "2타 피해량: 30/55/80/105/130(+0.65 공격력)\n" +
                     "출혈: 80/110/140/170/200\n" +
                     "사정거리 : 2.5m\n" +
                     "스테미너 소모: 50/60/70/80/90\n" +
@@ -550,7 +551,7 @@ class skill_information : AppCompatActivity() {
                             "스테미너 소모 : 80\n" +
                             "시전시간 : 0.25초\n" +
                             "재시전가능시간 : 1.5초\n" +
-                            "쿨다운 : 12초"
+                            "쿨다운 : 19/17/15/13/11초"
 
             binding.skill5.setImageResource(R.drawable.hyejin_skill_hyejin_r)
             binding.rName.text = "[ R ] 오대존명왕진"
@@ -615,7 +616,7 @@ class skill_information : AppCompatActivity() {
             binding.eExeplan1.text = "아이솔이 앞으로 구르며 이동합니다.\n" +
                     "이동 후 잠시 은신 상태가 됩니다."
             binding.eExeplan2.text = "구르는 거리: 4m\n" +
-                    "스테미너 소모 : 110\n" +
+                    "스테미너 소모 : 110/115/120/125/130\n" +
                     "시전 시간 : 즉시\n" +
                     "지속 시간 : 2.5/2.75/3/3.25/3.5초\n" +
                     "쿨다운 : 23/20/17/14/11초"
@@ -719,7 +720,7 @@ class skill_information : AppCompatActivity() {
                     "사정거리 ; 11m\n" +
                     "스테미너 소모 : 90/100/110/120/130\n" +
                     "시전시간 : 0.8초\n" +
-                    "쿨다운 : 18/16/14/12/10초"
+                    "쿨다운 : 18/15.5/13/10.5/8초"
 
             binding.skill3.setImageResource(R.drawable.magnus_magnus_w)
             binding.wName.text = "[ W ] 17 대 1"
@@ -745,7 +746,7 @@ class skill_information : AppCompatActivity() {
                     "스테미너 소모 : 80/90/100/110/120\n" +
                     "시전 시간 : 0.2초\n" +
                     "벽에 부딪힐 시 기절 지속 시간 : 1.5초\n" +
-                    "쿨다운 : 12/11/10/9/8초\n"
+                    "쿨다운 : 12/11.5/11/10.5/10초\n"
 
             binding.skill5.setImageResource(R.drawable.magnus_magnus_r)
             binding.rName.text = "[ R ] 폭주 바이크"
@@ -1359,7 +1360,7 @@ class skill_information : AppCompatActivity() {
                             "엠마가 날린 카드에 적이 적중되면 비둘기 딜러의 쿨다운이 1초 감소됩니다. 엠마와 비둘기가 날린 카드에 한 대상이 모두 맞으면 이동속도가 감소됩니다."
             binding.qExeplan2.text = "피해량 : 40/80/120/160/200(+0.45 공격력)\n" +
                     "비둘기 유지 시간 : 10초\n" +
-                    "이동속도 감소 : 30%\n" +
+                    "이동속도 감소 : 40%\n" +
                     "사정거리 : 10m\n" +
                     "스태미너 소모 : 60/70/80/90/100\n" +
                     "쿨다운 : 5.5초"
@@ -1384,7 +1385,7 @@ class skill_information : AppCompatActivity() {
                     "\n" +
                     "엠마가 지정한 적 대상에게 마술빔을 날려 1.5초 간 이동 외에 다른 행동을 할 수 없는 토끼로 변하게 합니다. 토끼가 된 대상은 이동속도가 감소됩니다. 빈사상태의 적에게 스킬을 사용할 수 없습니다."
             binding.eExeplan2.text = "회복량 : 소모한 스태미너의 8%/11%/14%/17%/20%\n" +
-                    "이동속도 감소 : 0.6\n" +
+                    "이동속도 감소 : 0.7\n" +
                     "사정거리 : 5.5m\n" +
                     "스태미너 소모 : 70/80/90/100/110\n" +
                     "쿨다운 : 16/15/14/13/12초"
@@ -1400,14 +1401,14 @@ class skill_information : AppCompatActivity() {
                             "◆ 모자: 모자가 엠마의 위치로 이동하며 범위 안의 적들에게 피해를 입히고 모자 중심으로 끌어당깁니다.\n" +
                             "◆ 토끼: 토끼 주변의 적들에게 마술을 걸어 1초 간 토끼로 만듭니다. 토끼가 된 대상은 이동속도가 감소됩니다."
             binding.rExeplan2.text = "비둘기 효과\n" +
-                    "피해량 : 150/200/250(+0.45 공격력)\n" +
+                    "피해량 : 175/200/225(+0.45 공격력)\n" +
                     "속박 시간: 0.5초\n\n" +
                     "모자 효과\n" +
-                    "피해량 : 200/250/300(+0.75 공격력)\n\n" +
+                    "피해량 : 225/250/275(+0.75 공격력)\n\n" +
                     "토끼 효과\n" +
                     "토끼 지속시간 : 1초\n" +
                     "이동속도 감소 : 0.6\n\n" +
-                    "충전 : 2회, 18/15/12초" +
+                    "충전 : 2회, 18/16.5/15초" +
                     "쿨다운 : 3초"
         }
         if (intent.hasExtra("레녹스")) {

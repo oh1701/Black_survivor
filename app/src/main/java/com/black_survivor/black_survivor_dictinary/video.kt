@@ -1,5 +1,4 @@
-package com.example.black_survivor_dictinary
-
+package com.black_survivor.black_survivor_dictinary
 import android.app.Activity
 import android.net.Uri
 import android.os.Bundle
@@ -7,7 +6,7 @@ import android.widget.ImageView
 import android.widget.MediaController
 import android.widget.TextView
 import android.widget.VideoView
-import com.example.black_survivor_dictinary.databinding.ActivityVideoBinding
+import com.black_survivor.black_survivor_dictinary.databinding.ActivityVideoBinding
 import com.google.android.gms.ads.AdRequest
 import com.google.android.gms.ads.AdView
 import com.google.android.gms.ads.MobileAds
@@ -34,8 +33,9 @@ class video : Activity() {
         val weapon_Image = findViewById<ImageView>(R.id.weapon_skill_Image)
         var levelup:Int = 1
 
+        MobileAds.initialize(this,"ca-app-pub-8417791108068506~7524991405")
+
         var adview = findViewById<AdView>(R.id.adView10)
-        MobileAds.initialize(this) {}
         val adRequest = AdRequest.Builder().build()
         adview.loadAd(adRequest)
 
@@ -143,7 +143,7 @@ class video : Activity() {
             a = 1
             b = 0.0
             c = 4.8
-            d = 2.0
+            d = 2.3
             table(a,b,c,d)
             videouri =
                     Uri.parse("https://ww.namu.la/s/eb09953ac7d8caae958790d14b6194cc99ba72198069104bd64357ad22e1e80504eab56aa938ff73fb02453fe430b38d563f0b26fba7bcb0fda0ad12d00b9b8fb9f651ac3a23ef8ebf9255f708f463b99f9cf985f1f51d3a317adeb7166dccef")
@@ -388,7 +388,7 @@ class video : Activity() {
             skill_exeplan.text = "지정한 방향으로 채찍을 날려 처음 닿은 적에게 피해를 입히고 1초 동안 시전자의 2.5m 앞으로 당겨옵니다. 2.5m보다 가까이 있는 적은 당겨오지 않고 0.75초 간 공중에 띄웁니다."
             skill_exeplan2.text = "피해량 : 100/150(+공격력의 30%)\n" +
                     "사거리 8m\n" +
-                    "쿨다운: 30/20초"
+                    "쿨다운: 40/30초"
             binding.ImageName.text = "채찍"
             binding.skillName.text = "갈고리"
 

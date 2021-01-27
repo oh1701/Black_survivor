@@ -1,4 +1,4 @@
-package com.example.black_survivor_dictinary
+package com.black_survivor.black_survivor_dictinary
 
 import android.app.Dialog
 import android.graphics.Bitmap
@@ -156,12 +156,12 @@ class defend(val defend_Item: ArrayList<defend_Item_list>) : RecyclerView.Adapte
                 item.down("티아라", "유리 조각", "", "", "")
             }
             if (defend_Item[i].name1 == "전술-OPS 헬멧") {
-                item.te("전술-OPS 헬멧", "방어력 +15, 최대 체력 +120, 공격속도 +20%, 쿨다운 감소 +15%", "[제작] 방탄모 + 전자 부품\n보라색 항공 보급", "영웅")
+                item.te("전술-OPS 헬멧", "방어력 +15, 최대 체력 +120, 공격속도 +23%, 쿨다운 감소 +15%", "[제작] 방탄모 + 전자 부품\n보라색 항공 보급", "영웅")
                 item.up("", "", "", "", "")
                 item.down("방탄모", "전자 부품", "", "", "")
             }
             if (defend_Item[i].name1 == "기사단장의 투구") {
-                item.te("기사단장의 투구", "방어력 +24, 최대 스태미너 +200, 이동속도 +0.1, 쿨다운 감소 +10%, 스킬 피해 감소 +11%", "[제작] 투구 + 고무\n보라색 항공 보급", "영웅")
+                item.te("기사단장의 투구", "방어력 +28, 최대 스태미너 +200, 이동속도 +0.1, 쿨다운 감소 +10%, 스킬 피해 감소 +11%", "[제작] 투구 + 고무\n보라색 항공 보급", "영웅")
                 item.up("", "", "", "", "")
                 item.down("투구", "고무", "", "", "")
             }
@@ -242,7 +242,7 @@ class defend(val defend_Item: ArrayList<defend_Item_list>) : RecyclerView.Adapte
             }
             if (defend_Item[i].name1 == "잠수복") {
                 item.te("잠수복", "방어력 +9, 스킬 피해 감소 +10%", "[제작] 전신 수영복 + 고무\n", "고급")
-                item.up("광학미체 슈트", "배틀 슈트", "", "", "")
+                item.up("광학미채 슈트", "배틀 슈트", "", "", "")
                 item.down("전신 수영복", "고무", "", "", "")
             }
             if (defend_Item[i].name1 == "라이더 자켓") {
@@ -351,7 +351,7 @@ class defend(val defend_Item: ArrayList<defend_Item_list>) : RecyclerView.Adapte
                 item.down("운석", "지휘관의 갑옷", "", "", "")
             }
             if (defend_Item[i].name1 == "퀸 오브 하트") {
-                item.te("퀸 오브 하트", "방어력 +45, 체력 재생 +3, 쿨다운 감소 +25%", "[제작] VF 혈액 샘플 + 한복\n노란색 항공 보급", "전설")
+                item.te("퀸 오브 하트", "방어력 +37, 체력 재생 +3, 쿨다운 감소 +25%", "[제작] VF 혈액 샘플 + 한복\n노란색 항공 보급", "전설")
                 item.up("", "", "", "", "")
                 item.down("VF 혈액 샘플", "한복", "", "", "")
             }
@@ -464,7 +464,7 @@ class defend(val defend_Item: ArrayList<defend_Item_list>) : RecyclerView.Adapte
                 item.down("바이탈 센서", "유리판", "", "", "")
             }
             if (defend_Item[i].name1 == "오토-암즈") {
-                item.te("오토-암즈", "공격력 +40, 방어력 +35, 체력 재생 +1.5", "[제작] 브레이서 + 포스 코어\n노란색 항공 보급", "전설")
+                item.te("오토-암즈", "공격력 +40, 방어력 +35, 체력 재생 +1", "[제작] 브레이서 + 포스 코어\n노란색 항공 보급", "전설")
                 item.up("", "", "", "", "")
                 item.down("브레이서", "포스 코어", "", "", "")
             }
@@ -848,7 +848,7 @@ class defend(val defend_Item: ArrayList<defend_Item_list>) : RecyclerView.Adapte
                 item.down("상자", "철판", "", "", "")
             }
             if (defend_Item[i].name1 == "궁기병의 화살통") {
-                item.te("궁기병의 화살통", "공격력 +10, 공격속도 +30%, 이동속도 +0.1", "[제작] 화살통 + 먼지털이개\n파란색 항공 보급", "희귀")
+                item.te("궁기병의 화살통", "공격력 +13, 공격속도 +30%, 이동속도 +0.1", "[제작] 화살통 + 먼지털이개\n파란색 항공 보급", "희귀")
                 item.up("", "", "", "", "")
                 item.down("화살통", "먼지털이개", "", "", "")
             }
@@ -888,7 +888,7 @@ class defend(val defend_Item: ArrayList<defend_Item_list>) : RecyclerView.Adapte
                 item.down("녹슨 검", "마패", "", "", "")
             }
             if (defend_Item[i].name1 == "월왕구천") {
-                item.te("월왕구천", "공격력 +10, 스킬증폭 20%", "[제작]\n비파단도 + 정교한 도면", "희귀")
+                item.te("월왕구천", "공격력 +13, 스킬증폭 20%", "[제작]\n비파단도 + 정교한 도면", "희귀")
                 item.up("", "", "", "", "")
                 item.down("비파단도", "정교한 도면", "", "", "")
             }
