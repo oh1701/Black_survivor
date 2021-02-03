@@ -1,4 +1,0 @@
-        ItemList.remove(ItemList[0])
-
-
-배열이름.remove(배열[])
