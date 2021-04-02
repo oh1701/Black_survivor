@@ -15,7 +15,7 @@ class profile : AppCompatActivity() {
         setContentView(binding.root)
 
         MobileAds.initialize(this){}
-        var adview8 = findViewById<AdView>(R.id.adview8)
+        var adview8 = findViewById<AdView>(R.id.adView8)
         adview8.loadAd(AdRequest.Builder().build())
 
         fun text(a:String, b:String, c:String, d:String, e:String, f:String, g:String, h:String, i:String){

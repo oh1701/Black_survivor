@@ -22,7 +22,7 @@ class creature : AppCompatActivity() {
         setContentView(R.layout.activity_creature)
 
         MobileAds.initialize(this){}
-        var adview3 = findViewById<AdView>(R.id.adview3)
+        var adview3 = findViewById<AdView>(R.id.adView3)
         adview3.loadAd(AdRequest.Builder().build())
 
         var rnqns: Int = 0

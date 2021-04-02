@@ -18,7 +18,7 @@ class map_explan : AppCompatActivity() {
         setContentView(R.layout.activity_map_explan)
 
         MobileAds.initialize(this){}
-        var adview7 = findViewById<AdView>(R.id.adview7)
+        var adview7 = findViewById<AdView>(R.id.adView7)
         adview7.loadAd(AdRequest.Builder().build())
 
         var gotcha = findViewById<TextView>(R.id.gotcha)

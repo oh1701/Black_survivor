@@ -12,12 +12,5 @@ class imsi : AppCompatActivity(){
         val im1: ImageView = findViewById(R.id.imaging2)
         val i = Item()
 
-
-
-
-
-
-
-
     }
 }

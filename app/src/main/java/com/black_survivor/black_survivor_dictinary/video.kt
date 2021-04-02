@@ -21,7 +21,7 @@ class video : AppCompatActivity() {
         setContentView(binding.root)
 
         MobileAds.initialize(this){}
-        var adview10 = findViewById<AdView>(R.id.adview10)
+        var adview10 = findViewById<AdView>(R.id.adView10)
         adview10.loadAd(AdRequest.Builder().build())
 
         var vv:VideoView = findViewById(R.id.vv)
@@ -74,7 +74,7 @@ class video : AppCompatActivity() {
 
                 a = 1
                 b = 3.3
-                c = 10.0
+                c = 5.0
                 d = 1.5
                 table(a, b, c, d)
 

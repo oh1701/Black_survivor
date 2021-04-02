@@ -16,7 +16,7 @@ class weaponskill : AppCompatActivity() {
         setContentView(binding.root)
 
         MobileAds.initialize(this){}
-        var adview11 = findViewById<AdView>(R.id.adview11)
+        var adview11 = findViewById<AdView>(R.id.adView11)
         adview11.loadAd(AdRequest.Builder().build())
 
         binding.weapon1.setOnClickListener {

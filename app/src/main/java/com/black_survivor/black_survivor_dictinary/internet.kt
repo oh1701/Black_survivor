@@ -42,7 +42,6 @@ class internet : AppCompatActivity() {
                 webview.loadUrl("https://dak.gg/bser/search/players?playerName=$a")
             else
                 false
-
         }
         if(intent.hasExtra("아야")){
             webview.loadUrl("http://www.inven.co.kr/board/er/5684?category=%EC%95%84%EC%95%BC")

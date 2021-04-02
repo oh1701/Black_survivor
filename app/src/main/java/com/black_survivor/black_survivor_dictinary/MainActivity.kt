@@ -1,7 +1,6 @@
 package com.black_survivor.black_survivor_dictinary
 
 import android.content.Intent
-import android.os.Build
 import android.os.Bundle
 import android.view.MenuItem
 import android.view.View
@@ -13,7 +12,6 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.ImageView
 import android.widget.LinearLayout
-import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
@@ -26,14 +24,13 @@ import com.google.android.material.navigation.NavigationView
 
 lateinit var a:String
 class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
-    @RequiresApi(Build.VERSION_CODES.O)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
         MobileAds.initialize(this){}
-        var adview6 = findViewById<AdView>(R.id.adview6)
+        var adview6 = findViewById<AdView>(R.id.adView6)
         adview6.loadAd(AdRequest.Builder().build())
 
         var ch = findViewById<Button>(R.id.Character)

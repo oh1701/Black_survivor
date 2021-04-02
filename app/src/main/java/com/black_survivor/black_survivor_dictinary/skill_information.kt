@@ -20,7 +20,7 @@ class skill_information : AppCompatActivity() {
         setContentView(binding.root)
 
         MobileAds.initialize(this){}
-        var adview9 = findViewById<AdView>(R.id.adview9)
+        var adview9 = findViewById<AdView>(R.id.adView9)
         adview9.loadAd(AdRequest.Builder().build())
 
         var a = -1
