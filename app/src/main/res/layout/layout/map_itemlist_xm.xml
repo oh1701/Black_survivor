@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="95dp"
+    android:layout_height="90dp"
+    android:orientation="horizontal"
+    android:weightSum="10">
+    <ImageButton
+        android:id="@+id/Imbu"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/mapitem_name"
+        android:background="@drawable/nocolor_tedory_black"/>
+
+    <TextView
+        android:id="@+id/mapitem_name"
+        android:layout_width="70dp"
+        android:layout_height="20dp"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/Imbu"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textColor="@color/white"/>
+
+ </androidx.constraintlayout.widget.ConstraintLayout>

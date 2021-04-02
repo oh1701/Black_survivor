@@ -1,4 +1,4 @@
-package com.example.black_survivor_dictinary
+package com.black_survivor.black_survivor_dictinary
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

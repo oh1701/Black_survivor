@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:id="@+id/layout_drawer">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="20">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="#363734"
+            android:layout_weight="1.7">
+
+            <ImageView
+                android:id="@+id/menu"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_baseline_menu_24"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/list"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"/>
+            <TextView
+                android:id="@+id/list"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:text="전적검색"
+                android:gravity="center"
+                android:textColor="@color/white"
+                app:layout_constraintLeft_toRightOf="@id/menu"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/search"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="5dp"
+                android:background="#0D4975"/>
+
+            <EditText
+                android:imeOptions="actionDone"
+                android:singleLine="true"
+                android:id="@+id/search"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+
+                android:textSize="13sp"
+                android:textColor="#ECD9D9"
+                android:hint="전적을 검색할 아이디를 입력하세요"
+                android:textColorHint="@color/white"
+
+                app:layout_constraintLeft_toRightOf="@id/list"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/src_btn"
+
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"/>
+
+            <Button
+                android:id="@+id/src_btn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/search"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:background="@drawable/search_24"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="16.8">
+
+                <WebView
+                    android:id="@+id/webview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:visibility="gone"/>
+
+                <LinearLayout
+                    android:id="@+id/lay1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="10"
+                    android:background="#60B3B0B0">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="3.5"
+                        android:paddingBottom="20dp">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/Character"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="#4C728E"
+                        android:maxHeight="40dp"
+                        android:minHeight="20dp"
+                        android:text="캐릭터"
+                        android:textColor="@color/white"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toLeftOf="@id/Item"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toTopOf="@id/loot"/>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/Item"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="#4C728E"
+                        android:maxHeight="40dp"
+                        android:minHeight="20dp"
+                        android:text="아이템"
+                        android:textColor="@color/white"
+                        app:layout_constraintLeft_toRightOf="@id/Character"
+                        app:layout_constraintRight_toLeftOf="@id/animal"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toTopOf="@id/Lank"/>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/animal"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="#4C728E"
+                        android:maxHeight="40dp"
+                        android:minHeight="20dp"
+                        android:text="야생동물"
+                        android:textColor="@color/white"
+                        app:layout_constraintLeft_toRightOf="@id/Item"
+                        app:layout_constraintRight_toLeftOf="@id/Weapon_skill"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toTopOf="@id/Lank"/>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/Weapon_skill"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="#4C728E"
+                        android:maxHeight="40dp"
+                        android:minHeight="20dp"
+                        android:text="무기스킬"
+                        android:textColor="@color/white"
+                        app:layout_constraintLeft_toRightOf="@id/animal"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toTopOf="@id/patch"/>
+
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/loot"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="#32AE32"
+                        android:maxHeight="40dp"
+                        android:minHeight="20dp"
+                        android:text="루트"
+                        android:textColor="@color/white"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toLeftOf="@id/Lank"/>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/Lank"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="#32AE32"
+                        android:maxHeight="40dp"
+                        android:minHeight="20dp"
+                        android:text="랭킹"
+                        android:textColor="@color/white"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toRightOf="@id/loot"
+                        app:layout_constraintRight_toLeftOf="@id/patch"/>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/patch"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="30dp"
+                        android:background="#32AE32"
+                        android:maxHeight="40dp"
+                        android:minHeight="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizePresetSizes="1sp"
+                        android:autoSizeMaxTextSize="14sp"
+                        android:autoSizeMinTextSize="10sp"
+                        android:text="패치 노트"
+                        android:textColor="@color/white"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toRightOf="@id/Lank"
+                        app:layout_constraintRight_toRightOf="parent"/>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="8.5"
+                        android:background="#BCBCBC">
+
+                        <ImageView
+                            android:id="@+id/map_ima"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toLeftOf="@id/map_name"
+                            android:src="@drawable/map"
+                            android:scaleType="fitXY"/>
+                        <TextView
+                            android:id="@+id/map_name"
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:text="터치 시 맵 이동"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintLeft_toRightOf="@id/map_ima"
+                            android:background="@color/black"
+                            android:gravity="center"/>
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/map_list"
+                            android:layout_width="120dp"
+                            android:layout_height="0dp"
+                            app:layout_constraintTop_toBottomOf="@id/map_name"
+                            app:layout_constraintLeft_toRightOf="@id/map_ima"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_weight="1.5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+            <com.google.android.gms.ads.AdView
+                xmlns:ads="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/adView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                ads:layout_constraintBottom_toBottomOf="parent"
+                ads:layout_constraintRight_toRightOf="parent"
+                ads:layout_constraintLeft_toLeftOf="parent"
+                ads:adSize="SMART_BANNER"
+                ads:adUnitId="ca-app-pub-3940256099942544/6300978111">
+            </com.google.android.gms.ads.AdView>
+        </LinearLayout>
+
+    </LinearLayout>
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navi_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:menu="@menu/navi_menu" />
+
+
+</androidx.drawerlayout.widget.DrawerLayout>
