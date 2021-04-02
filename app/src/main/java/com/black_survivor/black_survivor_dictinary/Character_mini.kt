@@ -7,7 +7,6 @@ import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.black_survivor.black_survivor_dictinary.databinding.ActivityCharacterMiniBinding
 import com.google.android.gms.ads.AdRequest
-import com.google.android.gms.ads.AdView
 import com.google.android.gms.ads.MobileAds
 
 class Character_mini : AppCompatActivity() {
@@ -18,11 +17,9 @@ class Character_mini : AppCompatActivity() {
         val binding = ActivityCharacterMiniBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        MobileAds.initialize(this,"ca-app-pub-8417791108068506~7524991405")
+        MobileAds.initialize(this){}
+        binding.adview2.loadAd(AdRequest.Builder().build())
 
-        var adview = findViewById<AdView>(R.id.adView6)
-        val adRequest = AdRequest.Builder().build()
-        adview.loadAd(adRequest)
 
         fun value(i:Int){
             var intent = Intent(this, video::class.java)
@@ -176,7 +173,8 @@ class Character_mini : AppCompatActivity() {
                 "쇼우" -> intent.putExtra("쇼우", "쇼우")
                 "유키" -> intent.putExtra("유키", "유키")
             }
-            if(binding.text.text == "엠마" || binding.text.text == "로지" || binding.text.text == "레녹스") {
+            if(binding.text.text == "엠마" || binding.text.text == "로지" || binding.text.text == "레녹스" || binding.text.text == "루크" || binding.text.text == "캐시" || binding.text.text == "아델라" || binding.text.text == "버니스"
+                    || binding.text.text == "바바라") {
                 val dlg = AlertDialog.Builder(this)
                 dlg.setMessage("해당 캐릭터는 공략 글이 부족합니다.")
 
@@ -212,6 +210,11 @@ class Character_mini : AppCompatActivity() {
                 "엠마" -> intent.putExtra("엠마", "엠마")
                 "레녹스" -> intent.putExtra("레녹스", "레녹스")
                 "로지" -> intent.putExtra("로지", "로지")
+                "루크" -> intent.putExtra("루크", "루크")
+                "캐시" -> intent.putExtra("캐시", "캐시")
+                "아델라" -> intent.putExtra("아델라", "아델라")
+                "버니스" -> intent.putExtra("버니스","버니스")
+                "바바라" -> intent.putExtra("바바라","바바라")
             }
             startActivity(intent)
         }
@@ -241,6 +244,11 @@ class Character_mini : AppCompatActivity() {
                 "엠마" -> intent.putExtra("엠마", "엠마")
                 "레녹스" -> intent.putExtra("레녹스", "레녹스")
                 "로지" -> intent.putExtra("로지", "로지")
+                "루크" -> intent.putExtra("루크", "루크")
+                "캐시" -> intent.putExtra("캐시", "캐시")
+                "아델라" -> intent.putExtra("아델라", "아델라")
+                "버니스" -> intent.putExtra("버니스","버니스")
+                "바바라" -> intent.putExtra("바바라","바바라")
             }
             startActivity(intent)
         }
@@ -254,11 +262,12 @@ class Character_mini : AppCompatActivity() {
             binding.chWeaName4.visibility = View.GONE
             binding.Image4.visibility = View.GONE
 
+
             binding.at2.text = "28"
             binding.at3.text = "77.4"
             binding.at4.text = "2.6"
-            binding.hp2.text = "480"
-            binding.hp3.text = "1677"
+            binding.hp2.text = "500"
+            binding.hp3.text = "1697"
             binding.hp4.text = "63"
             binding.hpr2.text = "0.5"
             binding.hpr3.text = "1.26"
@@ -284,6 +293,8 @@ class Character_mini : AppCompatActivity() {
             binding.vi2.text = "8"
             binding.vi3.text = "8"
             binding.vi4.text = "-"
+
+
 
 
             binding.chWeapon1.setImageResource(R.drawable.sniper)
@@ -317,11 +328,11 @@ class Character_mini : AppCompatActivity() {
             binding.chWeaName4.visibility = View.GONE
             binding.Image4.visibility = View.GONE
 
-            binding.at2.text = "37"
-            binding.at3.text = "97.8"
-            binding.at4.text = "3.2"
-            binding.hp2.text = "550"
-            binding.hp3.text = "2203"
+            binding.at2.text = "31"
+            binding.at3.text = "95.6"
+            binding.at4.text = "3.4"
+            binding.hp2.text = "610"
+            binding.hp3.text = "2233"
             binding.hp4.text = "87"
             binding.hpr2.text = "0.8"
             binding.hpr3.text = "1.94"
@@ -383,8 +394,8 @@ class Character_mini : AppCompatActivity() {
             binding.at2.text = "37"
             binding.at3.text = "88.3"
             binding.at4.text = "2.7"
-            binding.hp2.text = "560"
-            binding.hp3.text = "2023"
+            binding.hp2.text = "590"
+            binding.hp3.text = "2053"
             binding.hp4.text = "77"
             binding.hpr2.text = "0.5"
             binding.hpr3.text = "1.07"
@@ -452,11 +463,11 @@ class Character_mini : AppCompatActivity() {
             binding.chWeaName4.visibility = View.GONE
             binding.Image4.visibility = View.GONE
 
-            binding.at2.text = "40"
-            binding.at3.text = "91.3"
+            binding.at2.text = "34"
+            binding.at3.text = "85.3"
             binding.at4.text = "2.7"
-            binding.hp2.text = "500"
-            binding.hp3.text = "2020"
+            binding.hp2.text = "530"
+            binding.hp3.text = "2050"
             binding.hp4.text = "80"
             binding.hpr2.text = "0.8"
             binding.hpr3.text = "1.56"
@@ -467,8 +478,8 @@ class Character_mini : AppCompatActivity() {
             binding.str2.text = "1.8"
             binding.str3.text = "2.56"
             binding.str4.text = "0.04"
-            binding.def2.text = "26"
-            binding.def3.text = "67.8"
+            binding.def2.text = "23"
+            binding.def3.text = "64.8"
             binding.def4.text = "2.2"
             binding.ats2.text = "0.12"
             binding.ats3.text = "0.12"
@@ -514,10 +525,10 @@ class Character_mini : AppCompatActivity() {
             binding.Image4.visibility = View.GONE
 
             binding.at2.text = "31"
-            binding.at3.text = "76.6"
-            binding.at4.text = "2.7"
-            binding.hp2.text = "530"
-            binding.hp3.text = "1760"
+            binding.at3.text = "80.4"
+            binding.at4.text = "2.9"
+            binding.hp2.text = "550"
+            binding.hp3.text = "1780"
             binding.hp4.text = "65"
             binding.hpr2.text = "0.5"
             binding.hpr3.text = "1.07"
@@ -577,8 +588,8 @@ class Character_mini : AppCompatActivity() {
             binding.at2.text = "34"
             binding.at3.text = "72"
             binding.at4.text = "2"
-            binding.hp2.text = "500"
-            binding.hp3.text = "1640"
+            binding.hp2.text = "530"
+            binding.hp3.text = "1670"
             binding.hp4.text = "60"
             binding.hpr2.text = "0.5"
             binding.hpr3.text = "0.88"
@@ -586,12 +597,12 @@ class Character_mini : AppCompatActivity() {
             binding.st2.text = "410"
             binding.st3.text = "657"
             binding.st4.text = "13"
-            binding.str2.text = "1.8"
-            binding.str3.text = "2.37"
+            binding.str2.text = "2.1"
+            binding.str3.text = "2.67"
             binding.str4.text = "0.03"
-            binding.def2.text = "24"
-            binding.def3.text = "52.5"
-            binding.def4.text = "1.5"
+            binding.def2.text = "27"
+            binding.def3.text = "51.7"
+            binding.def4.text = "1.3"
             binding.ats2.text = "0.12"
             binding.ats3.text = "0.12"
             binding.ats4.text = "-"
@@ -638,8 +649,8 @@ class Character_mini : AppCompatActivity() {
             binding.at2.text = "22"
             binding.at3.text = "79"
             binding.at4.text = "3"
-            binding.hp2.text = "500"
-            binding.hp3.text = "1906"
+            binding.hp2.text = "530"
+            binding.hp3.text = "1936"
             binding.hp4.text = "74"
             binding.hpr2.text = "0.8"
             binding.hpr3.text = "2.43"
@@ -650,8 +661,8 @@ class Character_mini : AppCompatActivity() {
             binding.str2.text = "1.7"
             binding.str3.text = "2.46"
             binding.str4.text = "0.04"
-            binding.def2.text = "20"
-            binding.def3.text = "56.1"
+            binding.def2.text = "25"
+            binding.def3.text = "61.1"
             binding.def4.text = "1.9"
             binding.ats2.text = "0.12"
             binding.ats3.text = "0.12"
@@ -699,11 +710,11 @@ class Character_mini : AppCompatActivity() {
             binding.at2.text = "29"
             binding.at3.text = "76.5"
             binding.at4.text = "2.5"
-            binding.hp2.text = "500"
-            binding.hp3.text = "1716"
+            binding.hp2.text = "535"
+            binding.hp3.text = "1751"
             binding.hp4.text = "64"
-            binding.hpr2.text = "0.6"
-            binding.hpr3.text = "1.17"
+            binding.hpr2.text = "0.8"
+            binding.hpr3.text = "1.37"
             binding.hpr4.text = "0.03"
             binding.st2.text = "400"
             binding.st3.text = "894"
@@ -711,8 +722,8 @@ class Character_mini : AppCompatActivity() {
             binding.str2.text = "2"
             binding.str3.text = "3.52"
             binding.str4.text = "0.08"
-            binding.def2.text = "22"
-            binding.def3.text = "54.3"
+            binding.def2.text = "25"
+            binding.def3.text = "57.3"
             binding.def4.text = "1.7"
             binding.ats2.text = "0.12"
             binding.ats3.text = "0.12"
@@ -757,11 +768,11 @@ class Character_mini : AppCompatActivity() {
             binding.chWeaName4.visibility = View.GONE
             binding.Image4.visibility = View.GONE
 
-            binding.at2.text = "32"
-            binding.at3.text = "81.4"
-            binding.at4.text = "2.6"
-            binding.hp2.text = "500"
-            binding.hp3.text = "1640"
+            binding.at2.text = "27"
+            binding.at3.text = "82.1"
+            binding.at4.text = "2.9"
+            binding.hp2.text = "520"
+            binding.hp3.text = "1660"
             binding.hp4.text = "60"
             binding.hpr2.text = "0.5"
             binding.hpr3.text = "1.07"
@@ -773,8 +784,8 @@ class Character_mini : AppCompatActivity() {
             binding.str3.text = "2.37"
             binding.str4.text = "0.03"
             binding.def2.text = "23"
-            binding.def3.text = "53.4"
-            binding.def4.text = "1.6"
+            binding.def3.text = "45.8"
+            binding.def4.text = "1.2"
             binding.ats2.text = "0.14"
             binding.ats3.text = "0.14"
             binding.ats4.text = "-"
@@ -821,9 +832,9 @@ class Character_mini : AppCompatActivity() {
             binding.at2.text = "33"
             binding.at3.text = "74.8"
             binding.at4.text = "2.2"
-            binding.hp2.text = "550"
-            binding.hp3.text = "2241"
-            binding.hp4.text = "94"
+            binding.hp2.text = "580"
+            binding.hp3.text = "2138"
+            binding.hp4.text = "82"
             binding.hpr2.text = "1.1"
             binding.hpr3.text = "2.43"
             binding.hpr4.text = "0.07"
@@ -833,9 +844,9 @@ class Character_mini : AppCompatActivity() {
             binding.str2.text = "0.2"
             binding.str3.text = "0.39"
             binding.str4.text = "0.01"
-            binding.def2.text = "20"
-            binding.def3.text = "67.5"
-            binding.def4.text = "2.5"
+            binding.def2.text = "22"
+            binding.def3.text = "63.8"
+            binding.def4.text = "2.2"
             binding.ats2.text = "0.07"
             binding.ats3.text = "0.07"
             binding.ats4.text = "-"
@@ -880,13 +891,13 @@ class Character_mini : AppCompatActivity() {
             binding.Image4.visibility = View.GONE
 
             binding.at2.text = "32"
-            binding.at3.text = "68.1"
-            binding.at4.text = "1.9"
-            binding.hp2.text = "600"
-            binding.hp3.text = "2329"
-            binding.hp4.text = "91"
-            binding.hpr2.text = "1"
-            binding.hpr3.text = "1.95"
+            binding.at3.text = "73.8"
+            binding.at4.text = "2.2"
+            binding.hp2.text = "630"
+            binding.hp3.text = "2359"
+            binding.hp4.text = "2158"
+            binding.hpr2.text = "0.7"
+            binding.hpr3.text = "1.65"
             binding.hpr4.text = "0.05"
             binding.st2.text = "410"
             binding.st3.text = "676"
@@ -897,8 +908,8 @@ class Character_mini : AppCompatActivity() {
             binding.def2.text = "25"
             binding.def3.text = "53.5"
             binding.def4.text = "1.5"
-            binding.ats2.text = "0.12"
-            binding.ats3.text = "0.12"
+            binding.ats2.text = "0.14"
+            binding.ats3.text = "0.14"
             binding.ats4.text = "-"
             binding.cri2.text = "0%"
             binding.cri3.text = "0%"
@@ -943,8 +954,8 @@ class Character_mini : AppCompatActivity() {
             binding.at2.text = "32"
             binding.at3.text = "73.8"
             binding.at4.text = "2.2"
-            binding.hp2.text = "520"
-            binding.hp3.text = "1660"
+            binding.hp2.text = "555"
+            binding.hp3.text = "1695"
             binding.hp4.text = "60"
             binding.hpr2.text = "0.4"
             binding.hpr3.text = "0.97"
@@ -955,8 +966,8 @@ class Character_mini : AppCompatActivity() {
             binding.str2.text = "1.9"
             binding.str3.text = "2.85"
             binding.str4.text = "0.05"
-            binding.def2.text = "21"
-            binding.def3.text = "49.5"
+            binding.def2.text = "23"
+            binding.def3.text = "51.5"
             binding.def4.text = "1.5"
             binding.ats2.text = "0.12"
             binding.ats3.text = "0.12"
@@ -1002,10 +1013,10 @@ class Character_mini : AppCompatActivity() {
             binding.Image4.visibility = View.GONE
 
             binding.at2.text = "30"
-            binding.at3.text = "85.1"
-            binding.at4.text = "2.9"
-            binding.hp2.text = "550"
-            binding.hp3.text = "2032"
+            binding.at3.text = "88.9"
+            binding.at4.text = "3.1"
+            binding.hp2.text = "570"
+            binding.hp3.text = "2052"
             binding.hp4.text = "78"
             binding.hpr2.text = "0.8"
             binding.hpr3.text = "1.56"
@@ -1062,12 +1073,12 @@ class Character_mini : AppCompatActivity() {
             binding.chWeaName4.visibility = View.GONE
             binding.Image4.visibility = View.GONE
 
-            binding.at2.text = "28"
-            binding.at3.text = "66"
-            binding.at4.text = "2"
-            binding.hp2.text = "500"
-            binding.hp3.text = "1697"
-            binding.hp4.text = "63"
+            binding.at2.text = "25"
+            binding.at3.text = "67.7"
+            binding.at4.text = "2.2"
+            binding.hp2.text = "520"
+            binding.hp3.text = "1755"
+            binding.hp4.text = "65"
             binding.hpr2.text = "0.4"
             binding.hpr3.text = "0.97"
             binding.hpr4.text = "0.03"
@@ -1077,9 +1088,9 @@ class Character_mini : AppCompatActivity() {
             binding.str2.text = "2.1"
             binding.str3.text = "3.24"
             binding.str4.text = "0.06"
-            binding.def2.text = "20"
-            binding.def3.text = "46.6"
-            binding.def4.text = "1.4"
+            binding.def2.text = "24"
+            binding.def3.text = "46.8"
+            binding.def4.text = "1.2"
             binding.ats2.text = "0.02"
             binding.ats3.text = "0.02"
             binding.ats4.text = "-"
@@ -1126,8 +1137,8 @@ class Character_mini : AppCompatActivity() {
             binding.at2.text = "23"
             binding.at3.text = "69.6"
             binding.at4.text = "2.4"
-            binding.hp2.text = "480"
-            binding.hp3.text = "1620"
+            binding.hp2.text = "510"
+            binding.hp3.text = "1650"
             binding.hp4.text = "60"
             binding.hpr2.text = "0.4"
             binding.hpr3.text = "0.78"
@@ -1187,8 +1198,8 @@ class Character_mini : AppCompatActivity() {
             binding.at2.text = "40"
             binding.at3.text = "74.2"
             binding.at4.text = "1.8"
-            binding.hp2.text = "530"
-            binding.hp3.text = "2050"
+            binding.hp2.text = "560"
+            binding.hp3.text = "2080"
             binding.hp4.text = "80"
             binding.hpr2.text = "1"
             binding.hpr3.text = "2.14"
@@ -1245,11 +1256,11 @@ class Character_mini : AppCompatActivity() {
             binding.chWeaName4.visibility = View.GONE
             binding.Image4.visibility = View.GONE
 
-            binding.at2.text = "32"
-            binding.at3.text = "73.8"
-            binding.at4.text = "2.6"
-            binding.hp2.text = "550"
-            binding.hp3.text = "2089"
+            binding.at2.text = "29"
+            binding.at3.text = "65.1"
+            binding.at4.text = "2.3"
+            binding.hp2.text = "580"
+            binding.hp3.text = "2119"
             binding.hp4.text = "81"
             binding.hpr2.text = "0.7"
             binding.hpr3.text = "1.65"
@@ -1307,10 +1318,10 @@ class Character_mini : AppCompatActivity() {
             binding.Image4.visibility = View.GONE
 
             binding.at2.text = "25"
-            binding.at3.text = "78.2"
-            binding.at4.text = "2.8"
-            binding.hp2.text = "520"
-            binding.hp3.text = "1736"
+            binding.at3.text = "76.3"
+            binding.at4.text = "2.7"
+            binding.hp2.text = "540"
+            binding.hp3.text = "1756"
             binding.hp4.text = "64"
             binding.hpr2.text = "0.6"
             binding.hpr3.text = "1.17"
@@ -1368,23 +1379,23 @@ class Character_mini : AppCompatActivity() {
             binding.Image4.visibility = View.GONE
 
             binding.at2.text = "40"
-            binding.at3.text = "87.5"
-            binding.at4.text = "2.5"
-            binding.hp2.text = "550"
-            binding.hp3.text = "1690"
+            binding.at3.text = "81.8"
+            binding.at4.text = "2.2"
+            binding.hp2.text = "570"
+            binding.hp3.text = "1710"
             binding.hp4.text = "60"
             binding.hpr2.text = "0.4"
             binding.hpr3.text = "0.78"
             binding.hpr4.text = "0.02"
-            binding.st2.text = "430"
-            binding.st3.text = "772"
+            binding.st2.text = "450"
+            binding.st3.text = "792"
             binding.st4.text = "18"
             binding.str2.text = "1.1"
             binding.str3.text = "1.48"
             binding.str4.text = "0.06"
-            binding.def2.text = "28"
-            binding.def3.text = "58.4"
-            binding.def4.text = "1.6"
+            binding.def2.text = "31"
+            binding.def3.text = "55.7"
+            binding.def4.text = "1.3"
             binding.ats2.text = "0.1"
             binding.ats3.text = "0.1"
             binding.ats4.text = "-"
@@ -1430,16 +1441,16 @@ class Character_mini : AppCompatActivity() {
             binding.Image4.visibility = View.GONE
 
             binding.at2.text = "36"
-            binding.at3.text = "93.2"
-            binding.at4.text = "2.8"
-            binding.hp2.text = "550"
-            binding.hp3.text = "1975"
-            binding.hp4.text = "75"
+            binding.at3.text = "81.6"
+            binding.at4.text = "2.4"
+            binding.hp2.text = "560"
+            binding.hp3.text = "1890"
+            binding.hp4.text = "80"
             binding.hpr2.text = "0.8"
             binding.hpr3.text = "1.75"
             binding.hpr4.text = "0.05"
-            binding.st2.text = "430"
-            binding.st3.text = "677"
+            binding.st2.text = "380"
+            binding.st3.text = "637"
             binding.st4.text = "13"
             binding.str2.text = "2.2"
             binding.str3.text = "3.34"
@@ -1491,36 +1502,36 @@ class Character_mini : AppCompatActivity() {
             binding.chWeaName4.visibility = View.GONE
             binding.Image4.visibility = View.GONE
 
-            binding.at2.text = "?"
-            binding.at3.text = "?"
-            binding.at4.text = "?"
-            binding.hp2.text = "?"
-            binding.hp3.text = "?"
-            binding.hp4.text = "?"
-            binding.hpr2.text = "?"
-            binding.hpr3.text = "?"
-            binding.hpr4.text = "?"
-            binding.st2.text = "?"
-            binding.st3.text = "?"
-            binding.st4.text = "?"
-            binding.str2.text = "?"
-            binding.str3.text = "?"
-            binding.str4.text = "?"
-            binding.def2.text = "?"
-            binding.def3.text = "?"
-            binding.def4.text = "?"
-            binding.ats2.text = "?"
-            binding.ats3.text = "?"
-            binding.ats4.text = "?"
-            binding.cri2.text = "?"
-            binding.cri3.text = "?"
-            binding.cri4.text = "?"
-            binding.sp2.text = "?"
-            binding.sp3.text = "?"
-            binding.sp4.text = "?"
-            binding.vi2.text = "?"
-            binding.vi3.text = "?"
-            binding.vi4.text = "?"
+            binding.at2.text = "28"
+            binding.at3.text = "71.7"
+            binding.at4.text = "2.3"
+            binding.hp2.text = "515"
+            binding.hp3.text = "1693"
+            binding.hp4.text = "62"
+            binding.hpr2.text = "0.4"
+            binding.hpr3.text = "0.78"
+            binding.hpr4.text = "0.02"
+            binding.st2.text = "440"
+            binding.st3.text = "858"
+            binding.st4.text = "22"
+            binding.str2.text = "2.1"
+            binding.str3.text = "2.67"
+            binding.str4.text = "0.03"
+            binding.def2.text = "20"
+            binding.def3.text = "46.6"
+            binding.def4.text = "1.4"
+            binding.ats2.text = "0.11"
+            binding.ats3.text = "0.11"
+            binding.ats4.text = "-"
+            binding.cri2.text = "0"
+            binding.cri3.text = "0"
+            binding.cri4.text = "-"
+            binding.sp2.text = "3"
+            binding.sp3.text = "3"
+            binding.sp4.text = "-"
+            binding.vi2.text = "8"
+            binding.vi3.text = "8"
+            binding.vi4.text = "-"
 
             binding.chWeapon1.setImageResource(R.drawable.revolber)
             binding.chWeapon2
@@ -1543,5 +1554,376 @@ class Character_mini : AppCompatActivity() {
             binding.profile
             binding.movie
         }
+        
+        else if(intent.hasExtra("luke"))
+        {
+            binding.mini.setImageResource(R.drawable.luke)
+            binding.text.text = "루크"
+            binding.mini.setBackgroundResource(R.drawable.image_color)
+            binding.chWeapon4.visibility = View.GONE
+            binding.chWeaName4.visibility = View.GONE
+            binding.Image4.visibility = View.GONE
+
+            binding.at2.text = "28"
+            binding.at3.text = "75.5"
+            binding.at4.text = "2.5"
+            binding.hp2.text = "605"
+            binding.hp3.text = "2196"
+            binding.hp4.text = "84"
+            binding.hpr2.text = "1"
+            binding.hpr3.text = "2.14"
+            binding.hpr4.text = "0.06"
+            binding.st2.text = "427"
+            binding.st3.text = "705"
+            binding.st4.text = "15"
+            binding.str2.text = "1.9"
+            binding.str3.text = "3.04"
+            binding.str4.text = "0.06"
+            binding.def2.text = "30"
+            binding.def3.text = "73.7"
+            binding.def4.text = "2.3"
+            binding.ats2.text = "0.12"
+            binding.ats3.text = "0.12"
+            binding.ats4.text = "-"
+            binding.cri2.text = "0"
+            binding.cri3.text = "0"
+            binding.cri4.text = "-"
+            binding.sp2.text = "3.15"
+            binding.sp3.text = "3.15"
+            binding.sp4.text = "-"
+            binding.vi2.text = "8"
+            binding.vi3.text = "8"
+            binding.vi4.text = "-"
+
+            binding.chWeapon1.setImageResource(R.drawable.swing)
+            binding.chWeapon2
+            binding.chWeapon3
+            binding.chWeaName1.setText("방망이")
+            binding.chWeaName2
+            binding.chWeaName3
+            binding.chWeapon1.setOnClickListener(){
+                value(1)
+            }
+            binding.chWeapon2.setOnClickListener(){
+                value(2)
+            }
+            binding.chWeapon3.setOnClickListener(){
+                value(3)
+            }
+            noimage()
+            binding.recommend
+            binding.skillInformation
+            binding.profile
+            binding.movie
+        }
+        else if(intent.hasExtra("cathy"))
+        {
+            binding.mini.setImageResource(R.drawable.cathy)
+            binding.text.text = "캐시"
+            binding.mini.setBackgroundResource(R.drawable.image_color)
+            binding.chWeapon4.visibility = View.GONE
+            binding.chWeaName4.visibility = View.GONE
+            binding.Image4.visibility = View.GONE
+
+            binding.at2.text = "37"
+            binding.at3.text = "90.2"
+            binding.at4.text = "2.8"
+            binding.hp2.text = "570"
+            binding.hp3.text = "2223"
+            binding.hp4.text = "87"
+            binding.hpr2.text = "0.8"
+            binding.hpr3.text = "1.94"
+            binding.hpr4.text = "0.06"
+            binding.st2.text = "430"
+            binding.st3.text = "677"
+            binding.st4.text = "13"
+            binding.str2.text = "2.2"
+            binding.str3.text = "3.34"
+            binding.str4.text = "0.06"
+            binding.def2.text = "25"
+            binding.def3.text = "63.0"
+            binding.def4.text = "2.0"
+            binding.ats2.text = "0.22"
+            binding.ats3.text = "0.22"
+            binding.ats4.text = "-"
+            binding.cri2.text = "0"
+            binding.cri3.text = "0"
+            binding.cri4.text = "-"
+            binding.sp2.text = "3.15"
+            binding.sp3.text = "3.15"
+            binding.sp4.text = "-"
+            binding.vi2.text = "8"
+            binding.vi3.text = "8"
+            binding.vi4.text = "-"
+
+            binding.chWeapon1.setImageResource(R.drawable.cloakanddagger)
+            binding.chWeapon2
+            binding.chWeapon3
+            binding.chWeaName1.setText("단검")
+            binding.chWeaName2
+            binding.chWeaName3
+            binding.chWeapon1.setOnClickListener(){
+                value(1)
+            }
+            binding.chWeapon2.setOnClickListener(){
+                value(2)
+            }
+            binding.chWeapon3.setOnClickListener(){
+                value(3)
+            }
+            noimage()
+            binding.recommend
+            binding.skillInformation
+            binding.profile
+            binding.movie
+        }
+        else if(intent.hasExtra("adela"))
+        {
+            binding.mini.setImageResource(R.drawable.adela)
+            binding.text.text = "아델라"
+            binding.mini.setBackgroundResource(R.drawable.image_color)
+            binding.chWeapon4.visibility = View.GONE
+            binding.chWeaName4.visibility = View.GONE
+            binding.Image4.visibility = View.GONE
+
+            binding.at2.text = "37"
+            binding.at3.text = "94.0"
+            binding.at4.text = "3.0"
+            binding.hp2.text = "530"
+            binding.hp3.text = "2012"
+            binding.hp4.text = "78"
+            binding.hpr2.text = "0.6"
+            binding.hpr3.text = "1.74"
+            binding.hpr4.text = "0.06"
+            binding.st2.text = "500"
+            binding.st3.text = "994"
+            binding.st4.text = "26"
+            binding.str2.text = "2.0"
+            binding.str3.text = "5.82"
+            binding.str4.text = "0.08"
+            binding.def2.text = "28"
+            binding.def3.text = "69.8"
+            binding.def4.text = "2.2"
+            binding.ats2.text = "0.045"
+            binding.ats3.text = "0.66"
+            binding.ats4.text = "-"
+            binding.cri2.text = "0"
+            binding.cri3.text = "0"
+            binding.cri4.text = "-"
+            binding.sp2.text = "3"
+            binding.sp3.text = "3"
+            binding.sp4.text = "-"
+            binding.vi2.text = "8"
+            binding.vi3.text = "8"
+            binding.vi4.text = "-"
+
+            binding.chWeapon1.setImageResource(R.drawable.quickcut)
+            binding.chWeapon2
+            binding.chWeapon3
+            binding.chWeaName1.setText("레이피어")
+            binding.chWeaName2
+            binding.chWeaName3
+            binding.chWeapon1.setOnClickListener(){
+                value(1)
+            }
+            binding.chWeapon2.setOnClickListener(){
+                value(2)
+            }
+            binding.chWeapon3.setOnClickListener(){
+                value(3)
+            }
+            noimage()
+            binding.recommend
+            binding.skillInformation
+            binding.profile
+            binding.movie
+        }
+        else if(intent.hasExtra("bernice"))
+        {
+            binding.mini.setImageResource(R.drawable.bernice)
+            binding.text.text = "버니스"
+            binding.mini.setBackgroundResource(R.drawable.image_color)
+            binding.chWeapon4.visibility = View.GONE
+            binding.chWeaName4.visibility = View.GONE
+            binding.Image4.visibility = View.GONE
+
+            binding.at2.text = "25"
+            binding.at3.text = "70.6"
+            binding.at4.text = "2.4"
+            binding.hp2.text = "620"
+            binding.hp3.text = "2140"
+            binding.hp4.text = "80"
+            binding.hpr2.text = "0.5"
+            binding.hpr3.text = "1.64"
+            binding.hpr4.text = "0.06"
+            binding.st2.text = "410"
+            binding.st3.text = "695"
+            binding.st4.text = "15"
+            binding.str2.text = "1.8"
+            binding.str3.text = "2.94"
+            binding.str4.text = "0.06"
+            binding.def2.text = "25"
+            binding.def3.text = "59.2"
+            binding.def4.text = "1.8"
+            binding.ats2.text = "0.24"
+            binding.ats3.text = "0.24"
+            binding.ats4.text = "-"
+            binding.cri2.text = "-"
+            binding.cri3.text = "-"
+            binding.cri4.text = "-"
+            binding.sp2.text = "3.15"
+            binding.sp3.text = "3.15"
+            binding.sp4.text = "-"
+            binding.vi2.text = "8"
+            binding.vi3.text = "8"
+            binding.vi4.text = "-"
+
+            binding.chWeapon1.setImageResource(R.drawable.sniper)
+            binding.chWeapon2
+            binding.chWeapon3
+            binding.chWeaName1.setText("저격총")
+            binding.chWeaName2
+            binding.chWeaName3
+            binding.chWeapon1.setOnClickListener(){
+                value(1)
+            }
+            binding.chWeapon2.setOnClickListener(){
+                value(2)
+            }
+            binding.chWeapon3.setOnClickListener(){
+                value(3)
+            }
+            noimage()
+            binding.recommend
+            binding.skillInformation
+            binding.profile
+            binding.movie
+        }
+
+        else if(intent.hasExtra("barbara"))
+        {
+            binding.mini.setImageResource(R.drawable.barbara)
+            binding.text.text = "바바라"
+            binding.mini.setBackgroundResource(R.drawable.image_color)
+            binding.chWeapon4.visibility = View.GONE
+            binding.chWeaName4.visibility = View.GONE
+            binding.Image4.visibility = View.GONE
+
+            binding.at2.text = "18"
+            binding.at3.text = "44.6"
+            binding.at4.text = "1.4"
+            binding.hp2.text = "480"
+            binding.hp3.text = "1620"
+            binding.hp4.text = "60"
+            binding.hpr2.text = "0.4"
+            binding.hpr3.text = "0.97"
+            binding.hpr4.text = "0.03"
+            binding.st2.text = "390"
+            binding.st3.text = "713"
+            binding.st4.text = "17"
+            binding.str2.text = "2"
+            binding.str3.text = "2.76"
+            binding.str4.text = "0.04"
+            binding.def2.text = "21"
+            binding.def3.text = "51.4"
+            binding.def4.text = "1.6"
+            binding.ats2.text = "0.04"
+            binding.ats3.text = "0.04"
+            binding.ats4.text = "-"
+            binding.cri2.text = "-"
+            binding.cri3.text = "-"
+            binding.cri4.text = "-"
+            binding.sp2.text = "3"
+            binding.sp3.text = "3"
+            binding.sp4.text = "-"
+            binding.vi2.text = "8"
+            binding.vi3.text = "8"
+            binding.vi4.text = "-"
+
+            binding.chWeapon1.setImageResource(R.drawable.swing)
+            binding.chWeapon2
+            binding.chWeapon3
+            binding.chWeaName1.setText("방망이")
+            binding.chWeaName2
+            binding.chWeaName3
+            binding.chWeapon1.setOnClickListener(){
+                value(1)
+            }
+            binding.chWeapon2.setOnClickListener(){
+                value(2)
+            }
+            binding.chWeapon3.setOnClickListener(){
+                value(3)
+            }
+            noimage()
+            binding.recommend
+            binding.skillInformation
+            binding.profile
+            binding.movie
+        }
     }
 }
+
+/*
+else if(intent.hasExtra(""))
+        {
+            binding.mini.setImageResource(R.drawable.)
+            binding.text.text = ""
+            binding.mini.setBackgroundResource(R.drawable.image_color)
+            binding.chWeapon4.visibility = View.GONE
+            binding.chWeaName4.visibility = View.GONE
+            binding.Image4.visibility = View.GONE
+
+            binding.at2.text = ""
+            binding.at3.text = ""
+            binding.at4.text = ""
+            binding.hp2.text = ""
+            binding.hp3.text = ""
+            binding.hp4.text = ""
+            binding.hpr2.text = ""
+            binding.hpr3.text = ""
+            binding.hpr4.text = ""
+            binding.st2.text = ""
+            binding.st3.text = ""
+            binding.st4.text = ""
+            binding.str2.text = ""
+            binding.str3.text = ""
+            binding.str4.text = ""
+            binding.def2.text = ""
+            binding.def3.text = ""
+            binding.def4.text = ""
+            binding.ats2.text = ""
+            binding.ats3.text = ""
+            binding.ats4.text = ""
+            binding.cri2.text = ""
+            binding.cri3.text = ""
+            binding.cri4.text = ""
+            binding.sp2.text = ""
+            binding.sp3.text = ""
+            binding.sp4.text = ""
+            binding.vi2.text = ""
+            binding.vi3.text = ""
+            binding.vi4.text = ""
+
+            binding.chWeapon1.setImageResource(R.drawable.)
+            binding.chWeapon2
+            binding.chWeapon3
+            binding.chWeaName1.setText("")
+            binding.chWeaName2.setText("")
+            binding.chWeaName3
+            binding.chWeapon1.setOnClickListener(){
+                value(1)
+            }
+            binding.chWeapon2.setOnClickListener(){
+                value(2)
+            }
+            binding.chWeapon3.setOnClickListener(){
+                value(3)
+            }
+            noimage()
+            binding.recommend
+            binding.skillInformation
+            binding.profile
+            binding.movie
+        }
+        */

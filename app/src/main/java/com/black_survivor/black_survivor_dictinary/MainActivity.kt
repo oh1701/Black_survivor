@@ -32,7 +32,9 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        MobileAds.initialize(this,"ca-app-pub-8417791108068506~7524991405")
+        MobileAds.initialize(this){}
+        var adview6 = findViewById<AdView>(R.id.adview6)
+        adview6.loadAd(AdRequest.Builder().build())
 
         var ch = findViewById<Button>(R.id.Character)
         var item = findViewById<Button>(R.id.Item)
@@ -55,10 +57,6 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         webview.settings.javaScriptEnabled = true
         webview.webViewClient = WebViewClient()
         webview.webChromeClient = WebChromeClient()
-
-        var adview = findViewById<AdView>(R.id.adView)
-        val adRequest = AdRequest.Builder().build()
-        adview.loadAd(adRequest)
 
         fun inten(a:String){
             val intent = Intent(this, internet::class.java)
@@ -251,5 +249,4 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             }
         }
     }
-
 }

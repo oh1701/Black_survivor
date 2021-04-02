@@ -310,8 +310,8 @@
 
         <com.google.android.gms.ads.AdView
             xmlns:ads="http://schemas.android.com/apk/res-auto"
-            android:id="@+id/adView10"
-            android:layout_width="match_parent"
+            android:id="@+id/adview10"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             ads:layout_constraintBottom_toBottomOf="parent"
             ads:layout_constraintRight_toRightOf="parent"

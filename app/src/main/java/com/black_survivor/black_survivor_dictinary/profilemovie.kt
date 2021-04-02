@@ -44,6 +44,5 @@ class profilemovie : AppCompatActivity(){
             var intent = Intent(Intent.ACTION_VIEW, Uri.parse( "https://www.youtube.com/watch?v=3P4Lw6PS8kg"))
             startActivity(intent)
         }
-
     }
 }

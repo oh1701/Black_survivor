@@ -15,11 +15,10 @@ class weaponskill : AppCompatActivity() {
         val binding = ActivityWeaponskillBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        MobileAds.initialize(this,"ca-app-pub-8417791108068506~7524991405")
+        MobileAds.initialize(this){}
+        var adview11 = findViewById<AdView>(R.id.adview11)
+        adview11.loadAd(AdRequest.Builder().build())
 
-        var adview = findViewById<AdView>(R.id.adView5)
-        val adRequest = AdRequest.Builder().build()
-        adview.loadAd(adRequest)
         binding.weapon1.setOnClickListener {
             var intent = Intent(this, video::class.java)
             intent.putExtra("단검", "단검")
@@ -120,4 +119,5 @@ class weaponskill : AppCompatActivity() {
             intent.putExtra("채찍", "채찍")
             startActivity(intent)
         }
-    }}
+    }
+}

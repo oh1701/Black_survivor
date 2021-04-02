@@ -4,28 +4,17 @@ import android.webkit.WebChromeClient
 import android.webkit.WebView
 import android.webkit.WebViewClient
 import androidx.appcompat.app.AppCompatActivity
-import com.google.android.gms.ads.AdRequest
-import com.google.android.gms.ads.AdView
-import com.google.android.gms.ads.MobileAds
 
 class internet : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_internet)
 
-
-        MobileAds.initialize(this,"ca-app-pub-8417791108068506~7524991405")
-
-
         val webview = findViewById<WebView>(R.id.webview2)
         webview.settings.javaScriptEnabled = true
         webview.webViewClient = WebViewClient()
         webview.webChromeClient = WebChromeClient()
 
-
-        var adview = findViewById<AdView>(R.id.adView11)
-        val adRequest = AdRequest.Builder().build()
-        adview.loadAd(adRequest)
 
         if(intent.hasExtra("Lank"))
             webview.loadUrl("https://playeternalreturn.com/ko/ranking/")

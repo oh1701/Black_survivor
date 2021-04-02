@@ -238,26 +238,24 @@ class material(val material_Item: ArrayList<material_Item_list>) : RecyclerView.
                 item.im.setOnClickListener() {
                     if (qkRnrl == -1) {
                         for (j in falselist.indices) {
-                            if (falselist[j].name1 == "무릎 보호대") {
+                            if (falselist[j].name1 == "사슴 망치") {
                                 item.imaup1.setImageResource(falselist[j].Image1)
                                 item.uptext1.text = falselist[j].name1
                             }
-                            if (falselist[j].name1 == "사슴 망치") {
+                            if (falselist[j].name1 == "검집") {
                                 item.imaup2.setImageResource(falselist[j].Image1)
                                 item.uptext2.text = falselist[j].name1
                             }
-                            if (falselist[j].name1 == "검집") {
+                            if (falselist[j].name1 == "M16A1") {
                                 item.imaup3.setImageResource(falselist[j].Image1)
                                 item.uptext3.text = falselist[j].name1
                             }
-                            if (falselist[j].name1 == "M16A1") {
+                            if (falselist[j].name1 == "전투화") {
                                 item.imaup4.setImageResource(falselist[j].Image1)
                                 item.uptext4.text = falselist[j].name1
                             }
-                            if (falselist[j].name1 == "전투화") {
-                                item.imaup5.setImageResource(falselist[j].Image1)
-                                item.uptext5.text = falselist[j].name1
-                            }
+                            item.imaup5.setImageResource(0)
+                            item.uptext5.text = ""
                         }
                         item.im.text = ("상위 아이템2 (터치 시 상위 아이템1로 변경)")
                         qkRnrl *= -1
@@ -455,7 +453,7 @@ class material(val material_Item: ArrayList<material_Item_list>) : RecyclerView.
             if (material_Item[i].name1 == "라이터") {
                 item.name.text = "라이터"
                 item.abil.text = ""
-                item.exeplan.text = "항구(8개), 골목길(8개), 공장(8개), 학교(7개)의 상자\n" +
+                item.exeplan.text = "항구(9개), 골목길(8개), 공장(8개), 학교(8개)의 상자\n" +
                         "들개(가끔)를 처치"
                 item.grade.text = "일반"
                 item.im.isClickable = true
@@ -622,14 +620,14 @@ class material(val material_Item: ArrayList<material_Item_list>) : RecyclerView.
             }
 
             if (material_Item[i].name1 == "마패") {
-                item.te("마패", "", "모래사장(6개), 골목길(7개), 절(7개)의 상자\n" +
+                item.te("마패", "", "모래사장(6개), 골목길(6개), 절(7개)의 상자\n" +
                         "맷돼지(가끔)를 처치", "일반")
                 item.up("경찰봉", "챠크람", "티아라", "어사의", "국궁")
                 item.down("", "", "", "", "")
             }
 
             if (material_Item[i].name1 == "배터리") {
-                item.te("배터리", "", "항구(7개), 번화가(8개), 공장(9개)의 상자\n" +
+                item.te("배터리", "", "항구(8개), 번화가(9개), 공장(9개)의 상자\n" +
                         "들개(가끔)를 처치", "일반")
                 item.up("방전 전지", "전자 부품", "", "", "")
                 item.down("", "", "", "", "")
@@ -637,7 +635,7 @@ class material(val material_Item: ArrayList<material_Item_list>) : RecyclerView.
             if (material_Item[i].name1 == "알코올") {
                 item.te("알코올", "", "병원(4개), 공장(6개), 학교(5개)의 상자\n" +
                         "맷돼지(가끔)를 처치", "일반")
-                item.up("소주", "백주", "커피 리큐르", "지혈제", "")
+                item.up("소주", "백주", "커피 리큐르", "지혈제", "풍마 수리검")
                 item.down("", "", "", "", "")
             }
             if (material_Item[i].name1 == "오일") {
@@ -683,10 +681,8 @@ class material(val material_Item: ArrayList<material_Item_list>) : RecyclerView.
                                 item.imaup2.setImageResource(falselist[j].Image1)
                                 item.uptext2.text = falselist[j].name1
                             }
-                            if (falselist[j].name1 == "개틀링건") {
-                                item.imaup3.setImageResource(falselist[j].Image1)
-                                item.uptext3.text = falselist[j].name1
-                            }
+                            item.imaup3.setImageResource(0)
+                            item.uptext3.text = ""
                             item.imaup4.setImageResource(0)
                             item.uptext4.text = ""
                             item.imaup5.setImageResource(0)
@@ -735,9 +731,9 @@ class material(val material_Item: ArrayList<material_Item_list>) : RecyclerView.
                 item.down("", "", "", "", "")
             }
             if (material_Item[i].name1 == "접착제") {
-                item.te("접착제", "", "골목길(7개), 병원(6개), 공장(7개)의 상자\n" +
+                item.te("접착제", "", "골목길(6개), 병원(7개), 공장(8개)의 상자\n" +
                         "박쥐(가끔)를 처치", "일반")
-                item.up("부비트랩", "유리판", "", "", "")
+                item.up("부비트랩", "유리판", "고장난 시계", "무릎 보호대", "")
                 item.down("", "", "", "", "")
             }
 
@@ -848,7 +844,7 @@ class material(val material_Item: ArrayList<material_Item_list>) : RecyclerView.
                 item.grade.text = "고급"
                 item.im.isClickable = true
                 item.im.text = "상위 아이템1 (터치 시 상위 아이템2로 변경)"
-                qkRnrl = -1
+                var change = 0
 
                 for (j in falselist.indices) {
                     if (falselist[j].name1 == "건틀릿") {
@@ -881,7 +877,8 @@ class material(val material_Item: ArrayList<material_Item_list>) : RecyclerView.
                     }
                 }
                 item.im.setOnClickListener() {
-                    if (qkRnrl == -1) {
+                    change += 1
+                    if (change == 1) {
                         for (j in falselist.indices) {
                             if (falselist[j].name1 == "헤비 크로스보우") {
                                 item.imaup1.setImageResource(falselist[j].Image1)
@@ -904,9 +901,27 @@ class material(val material_Item: ArrayList<material_Item_list>) : RecyclerView.
                                 item.uptext5.text = falselist[j].name1
                             }
                         }
-                        item.im.text = ("상위 아이템2 (터치 시 상위 아이템1로 변경)")
-                        qkRnrl *= -1
-                    } else {
+                        item.im.text = ("상위 아이템2 (터치 시 상위 아이템3 변경)")
+                    }
+                    else if(change == 2) {
+                        for (j in falselist.indices) {
+                            if (falselist[j].name1 == "95식 자동소총") {
+                                item.imaup1.setImageResource(falselist[j].Image1)
+                                item.uptext1.text = falselist[j].name1
+                            }
+                            item.imaup2.setImageResource(0)
+                            item.uptext2.text = ""
+                            item.imaup3.setImageResource(0)
+                            item.uptext3.text = ""
+                            item.imaup4.setImageResource(0)
+                            item.uptext4.text = ""
+                            item.imaup5.setImageResource(0)
+                            item.uptext5.text = ""
+                            item.im.text = ("상위 아이템2 (터치 시 상위 아이템1 변경)")
+                        }
+                    }
+                    else{
+                        change = 0
                         for (j in falselist.indices) {
                             if (falselist[j].name1 == "건틀릿") {
                                 item.imaup1.setImageResource(falselist[j].Image1)
@@ -930,7 +945,6 @@ class material(val material_Item: ArrayList<material_Item_list>) : RecyclerView.
                             }
                         }
                         item.im.text = ("상위 아이템1 (터치 시 상위 아이템2로 변경)")
-                        qkRnrl *= -1
                     }
                 }
             }
@@ -986,8 +1000,10 @@ class material(val material_Item: ArrayList<material_Item_list>) : RecyclerView.
                                 item.imaup1.setImageResource(falselist[j].Image1)
                                 item.uptext1.text = falselist[j].name1
                             }
-                            item.imaup2.setImageResource(0)
-                            item.uptext2.text = ""
+                            if (falselist[j].name1 == "아그니") {
+                                item.imaup2.setImageResource(falselist[j].Image1)
+                                item.uptext2.text = falselist[j].name1
+                            }
                             item.imaup3.setImageResource(0)
                             item.uptext3.text = ""
                             item.imaup4.setImageResource(0)
@@ -1348,8 +1364,10 @@ class material(val material_Item: ArrayList<material_Item_list>) : RecyclerView.
                                 item.imaup1.setImageResource(falselist[j].Image1)
                                 item.uptext1.text = falselist[j].name1
                             }
-                            item.imaup2.setImageResource(0)
-                            item.uptext2.text = ""
+                            if (falselist[j].name1 == "타구봉") {
+                                item.imaup2.setImageResource(falselist[j].Image1)
+                                item.uptext2.text = falselist[j].name1
+                            }
                             item.imaup3.setImageResource(0)
                             item.uptext3.text = ""
                             item.imaup4.setImageResource(0)
@@ -1792,8 +1810,10 @@ class material(val material_Item: ArrayList<material_Item_list>) : RecyclerView.
                                 item.imaup1.setImageResource(falselist[j].Image1)
                                 item.uptext1.text = falselist[j].name1
                             }
-                            item.imaup2.setImageResource(0)
-                            item.uptext2.text = ""
+                            if (falselist[j].name1 == "요명월") {
+                                item.imaup2.setImageResource(falselist[j].Image1)
+                                item.uptext2.text = falselist[j].name1
+                            }
                             item.imaup3.setImageResource(0)
                             item.uptext3.text = ""
                             item.imaup4.setImageResource(0)
@@ -1840,7 +1860,7 @@ class material(val material_Item: ArrayList<material_Item_list>) : RecyclerView.
 
             if (material_Item[i].name1 == "모터") {
                 item.te("모터", "", "[제작] 전자 부품 + 고철, 늑대, 곰\n파란색 항공 보급", "희귀")
-                item.up("초진동나이프", "기관총", "타구봉", "초진동눈차크", "")
+                item.up("초진동나이프", "개틀링 건", "초진동눈차크", "타기온 브레이스", "")
                 item.down("전자 부품", "고철", "", "", "")
             }
             if (material_Item[i].name1 == "미스릴") {
@@ -1968,8 +1988,10 @@ class material(val material_Item: ArrayList<material_Item_list>) : RecyclerView.
                                 item.imaup1.setImageResource(falselist[j].Image1)
                                 item.uptext1.text = falselist[j].name1
                             }
-                            item.imaup2.setImageResource(0)
-                            item.uptext2.text = ""
+                            if (falselist[j].name1 == "혈화구절편") {
+                                item.imaup2.setImageResource(falselist[j].Image1)
+                                item.uptext2.text = falselist[j].name1
+                            }
                             item.imaup3.setImageResource(0)
                             item.uptext3.text = ""
                             item.imaup4.setImageResource(0)
@@ -2062,8 +2084,10 @@ class material(val material_Item: ArrayList<material_Item_list>) : RecyclerView.
                                 item.imaup4.setImageResource(falselist[j].Image1)
                                 item.uptext4.text = falselist[j].name1
                             }
-                            item.imaup5.setImageResource(0)
-                            item.uptext5.text = ""
+                            if (falselist[j].name1 == "천사의 고리") {
+                                item.imaup5.setImageResource(falselist[j].Image1)
+                                item.uptext5.text = falselist[j].name1
+                            }
                         }
                         item.im.text = ("상위 아이템2 (터치 시 상위 아이템1로 변경)")
                         qkRnrl *= -1

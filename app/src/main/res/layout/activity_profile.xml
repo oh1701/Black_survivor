@@ -15,6 +15,7 @@
         android:orientation="vertical"
         android:weightSum="50"
         android:layout_weight="18.5">
+
     <TextView
         android:id="@+id/name"
         android:layout_width="match_parent"
@@ -116,6 +117,7 @@
                 android:background="@drawable/bla2"
                 android:textStyle="bold"
                 android:textSize="14sp"/>
+
             <TextView
                 android:id="@+id/text2"
                 android:layout_weight="3"
@@ -301,11 +303,10 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1.5">
-
         <com.google.android.gms.ads.AdView
             xmlns:ads="http://schemas.android.com/apk/res-auto"
-            android:id="@+id/adView2"
-            android:layout_width="match_parent"
+            android:id="@+id/adview8"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             ads:layout_constraintBottom_toBottomOf="parent"
             ads:layout_constraintRight_toRightOf="parent"

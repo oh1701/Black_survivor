@@ -17,7 +17,9 @@ class map_explan : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_map_explan)
 
-        MobileAds.initialize(this,"ca-app-pub-8417791108068506~7524991405")
+        MobileAds.initialize(this){}
+        var adview7 = findViewById<AdView>(R.id.adview7)
+        adview7.loadAd(AdRequest.Builder().build())
 
         var gotcha = findViewById<TextView>(R.id.gotcha)
         var creature = findViewById<TextView>(R.id.creature)
@@ -30,10 +32,6 @@ class map_explan : AppCompatActivity() {
         var text2 = findViewById<TextView>(R.id.ani_tex2)
         var text3 = findViewById<TextView>(R.id.ani_tex3)
         var title = findViewById<TextView>(R.id.map_title)
-
-        var adview = findViewById<AdView>(R.id.adView1)
-        val adRequest = AdRequest.Builder().build()
-        adview.loadAd(adRequest)
 
         if(intent.hasExtra("0"))
             abc = 0

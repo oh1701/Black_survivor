@@ -17,6 +17,7 @@ class close_app : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         requestWindowFeature(Window.FEATURE_NO_TITLE)
         setContentView(R.layout.activity_close_app)
+
         val adView: BannerAdView = findViewById(R.id.kakao_View)
         adView.setClientId("DAN-vH40oM1xdrny04Lo")  // 할당 받은 광고 단위(clientId) 설정
         adView.setAdListener(object : AdListener {  // optional :: 광고 수신 리스너 설정

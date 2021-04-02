@@ -14,11 +14,9 @@ class profile : AppCompatActivity() {
         val binding = ActivityProfileBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        MobileAds.initialize(this,"ca-app-pub-8417791108068506~7524991405")
-
-        var adview = findViewById<AdView>(R.id.adView2)
-        val adRequest = AdRequest.Builder().build()
-        adview.loadAd(adRequest)
+        MobileAds.initialize(this){}
+        var adview8 = findViewById<AdView>(R.id.adview8)
+        adview8.loadAd(AdRequest.Builder().build())
 
         fun text(a:String, b:String, c:String, d:String, e:String, f:String, g:String, h:String, i:String){
             binding.charText.text = a
@@ -168,7 +166,46 @@ class profile : AppCompatActivity() {
             binding.name.text = "로지"
             binding.image.setImageResource(R.drawable.c_rozzi)
             text("\"은밀하고, 깔끔하게\"", "로지", "권총"
-                    ,"20세", "브라질", "용병", "?cm/?kg", "여성","8020 A코인 / 1075 NP")
+                    ,"20세", "브라질", "용병", "165cm/50kg", "여성","8020 A코인 / 1075 NP")
         }
+        if(intent.hasExtra("루크")){
+            binding.name.text = "루크"
+            binding.image.setImageResource(R.drawable.luke)
+            text("\"쓱싹쓱싹, 청소 대행업체 더블 엘(LL)입니다~\"", "루크", "방망이",
+                    "27세", "폴란드", "청소부", "177cm/75kg", "남성","8020 A코인 / 1075 NP")
+        }
+        if(intent.hasExtra("캐시")){
+            binding.name.text = "캐시"
+            binding.image.setImageResource(R.drawable.cathy)
+            text("\"피와 사체를 보는 건 익숙합니다.\"", "캐시 허긴스", "단검",
+                    "32세", "캐나다", "의사", "?cm/?kg", "여성","8020 A코인 / 1075 NP")
+        }
+        if(intent.hasExtra("아델라")){
+            binding.name.text = "아델라"
+            binding.image.setImageResource(R.drawable.adela)
+            text("\"왜 그렇게 애를 써? 어차피 내가 이길텐데.\"", "아델라 그로", "레이피어",
+                    "25세", "--", "체스 챔피언", "?cm/?kg", "여성","8020 A코인 / 1075 NP")
+        }
+
+        if(intent.hasExtra("버니스")) {
+            binding.name.text = "버니스"
+            binding.image.setImageResource(R.drawable.bernice)
+            text("\"인간을 쏘지 않아. 짐승을 사냥할 뿐이다\"", "버니스 볼튼", "저격총",
+                    "42세", "--", "사냥꾼", "?cm/?kg", "남성", "8020 A코인 / 1075 NP")
+        }
+        if(intent.hasExtra("바바라")){
+            binding.name.text = "바바라"
+            binding.image.setImageResource(R.drawable.barbara)
+            text("\"너희가 이게 얼마나 대단한 발명인지 알 리가 없지\"", "바바라 엘란바인", "방망이",
+                    "36세", "--", "발명가", "?cm/?kg", "여성","8020 A코인 / 1075 NP")
+        }
+        /*
+        if(intent.hasExtra("")){
+            binding.name.text = ""
+            binding.image.setImageResource(R.drawable.)
+            text("\"\"", "", "",
+                    "", "", "", "", "","8020 A코인 / 1075 NP")
+        }
+        */
     }
 }

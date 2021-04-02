@@ -17,10 +17,12 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="18.5">
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#EE000000">
+
         <androidx.appcompat.widget.AppCompatImageButton
             android:layout_width="0dp"
             android:layout_height="200dp"
@@ -519,7 +521,6 @@
                     app:layout_constraintTop_toBottomOf="@id/emma"
                     app:layout_constraintLeft_toLeftOf="parent"
                     app:layout_constraintRight_toLeftOf="@id/lenox_name"
-                    app:layout_constraintBottom_toBottomOf="parent"
                     android:textColor="#ffffff"
                     android:background="@drawable/white_text"/>
 
@@ -547,7 +548,6 @@
                     app:layout_constraintTop_toBottomOf="@id/lenox"
                     app:layout_constraintLeft_toRightOf="@id/emma_name"
                     app:layout_constraintRight_toLeftOf="@id/rozzi_name"
-                    app:layout_constraintBottom_toBottomOf="parent"
                     android:textColor="#ffffff"
                     android:background="@drawable/white_text"/>
 
@@ -576,9 +576,229 @@
                     app:layout_constraintTop_toBottomOf="@id/rozzi"
                     app:layout_constraintLeft_toRightOf="@id/lenox_name"
                     app:layout_constraintRight_toRightOf="parent"
-                    app:layout_constraintBottom_toBottomOf="parent"
                     android:textColor="#ffffff"
                     android:background="@drawable/white_text"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/luke_line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/rozzi_name"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:id="@+id/luke"
+                android:src="@drawable/luke"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/luke_name"
+                android:background="@drawable/image_color"
+                android:layout_marginTop="10dp"
+                android:scaleType="fitXY"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:id="@+id/luke_name"
+                android:text="루크"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:autoSizeTextType="uniform"
+                app:layout_constraintTop_toBottomOf="@id/luke"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:textColor="#ffffff"
+                android:background="@drawable/white_text"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+
+                    <androidx.appcompat.widget.AppCompatImageButton
+                        android:layout_width="0dp"
+                        android:layout_height="200dp"
+                        android:id="@+id/cathy"
+                        android:src="@drawable/cathy"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintBottom_toTopOf="@id/cathy_name"
+                        android:background="@drawable/image_color"
+                        android:layout_marginTop="10dp"
+                        android:scaleType="fitXY"/>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:id="@+id/cathy_name"
+                        android:text="캐시"
+                        android:textSize="20sp"
+                        android:gravity="center"
+                        android:autoSizeTextType="uniform"
+                        app:layout_constraintTop_toBottomOf="@id/cathy"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:textColor="#ffffff"
+                        android:background="@drawable/white_text"/>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <androidx.appcompat.widget.AppCompatImageButton
+                        android:layout_width="0dp"
+                        android:layout_height="200dp"
+                        android:id="@+id/adela"
+                        android:src="@drawable/adela"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintBottom_toTopOf="@id/adela_name"
+                        android:background="@drawable/image_color"
+                        android:layout_marginTop="10dp"
+                        android:scaleType="fitXY"/>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:id="@+id/adela_name"
+                        android:text="아델라"
+                        android:textSize="20sp"
+                        android:gravity="center"
+                        android:autoSizeTextType="uniform"
+                        app:layout_constraintTop_toBottomOf="@id/adela"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:textColor="#ffffff"
+                        android:background="@drawable/white_text"/>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/luke_line"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <androidx.appcompat.widget.AppCompatImageButton
+                        android:layout_width="0dp"
+                        android:layout_height="200dp"
+                        android:id="@+id/bernice"
+                        android:src="@drawable/bernice"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintBottom_toTopOf="@id/bernice_name"
+                        android:background="@drawable/image_color"
+                        android:layout_marginTop="10dp"
+                        android:scaleType="fitXY"/>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:id="@+id/bernice_name"
+                        android:text="버니스"
+                        android:textSize="20sp"
+                        android:gravity="center"
+                        android:autoSizeTextType="uniform"
+                        app:layout_constraintTop_toBottomOf="@id/bernice"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:textColor="#ffffff"
+                        android:background="@drawable/white_text"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <androidx.appcompat.widget.AppCompatImageButton
+                        android:layout_width="0dp"
+                        android:layout_height="200dp"
+                        android:id="@+id/barbara"
+                        android:src="@drawable/barbara"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintBottom_toTopOf="@id/barbara_name"
+                        android:background="@drawable/image_color"
+                        android:layout_marginTop="10dp"
+                        android:scaleType="fitXY"/>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:id="@+id/barbara_name"
+                        android:text="바바라"
+                        android:textSize="20sp"
+                        android:gravity="center"
+                        android:autoSizeTextType="uniform"
+                        app:layout_constraintTop_toBottomOf="@id/barbara"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:textColor="#ffffff"
+                        android:background="@drawable/white_text"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
         </ScrollView>
@@ -591,8 +811,8 @@
 
             <com.google.android.gms.ads.AdView
                 xmlns:ads="http://schemas.android.com/apk/res-auto"
-                android:id="@+id/adView7"
-                android:layout_width="match_parent"
+                android:id="@+id/adview1"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 ads:layout_constraintBottom_toBottomOf="parent"
                 ads:layout_constraintRight_toRightOf="parent"

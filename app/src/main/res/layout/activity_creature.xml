@@ -137,15 +137,16 @@
             android:layout_weight="1.5"
             android:orientation="vertical">
 
-            <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
-                android:id="@+id/adView8"
-                android:layout_width="match_parent"
+            <com.google.android.gms.ads.AdView
+                xmlns:ads="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/adview3"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                ads:adSize="SMART_BANNER"
-                ads:adUnitId="ca-app-pub-8417791108068506/8286077143"
                 ads:layout_constraintBottom_toBottomOf="parent"
+                ads:layout_constraintRight_toRightOf="parent"
                 ads:layout_constraintLeft_toLeftOf="parent"
-                ads:layout_constraintRight_toRightOf="parent" />
+                ads:adSize="SMART_BANNER"
+                ads:adUnitId="ca-app-pub-8417791108068506/8286077143"/>
         </LinearLayout>
 
     </LinearLayout>

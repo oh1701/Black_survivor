@@ -211,13 +211,14 @@
 
         <com.google.android.gms.ads.AdView
             xmlns:ads="http://schemas.android.com/apk/res-auto"
-            android:id="@+id/adView1"
-            android:layout_width="match_parent"
+            android:id="@+id/adview7"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             ads:layout_constraintBottom_toBottomOf="parent"
             ads:layout_constraintRight_toRightOf="parent"
             ads:layout_constraintLeft_toLeftOf="parent"
             ads:adSize="SMART_BANNER"
             ads:adUnitId="ca-app-pub-8417791108068506/8286077143"/>
+
     </LinearLayout>
 </LinearLayout>

@@ -21,11 +21,9 @@ class creature : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_creature)
 
-        MobileAds.initialize(this,"ca-app-pub-8417791108068506~7524991405")
-
-        var adview = findViewById<AdView>(R.id.adView8)
-        val adRequest = AdRequest.Builder().build()
-        adview.loadAd(adRequest)
+        MobileAds.initialize(this){}
+        var adview3 = findViewById<AdView>(R.id.adview3)
+        adview3.loadAd(AdRequest.Builder().build())
 
         var rnqns: Int = 0
         var qkRnrl: Int = -1
@@ -87,17 +85,17 @@ class creature : AppCompatActivity() {
         val bview: View = LayoutInflater.from(this).inflate(R.layout.activity_imsi, null)
 
 
-        val imaup1: ImageView = cview.findViewById(R.id.imup_1)
-        val imaup2: ImageView = cview.findViewById(R.id.imup_2)
-        val imaup3: ImageView = cview.findViewById(R.id.imup_3)
-        val imaup4: ImageView = cview.findViewById(R.id.imup_4)
-        val imaup5: ImageView = cview.findViewById(R.id.imup_5)
+        /*val item.imaup1: ImageView = cview.findViewById(R.id.imup_1)
+        val item.imaup2: ImageView = cview.findViewById(R.id.imup_2)
+        val item.imaup3: ImageView = cview.findViewById(R.id.imup_3)
+        val item.imaup4: ImageView = cview.findViewById(R.id.imup_4)
+        val item.imaup5: ImageView = cview.findViewById(R.id.imup_5)
 
-        val imadown1: ImageView = cview.findViewById(R.id.imdown_1)
-        val imadown2: ImageView = cview.findViewById(R.id.imdown_2)
-        val imadown3: ImageView = cview.findViewById(R.id.imdown_3)
-        val imadown4: ImageView = cview.findViewById(R.id.imdown_4)
-        val imadown5: ImageView = cview.findViewById(R.id.imdown_5)
+        val item.imadown1: ImageView = cview.findViewById(R.id.imdown_1)
+        val item.imadown2: ImageView = cview.findViewById(R.id.imdown_2)
+        val item.imadown3: ImageView = cview.findViewById(R.id.imdown_3)
+        val item.imadown4: ImageView = cview.findViewById(R.id.imdown_4)
+        val item.imadown5: ImageView = cview.findViewById(R.id.imdown_5)*/
 
         val imsi: ImageView = bview.findViewById(R.id.imaging)
         val noimage: ImageView = bview.findViewById(R.id.imaging2)
@@ -105,7 +103,7 @@ class creature : AppCompatActivity() {
         
 
         val dlg2 = Dialog(this)
-        dlg2.setContentView(cview)
+        dlg2.setContentView(item.aview)
         
         fun reset2(){
             randomte1.text = ""
@@ -373,10 +371,10 @@ class creature : AppCompatActivity() {
             dlg.dismiss()
             dlg2.show()
         }
-    imaup1.setOnClickListener() {
-        if (imaup1.drawable != null) {
+    item.imaup1.setOnClickListener() {
+        if (item.imaup1.drawable != null) {
 
-            val drawable1: Drawable = imaup1.drawable
+            val drawable1: Drawable = item.imaup1.drawable
             val bitmapdrawable1: BitmapDrawable = drawable1 as BitmapDrawable
             val bitmap: Bitmap = bitmapdrawable1.bitmap
 
@@ -405,9 +403,9 @@ class creature : AppCompatActivity() {
         }
     }
 
-    imaup2.setOnClickListener() {
-        if (imaup2.drawable != null) {
-            val drawable1: Drawable = imaup2.drawable
+    item.imaup2.setOnClickListener() {
+        if (item.imaup2.drawable != null) {
+            val drawable1: Drawable = item.imaup2.drawable
             val bitmapdrawable1: BitmapDrawable = drawable1 as BitmapDrawable
             val bitmap: Bitmap = bitmapdrawable1.bitmap
 
@@ -435,10 +433,10 @@ class creature : AppCompatActivity() {
             }
         }
     }
-    imaup3.setOnClickListener() {
-        if (imaup3.drawable != null) {
+    item.imaup3.setOnClickListener() {
+        if (item.imaup3.drawable != null) {
 
-            val drawable1: Drawable = imaup3.drawable
+            val drawable1: Drawable = item.imaup3.drawable
             val bitmapdrawable1: BitmapDrawable = drawable1 as BitmapDrawable
             val bitmap: Bitmap = bitmapdrawable1.bitmap
 
@@ -466,10 +464,10 @@ class creature : AppCompatActivity() {
             }
         }
     }
-    imaup4.setOnClickListener() {
-        if (imaup4.drawable != null) {
+    item.imaup4.setOnClickListener() {
+        if (item.imaup4.drawable != null) {
 
-            val drawable1: Drawable = imaup4.drawable
+            val drawable1: Drawable = item.imaup4.drawable
             val bitmapdrawable1: BitmapDrawable = drawable1 as BitmapDrawable
             val bitmap: Bitmap = bitmapdrawable1.bitmap
 
@@ -497,10 +495,10 @@ class creature : AppCompatActivity() {
             }
         }
     }
-    imaup5.setOnClickListener() {
-        if (imaup5.drawable != null) {
+    item.imaup5.setOnClickListener() {
+        if (item.imaup5.drawable != null) {
 
-            val drawable1: Drawable = imaup5.drawable
+            val drawable1: Drawable = item.imaup5.drawable
             val bitmapdrawable1: BitmapDrawable = drawable1 as BitmapDrawable
             val bitmap: Bitmap = bitmapdrawable1.bitmap
 
@@ -529,9 +527,9 @@ class creature : AppCompatActivity() {
         }
     }
     //이후 하위아이템
-    imadown1.setOnClickListener() {
-        if (imadown1.drawable != null) {
-            val drawable1: Drawable = imadown1.drawable
+    item.imadown1.setOnClickListener() {
+        if (item.imadown1.drawable != null) {
+            val drawable1: Drawable = item.imadown1.drawable
             val bitmapdrawable1: BitmapDrawable = drawable1 as BitmapDrawable
             val bitmap: Bitmap = bitmapdrawable1.bitmap
 
@@ -561,9 +559,9 @@ class creature : AppCompatActivity() {
         }
     }
 
-    imadown2.setOnClickListener() {
-        if (imadown2.drawable != null) {
-            val drawable1: Drawable = imadown2.drawable
+    item.imadown2.setOnClickListener() {
+        if (item.imadown2.drawable != null) {
+            val drawable1: Drawable = item.imadown2.drawable
             val bitmapdrawable1: BitmapDrawable = drawable1 as BitmapDrawable
             val bitmap: Bitmap = bitmapdrawable1.bitmap
 
@@ -592,41 +590,9 @@ class creature : AppCompatActivity() {
 
         }
     }
-    imadown3.setOnClickListener() {
-        if (imadown3.drawable != null) {
-            val drawable1: Drawable = imadown3.drawable
-            val bitmapdrawable1: BitmapDrawable = drawable1 as BitmapDrawable
-            val bitmap: Bitmap = bitmapdrawable1.bitmap
-
-            item.reset()
-
-
-            if (rnqns == 0) {
-                for (j in falselist.indices) {
-                    imsi.setImageResource(falselist[j].Image1)
-
-                    val drawable2: Drawable = imsi.drawable
-                    val bitmapdrawable2: BitmapDrawable = drawable2 as BitmapDrawable
-                    val bitmap2: Bitmap = bitmapdrawable2.bitmap
-
-                    if (bitmap == bitmap2) {
-                        item.ImageView1.setImageResource(falselist[j].Image1)
-                        item.ima_tex_clear()
-                        //item.falsearray
-                        item.falsearray(j)
-
-                        item.grade()
-
-                        break
-                    }
-                }
-            }
-
-        }
-    }
-    imadown4.setOnClickListener() {
-        if (imadown4.drawable != null) {
-            val drawable1: Drawable = imadown4.drawable
+    item.imadown3.setOnClickListener() {
+        if (item.imadown3.drawable != null) {
+            val drawable1: Drawable = item.imadown3.drawable
             val bitmapdrawable1: BitmapDrawable = drawable1 as BitmapDrawable
             val bitmap: Bitmap = bitmapdrawable1.bitmap
 
@@ -656,9 +622,41 @@ class creature : AppCompatActivity() {
 
         }
     }
-    imadown5.setOnClickListener() {
-        if (imadown5.drawable != null) {
-            val drawable1: Drawable = imadown5.drawable
+    item.imadown4.setOnClickListener() {
+        if (item.imadown4.drawable != null) {
+            val drawable1: Drawable = item.imadown4.drawable
+            val bitmapdrawable1: BitmapDrawable = drawable1 as BitmapDrawable
+            val bitmap: Bitmap = bitmapdrawable1.bitmap
+
+            item.reset()
+
+
+            if (rnqns == 0) {
+                for (j in falselist.indices) {
+                    imsi.setImageResource(falselist[j].Image1)
+
+                    val drawable2: Drawable = imsi.drawable
+                    val bitmapdrawable2: BitmapDrawable = drawable2 as BitmapDrawable
+                    val bitmap2: Bitmap = bitmapdrawable2.bitmap
+
+                    if (bitmap == bitmap2) {
+                        item.ImageView1.setImageResource(falselist[j].Image1)
+                        item.ima_tex_clear()
+                        //item.falsearray
+                        item.falsearray(j)
+
+                        item.grade()
+
+                        break
+                    }
+                }
+            }
+
+        }
+    }
+    item.imadown5.setOnClickListener() {
+        if (item.imadown5.drawable != null) {
+            val drawable1: Drawable = item.imadown5.drawable
             val bitmapdrawable1: BitmapDrawable = drawable1 as BitmapDrawable
             val bitmap: Bitmap = bitmapdrawable1.bitmap
 

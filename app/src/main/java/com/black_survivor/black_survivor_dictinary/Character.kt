@@ -5,8 +5,8 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.black_survivor.black_survivor_dictinary.databinding.ActivityCharacterBinding
 import com.google.android.gms.ads.AdRequest
-import com.google.android.gms.ads.AdView
 import com.google.android.gms.ads.MobileAds
+
 
 class Character : AppCompatActivity() {
 
@@ -16,11 +16,8 @@ class Character : AppCompatActivity() {
         val binding = ActivityCharacterBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        MobileAds.initialize(this,"ca-app-pub-8417791108068506~7524991405")
-
-        var adview = findViewById<AdView>(R.id.adView7)
-        val adRequest = AdRequest.Builder().build()
-        adview.loadAd(adRequest)
+        MobileAds.initialize(this){}
+        binding.adview1.loadAd(AdRequest.Builder().build())
 
         binding.aya.setOnClickListener{
             val intent = Intent(this, Character_mini::class.java)
@@ -125,6 +122,31 @@ class Character : AppCompatActivity() {
         binding.rozzi.setOnClickListener{
             val intent = Intent(this, Character_mini::class.java)
             intent.putExtra("rozzi", "rozzi")
+            startActivity(intent)
+        }
+        binding.luke.setOnClickListener{
+            val intent = Intent(this, Character_mini::class.java)
+            intent.putExtra("luke", "luke")
+            startActivity(intent)
+        }
+        binding.cathy.setOnClickListener{
+            val intent = Intent(this, Character_mini::class.java)
+            intent.putExtra("cathy", "cathy")
+            startActivity(intent)
+        }
+        binding.adela.setOnClickListener{
+            val intent = Intent(this, Character_mini::class.java)
+            intent.putExtra("adela", "adela")
+            startActivity(intent)
+        }
+        binding.bernice.setOnClickListener{
+            val intent = Intent(this, Character_mini::class.java)
+            intent.putExtra("bernice", "bernice")
+            startActivity(intent)
+        }
+        binding.bernice.setOnClickListener{
+            val intent = Intent(this, Character_mini::class.java)
+            intent.putExtra("barbara", "barbara")
             startActivity(intent)
         }
     }
