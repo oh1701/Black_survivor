@@ -41,9 +41,10 @@ class consume(val consume_Item: ArrayList<consume_Item_list>) : RecyclerView.Ada
             item.up("감자빵", "감자스프", "감자튀김", "구운 감자", "버터 감자구이")
             item.down("", "", "", "", "")
         }
+            
             if (consume_Item[i].name1 == "대구") {
                 item.te("대구", "체력 재생 +130", "바다 낚시(모래사장, 고급 주택가, 항구)에서 채집", "일반")
-                item.up("꿀 바른 대구살", "대구 간 통조림", "달걀 생선 필레", "메로구이", "생선까스")
+                item.up("꿀 바른 대구살", "대구 간 통조림", "매운탕", "메로구이", "생선까스")
                 item.down("", "", "", "", "")
             }
             if (consume_Item[i].name1 == "레몬") {
@@ -63,7 +64,7 @@ class consume(val consume_Item: ArrayList<consume_Item_list>) : RecyclerView.Ada
             }
             if (consume_Item[i].name1 == "붕어") {
                 item.te("붕어", "체력 재생 +130", "민물 낚시에서 채집", "일반")
-                item.up("붕어빵", "매운탕", "구운 붕어", "", "")
+                item.up("붕어빵", "구운 붕어", "달걀 생선 필레", "", "")
                 item.down("", "", "", "", "")
             }
             if (consume_Item[i].name1 == "빵") {
@@ -429,9 +430,9 @@ class consume(val consume_Item: ArrayList<consume_Item_list>) : RecyclerView.Ada
                 item.down("감자", "우유", "", "", "")
             }
             if (consume_Item[i].name1 == "달걀 생선 필레") {
-                item.te("달걀 생선 필레", "체력 재생 +700", "[제작] 대구 + 달걀\n초록색 항공 보급", "고급")
+                item.te("달걀 생선 필레", "체력 재생 +700", "[제작] 붕어 + 달걀\n초록색 항공 보급", "고급")
                 item.up("", "", "", "", "")
-                item.down("대구", "달걀", "", "", "")
+                item.down("붕어", "달걀", "", "", "")
             }
             if (consume_Item[i].name1 == "시트러스 케이크") {
                 item.te("시트러스 케이크", "체력 재생 +380", "[제작] 레몬 + 빵\n초록색 항공 보급", "고급")
@@ -474,9 +475,9 @@ class consume(val consume_Item: ArrayList<consume_Item_list>) : RecyclerView.Ada
                 item.down("카레 가루", "빵", "", "", "")
             }
             if (consume_Item[i].name1 == "매운탕") {
-                item.te("매운탕", "체력 재생 +450", "[제작] 붕어 + 뜨거운 물\n파란색 항공 보급", "희귀")
+                item.te("매운탕", "체력 재생 +550", "[제작] 대구 + 뜨거운 물\n파란색 항공 보급", "희귀")
                 item.up("", "", "", "", "")
-                item.down("붕어", "뜨거운 물", "", "", "")
+                item.down("대구", "뜨거운 물", "", "", "")
             }
             if (consume_Item[i].name1 == "감자튀김") {
                 item.te("감자튀김", "체력 재생 +700", "[제작] 감자 + 뜨거운 오일\n파란색 항공 보급", "희귀")
@@ -1009,7 +1010,7 @@ class consume(val consume_Item: ArrayList<consume_Item_list>) : RecyclerView.Ada
 
             if (consume_Item[i].name1 == "뜨거운 물") {
                 item.name.text = "뜨거운 물"
-                item.abil.text = "스태미너 재생 +300"
+                item.abil.text = "스태미너 재생 +350"
                 item.exeplan.text = "[제작] 물 + 라이터"
                 item.grade.text = "고급"
                 item.im.isClickable = true

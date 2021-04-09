@@ -1,10 +1,8 @@
 package com.black_survivor.black_survivor_dictinary
+
+
 import android.app.Dialog
 import android.graphics.Bitmap
-
-
-import android.graphics.Color
-
 import android.graphics.drawable.BitmapDrawable
 import android.graphics.drawable.Drawable
 import android.util.Log
@@ -63,7 +61,7 @@ class anan(val an_Item: ArrayList<an_Item_list>) : RecyclerView.Adapter<anan.Vie
                 item.down("오랏줄", "부채", "", "", "")
             }
             if (an_Item[e].name1 == "뇌룡편") {
-                item.te("뇌룡편", "공격력 +30\n" +
+                item.te("뇌룡편", "공격력 +40\n" +
                         "스킬 증폭 +24%", "[제작] 철편 + 황금", "희귀")
                 item.up("", "", "", "", "")
                 item.down("철편", "황금", "", "", "")
@@ -81,14 +79,14 @@ class anan(val an_Item: ArrayList<an_Item_list>) : RecyclerView.Adapter<anan.Vie
                 item.down("바람 채찍", "가시 발판", "", "", "")
             }
             if (an_Item[e].name1 == "플라즈마 윕") {
-                item.te("플라즈마 윕", "공격력 +60, 공격 속도 +40%\n" +
+                item.te("플라즈마 윕", "공격력 +64, 공격 속도 +40%\n" +
                         "시야 +2.3, 기본 공격 추가피해 +15", "[제작] 박력편 + 레이저 포인터", "영웅")
                 item.up("", "", "", "", "")
                 item.down("박력편", "레이저 포인터", "", "", "")
             }
             if (an_Item[e].name1 == "혈화구절편") {
                 item.te("혈화구절편", "공격력 +70, 생명력 흡수 +25%\n" +
-                        "스킬 증폭 +40", "[제작] VF 혈액 샘플 + 바람 채찍", "전설")
+                        "스킬 증폭 +44", "[제작] VF 혈액 샘플 + 바람 채찍", "전설")
                 item.up("", "", "", "", "")
                 item.down("VF 혈액 샘플", "바람 채찍", "", "", "")
             }
@@ -371,15 +369,15 @@ class anan(val an_Item: ArrayList<an_Item_list>) : RecyclerView.Adapter<anan.Vie
                 item.down("AK-47", "유리판", "", "", "")
             }
             if (an_Item[e].name1 == "XCR") {
-                item.te("XCR", "장탄 수: 30발, 공격력 +63, 시야 +1.5\n 최대 체력 +330, 기본 공격 추가 피해 +10", "[제작]\nM16A1 + 탄창", "영웅")
+                item.te("XCR", "장탄 수: 30발, 공격력 +66, 시야 +1.5\n 최대 체력 +330, 기본 공격 추가 피해 +10", "[제작]\nM16A1 + 탄창", "영웅")
                 item.down("M16A1", "탄창", "", "", "")
             }
             if (an_Item[e].name1 == "95식 자동소총") {
-                item.te("95식 자동소총", "장탄 수: 30발, 공격력 +72, 시야 +1.5\n 기본 공격 사거리 +0.5", "[제작]\nAK-47 + 강철", "영웅")
+                item.te("95식 자동소총", "장탄 수: 30발, 공격력 +75, 시야 +1.5\n 기본 공격 사거리 +1", "[제작]\nAK-47 + 강철", "영웅")
                 item.down("AK-47", "강철", "", "", "")
             }
             if (an_Item[e].name1 == "아그니") {
-                item.te("아그니", "장탄 수: 30발, 공격력 +55, 시야 +2.5\n 공격 속도 +33%, 기본 공격 추가 피해 +16", "[제작]\n개틀링 건 + 뜨거운 오일", "영웅")
+                item.te("아그니", "장탄 수: 30발, 공격력 +55, 시야 +2.5\n 공격 속도 +25%, 기본 공격 추가 피해 +16", "[제작]\n개틀링 건 + 뜨거운 오일", "영웅")
                 item.down("개틀링 건", "뜨거운 오일", "", "", "")
             }
             if (an_Item[e].name1 == "화승총") {
@@ -428,17 +426,17 @@ class anan(val an_Item: ArrayList<an_Item_list>) : RecyclerView.Adapter<anan.Vie
                 item.down("문스톤", "금교전", "", "", "")
             }
             if (an_Item[e].name1 == "바늘") {
-                item.te("바늘", "공격력 +3, 치명타 피해량 +25%", "사용 시 기본 지급\n" +
+                item.te("바늘", "공격력 +3, 치명타 피해량 +15%", "사용 시 기본 지급\n" +
                         "골목길(6개), 호텔(5개), 병원(6개)의 상자", "일반")
                 item.up("레이피어", "분대장 완장", "한방침", "다트", "독침")
             }
             if (an_Item[e].name1 == "레이피어") {
-                item.te("레이피어", "공격력 +16, 치명타 피해량 +25%", "[제작] \n바늘 + 철광성", "고급")
+                item.te("레이피어", "공격력 +16, 치명타 피해량 +15%", "[제작] \n바늘 + 철광성", "고급")
                 item.up("매화검", "활빈검", "주와이외즈", "", "")
                 item.down("바늘", "철광석", "", "", "")
             }
             if (an_Item[e].name1 == "매화검") {
-                item.te("매화검", "공격력 +121, 치명타 확률 +10%, 치명타 피해량 +25%, 쿨다운 감소 +6%", "[제작] \n레이피어 + 운명의 꽃", "희귀")
+                item.te("매화검", "공격력 +25, 치명타 확률 +10%, 치명타 피해량 +15%, 쿨다운 감소 +6%", "[제작] \n레이피어 + 운명의 꽃", "희귀")
                 item.up("듀랜달 Mk2", "볼틱레토", "유성검", "", "")
                 item.down("레이피어", "운명의 꽃", "", "", "")
             }
@@ -448,23 +446,23 @@ class anan(val an_Item: ArrayList<an_Item_list>) : RecyclerView.Adapter<anan.Vie
                 item.down("레이피어", "어사의", "", "", "")
             }
             if (an_Item[e].name1 == "듀랜달 Mk2") {
-                item.te("듀랜달 Mk2", "공격력 +53, 시야 +1.5, 생명력 흡수 +8%, 치명타 확률 +12%, 치명타 피해량 +30%, 쿨다운 감소 +6%", "[제작]\n 매화검 + 레이저 포인터", "영웅")
+                item.te("듀랜달 Mk2", "공격력 +53, 시야 +1.5, 생명력 흡수 +8%, 치명타 확률 +12%, 치명타 피해량 +25%, 쿨다운 감소 +6%", "[제작]\n 매화검 + 레이저 포인터", "영웅")
                 item.down("매화검", "레이저 포인터", "", "", "")
             }
             if (an_Item[e].name1 == "볼틱레토") {
-                item.te("볼틱레토", "공격력 +47, 공격속도 +45%, 치명타 확률 +10%, 치명타 피해량 +25%, 쿨다운 감소 +6%", "[제작]\n 매화검 + 전자 부품", "영웅")
+                item.te("볼틱레토", "공격력 +47, 공격속도 +45%, 치명타 확률 +10%, 치명타 피해량 +15%, 쿨다운 감소 +6%", "[제작]\n 매화검 + 전자 부품", "영웅")
                 item.down("매화검", "전자 부품", "", "", "")
             }
             if (an_Item[e].name1 == "유성검") {
-                item.te("유성검", "공격력 +67, 치명타 피해량 +20%\n치명타 확률 +20%, 쿨다운 감소 +12%", "[제작]\n 매화검 + 운석", "영웅")
+                item.te("유성검", "공격력 +67, 치명타 피해량 +20%\n치명타 확률 +15%, 쿨다운 감소 +12%", "[제작]\n 매화검 + 운석", "영웅")
                 item.down("매화검", "운석", "", "", "")
             }
             if (an_Item[e].name1 == "주와이외즈") {
-                item.te("주와이외즈", "공격력 +69, 치명타 피해량 +30%\n공격 속도 +12%, 이동속도 +0.2", "[제작]\n 레이피어 + 미스릴", "영웅")
+                item.te("주와이외즈", "공격력 +69, 치명타 피해량 +20%\n공격 속도 +12%, 이동속도 +0.2", "[제작]\n 레이피어 + 미스릴", "영웅")
                 item.down("레이피어", "미스릴", "", "", "")
             }
             if (an_Item[e].name1 == "미스틸테인") {
-                item.te("미스틸테인", "공격력 +33, 시야 +1, 치명타 피해량 +25%, 쿨다운 감소 +15%, 스태미너 재생 +150%, 체력 재생 +1.5, 스킬 증폭 +17%", "[제작]\n 활빈검 + 나뭇가지", "전설")
+                item.te("미스틸테인", "공격력 +35, 시야 +1, 치명타 피해량 +25%, 쿨다운 감소 +15%, 스태미너 재생 +150%, 체력 재생 +1.5, 스킬 증폭 +17%", "[제작]\n 활빈검 + 나뭇가지", "전설")
                 item.down("활빈검", "나뭇가지", "", "", "")
             }
             if (an_Item[e].name1 == "단창") {
@@ -497,11 +495,11 @@ class anan(val an_Item: ArrayList<an_Item_list>) : RecyclerView.Adapter<anan.Vie
                 item.down("죽창", "깃털", "", "", "")
             }
             if (an_Item[e].name1 == "애각창") {
-                item.te("애각창", "공격력 +105, 이동속도 +0.12", "[제작]\n 강창 + 백색 가루", "영웅")
+                item.te("애각창", "공격력 +108, 이동속도 +0.12", "[제작]\n 강창 + 백색 가루", "영웅")
                 item.down("강창", "백색 가루", "", "", "")
             }
             if (an_Item[e].name1 == "장팔사모") {
-                item.te("장팔마소", "공격력 +100, 공격속도 +40%", "[제작]\n 강창 + 이온 전지", "영웅")
+                item.te("장팔마소", "공격력 +104, 공격속도 +40%", "[제작]\n 강창 + 이온 전지", "영웅")
                 item.down("강창", "이온 전지", "", "", "")
             }
             if (an_Item[e].name1 == "코스믹 바이던트") {
@@ -509,7 +507,7 @@ class anan(val an_Item: ArrayList<an_Item_list>) : RecyclerView.Adapter<anan.Vie
                 item.down("강창", "문스톤", "", "", "")
             }
             if (an_Item[e].name1 == "트리아이나") {
-                item.te("트리아이나", "공격력 +90, 스킬 증폭 +21%, 쿨다운 감소 5%", "[제작]\n 바이던트 + 파이크", "영웅")
+                item.te("트리아이나", "공격력 +90, 스킬 증폭 +21%, 쿨다운 감소 7%", "[제작]\n 바이던트 + 파이크", "영웅")
                 item.down("바이던트", "파이크", "", "", "")
             }
             if (an_Item[e].name1 == "방천화극") {
@@ -613,7 +611,7 @@ class anan(val an_Item: ArrayList<an_Item_list>) : RecyclerView.Adapter<anan.Vie
                 item.down("고무", "뜨거운 물", "", "", "")
             }
             if (an_Item[e].name1 == "가시 탱탱볼") {
-                item.te("가시 탱탱볼", "공격력 +45, 스킬 적중 시 치유 감소 -40%", "[제작]\n플러버 + 못", "희귀")
+                item.te("가시 탱탱볼", "공격력 +45, 스킬 적중 시 치유 감소 -25%", "[제작]\n플러버 + 못", "희귀")
                 item.up("루테늄 구슬", "", "", "", "")
                 item.down("플러버", "못", "", "", "")
             }
@@ -622,7 +620,7 @@ class anan(val an_Item: ArrayList<an_Item_list>) : RecyclerView.Adapter<anan.Vie
                 item.down("화염병", "볼 라이트닝", "", "", "")
             }
             if (an_Item[e].name1 == "안티오크의 수류탄") {
-                item.te("안티오크의 수류탄", "최대 충전 수 : 8발, 공격력 +77, 기본 공격 추가 피해 +95", "[제작]\n고폭 수류탄 + 십자가", "영웅")
+                item.te("안티오크의 수류탄", "최대 충전 수 : 8발, 공격력 +77, 기본 공격 추가 피해 +100", "[제작]\n고폭 수류탄 + 십자가", "영웅")
                 item.down("고폭 수류탄", "십자가", "", "", "")
             }
             if (an_Item[e].name1 == "다비드슬링") {
@@ -638,7 +636,7 @@ class anan(val an_Item: ArrayList<an_Item_list>) : RecyclerView.Adapter<anan.Vie
                 item.down("수류탄", "RDX", "", "", "")
             }
             if (an_Item[e].name1 == "루테늄 구슬") {
-                item.te("루테늄 구슬", "최대 충전 수 : 50발, 공격력 +76, 스킬 증폭 +28%, 스킬 적중 시 치유 감소 -40%", "[제작]\n가시 탱탱볼 + 황금", "영웅")
+                item.te("루테늄 구슬", "최대 충전 수 : 50발, 공격력 +76, 스킬 증폭 +28%, 스킬 적중 시 치유 감소 -25%", "[제작]\n가시 탱탱볼 + 황금", "영웅")
                 item.down("가시 탱탱볼", "황금", "", "", "")
             }
 
@@ -734,7 +732,7 @@ class anan(val an_Item: ArrayList<an_Item_list>) : RecyclerView.Adapter<anan.Vie
             }
 
             if (an_Item[e].name1 == "소수") {
-                item.te("소수", "공격력 +58, 치명타 확률 +30%", "[제작]\n유리 너클 + 백색 가루", "영웅")
+                item.te("소수", "공격력 +58, 치명타 확률 +33%", "[제작]\n유리 너클 + 백색 가루", "영웅")
                 item.up("", "", "", "", "")
                 item.down("유리 너클", "백색 가루", "", "", "")
             }
@@ -1076,7 +1074,7 @@ class anan(val an_Item: ArrayList<an_Item_list>) : RecyclerView.Adapter<anan.Vie
             }
 
             if (an_Item[e].name1 == "컴포지트 보우") {
-                item.te("컴포지트 보우", "공격력 +25, 기본 공격 시 치유 감소 -40%", "[제작]\n장궁 + 못", "희귀")
+                item.te("컴포지트 보우", "공격력 +25, 기본 공격 시 치유 감소 -25%", "[제작]\n장궁 + 못", "희귀")
                 item.up("트윈보우", "", "", "", "")
                 item.down("장궁", "못", "", "", "")
             }
@@ -1112,7 +1110,7 @@ class anan(val an_Item: ArrayList<an_Item_list>) : RecyclerView.Adapter<anan.Vie
             }
 
             if (an_Item[e].name1 == "편전") {
-                item.te("편전", "공격력 +60, 기본 공격 추가 피해 +45", "[제작]\n국궁 + 대나무", "영웅")
+                item.te("편전", "공격력 +60, 기본 공격 추가 피해 +48", "[제작]\n국궁 + 대나무", "영웅")
                 item.up("", "", "", "", "")
                 item.down("국궁", "대나무", "", "", "")
             }
@@ -1124,12 +1122,12 @@ class anan(val an_Item: ArrayList<an_Item_list>) : RecyclerView.Adapter<anan.Vie
             }
 
             if (an_Item[e].name1 == "트윈보우") {
-                item.te("트윈보우", "공격력 +70, 공격속도 +55%, 기본 공격 시 치유 감소 -40%, 시야 +1", "[제작]\n강궁 + 컴포지트 보우", "영웅")
+                item.te("트윈보우", "공격력 +74, 공격속도 +55%, 기본 공격 시 치유 감소 -25%, 시야 +1", "[제작]\n강궁 + 컴포지트 보우", "영웅")
                 item.up("", "", "", "", "")
                 item.down("강궁", "컴포지트 보우", "", "", "")
             }
             if (an_Item[e].name1 == "엘리멘탈 보우") {
-                item.te("엘리멘탈 보우", "공격력 +60, 이동속도 +0.13, 스킬 증폭 +38, 스킬 적중 시 치유 감소 -40%", "[제작]\n화전 + 백우선", "영웅")
+                item.te("엘리멘탈 보우", "공격력 +60, 이동속도 +0.13, 스킬 증폭 +45, 스킬 적중 시 치유 감소 -25%", "[제작]\n화전 + 백우선", "영웅")
                 item.up("", "", "", "", "")
                 item.down("화전", "백우선", "", "", "")
             }
@@ -1322,7 +1320,7 @@ class anan(val an_Item: ArrayList<an_Item_list>) : RecyclerView.Adapter<anan.Vie
                 item.down("포스 코어", "표창", "", "", "")
             }
             if (an_Item[e].name1 == "만천화우") {
-                item.te("만천화우", "장탄 수: 3, 공격력 +80, 치명타 피해량+50%, 스킬 증폭 +30, 기본 공격 추가 피해 +150", "[제작]\n빙백은침 + 폭뢰침", "전설")
+                item.te("만천화우", "장탄 수: 3, 공격력 +85, 치명타 피해량 + 30%, 스킬 증폭 +30, 기본 공격 추가 피해 +150", "[제작]\n빙백은침 + 폭뢰침", "전설")
                 item.up("", "", "", "", "")
                 item.down("빙백은침", "폭뢰침", "", "", "")
             }
@@ -1393,12 +1391,12 @@ class anan(val an_Item: ArrayList<an_Item_list>) : RecyclerView.Adapter<anan.Vie
                 item.down("플럼바타", "백색 가루", "", "", "")
             }
             if (an_Item[e].name1 == "건곤권") {
-                item.te("건곤권", "장탄 수: 50, 공격력 +51, 스킬 증폭 +23%", "[제작]\n법륜 + 대나무", "영웅")
+                item.te("건곤권", "장탄 수: 50, 공격력 +53, 스킬 증폭 +23%", "[제작]\n법륜 + 대나무", "영웅")
                 item.up("", "", "", "", "")
                 item.down("법륜", "대나무", "", "", "")
             }
             if (an_Item[e].name1 == "생사부") {
-                item.te("생사부", "장탄 수: 15, 공격력 +80, 스킬 증폭 +20%", "[제작]\n부적 + 생명의 나무", "영웅")
+                item.te("생사부", "장탄 수: 15, 공격력 +80, 스킬 증폭 +25%", "[제작]\n부적 + 생명의 나무", "영웅")
                 item.up("", "", "", "", "")
                 item.down("부적", "생명의 나무", "", "", "")
             }
@@ -1448,7 +1446,7 @@ class anan(val an_Item: ArrayList<an_Item_list>) : RecyclerView.Adapter<anan.Vie
                 item.down("싱글 픽업", "오일", "", "", "")
             }
             if (an_Item[e].name1 == "보헤미안") {
-                item.te("보헤미안", "공격력 +50, 최대 체력 +380, 공격 속도 +20%\n치명타 확률 +20%, 기본 공격 추가 피해 +2", "[제작]\n루비 스페셜 + 트럼프 카드", "영웅")
+                item.te("보헤미안", "공격력 +53, 최대 체력 +380, 공격 속도 +20%\n치명타 확률 +20%, 기본 공격 추가 피해 +2", "[제작]\n루비 스페셜 + 트럼프 카드", "영웅")
                 item.up("", "", "", "", "")
                 item.down("루비 스페셜", "트럼프 카드", "", "", "")
             }
@@ -1463,7 +1461,7 @@ class anan(val an_Item: ArrayList<an_Item_list>) : RecyclerView.Adapter<anan.Vie
                 item.down("King-V", "재", "", "", "")
             }
             if (an_Item[e].name1 == "새티스팩션") {
-                item.te("새티스팩션", "공격력 +30, 공격속도 +30%, 생명력 흡수 +15%, 기본 공격 추가 피해 +13", "[제작]\n노캐스터 + 돌멩이", "영웅")
+                item.te("새티스팩션", "공격력 +30, 공격속도 +30%, 생명력 흡수 +15%, 기본 공격 추가 피해 +15", "[제작]\n노캐스터 + 돌멩이", "영웅")
                 item.up("", "", "", "", "")
                 item.down("노캐스터", "돌멩이", "", "", "")
             }

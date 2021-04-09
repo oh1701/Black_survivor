@@ -1012,8 +1012,8 @@ class Character_mini : AppCompatActivity() {
             binding.chWeaName4.visibility = View.GONE
             binding.Image4.visibility = View.GONE
 
-            binding.at2.text = "30"
-            binding.at3.text = "88.9"
+            binding.at2.text = "27"
+            binding.at3.text = "85.9"
             binding.at4.text = "3.1"
             binding.hp2.text = "570"
             binding.hp3.text = "2052"
@@ -1388,8 +1388,8 @@ class Character_mini : AppCompatActivity() {
             binding.hpr3.text = "0.78"
             binding.hpr4.text = "0.02"
             binding.st2.text = "450"
-            binding.st3.text = "792"
-            binding.st4.text = "18"
+            binding.st3.text = "868"
+            binding.st4.text = "22"
             binding.str2.text = "1.1"
             binding.str3.text = "1.48"
             binding.str4.text = "0.06"
@@ -1450,8 +1450,8 @@ class Character_mini : AppCompatActivity() {
             binding.hpr3.text = "1.75"
             binding.hpr4.text = "0.05"
             binding.st2.text = "380"
-            binding.st3.text = "637"
-            binding.st4.text = "13"
+            binding.st3.text = "694"
+            binding.st4.text = "16"
             binding.str2.text = "2.2"
             binding.str3.text = "3.34"
             binding.str4.text = "0.06"
@@ -1565,8 +1565,8 @@ class Character_mini : AppCompatActivity() {
             binding.Image4.visibility = View.GONE
 
             binding.at2.text = "28"
-            binding.at3.text = "75.5"
-            binding.at4.text = "2.5"
+            binding.at3.text = "66"
+            binding.at4.text = "2"
             binding.hp2.text = "605"
             binding.hp3.text = "2196"
             binding.hp4.text = "84"
@@ -1686,8 +1686,8 @@ class Character_mini : AppCompatActivity() {
             binding.chWeaName4.visibility = View.GONE
             binding.Image4.visibility = View.GONE
 
-            binding.at2.text = "37"
-            binding.at3.text = "94.0"
+            binding.at2.text = "34"
+            binding.at3.text = "91.0"
             binding.at4.text = "3.0"
             binding.hp2.text = "530"
             binding.hp3.text = "2012"
@@ -1813,8 +1813,8 @@ class Character_mini : AppCompatActivity() {
             binding.at3.text = "44.6"
             binding.at4.text = "1.4"
             binding.hp2.text = "480"
-            binding.hp3.text = "1620"
-            binding.hp4.text = "60"
+            binding.hp3.text = "1734"
+            binding.hp4.text = "66"
             binding.hpr2.text = "0.4"
             binding.hpr3.text = "0.97"
             binding.hpr4.text = "0.03"

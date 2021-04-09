@@ -144,7 +144,7 @@ class Character : AppCompatActivity() {
             intent.putExtra("bernice", "bernice")
             startActivity(intent)
         }
-        binding.bernice.setOnClickListener{
+        binding.barbara.setOnClickListener{
             val intent = Intent(this, Character_mini::class.java)
             intent.putExtra("barbara", "barbara")
             startActivity(intent)

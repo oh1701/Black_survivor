@@ -39,7 +39,7 @@ class skill_information : AppCompatActivity() {
                         binding.qExeplan1.text =
                                 "실비아가 바이크로 선회하며 범위 내의 적들에게 60/102/144/186/228(+공격력의 70%)의 피해를 입힙니다. \n" +
                                         "스킬 사용 중 이동이 가능합니다."
-                        binding.qExeplan2.text = "쿨다운 : 3.7/3.2/2.7/2.2/1.7초\n" +
+                        binding.qExeplan2.text = "쿨다운 : 3.5/3/2.5/2/1.5초\n" +
                                 "피해 범위 : 2.5m\n" +
                                 "연료 5 소모"
 
@@ -74,16 +74,7 @@ class skill_information : AppCompatActivity() {
                         binding.rExeplan2.text = "스태미너 소모 : 없음\n쿨다운 : 2초"
                     }
 
-                    else if(name == "바바라"){
-
-                        binding.skill1.setImageResource(R.drawable.barbara_t)
-                        binding.passiveName.text = "[ Passive ] 개조"
-                        var span: Spannable = binding.passiveName.text as Spannable
-                        span.setSpan(ForegroundColorSpan(Color.RED), 0, 11, Spanned.SPAN_EXCLUSIVE_INCLUSIVE)
-                        binding.passiveExeplan1.text = "'바바라 레벨에 비례하여 공격력의 6%, 방어력의 4%만큼 센트리건이 강화됩니다.'\n" +
-                                "'센트리건이 레일건에 적중하거나 자력 폭풍을 생성할 때마다 공격속도가 상승하며, 최대 3번 중첩됩니다.'"
-                        binding.passiveExeplan2.text = "공격속도 : 15/20/25%"
-
+                    else if(name == "바바라") {
                         binding.skill2.setImageResource(R.drawable.barbara_q2)
                         binding.qName.text = "[ Q ] BT-Mk2 센트리건"
                         var spanq: Spannable = binding.qName.text as Spannable
@@ -100,9 +91,9 @@ class skill_information : AppCompatActivity() {
                         binding.wName.text = "[ W ] 이온 레이저"
                         var spanw: Spannable = binding.wName.text as Spannable
                         spanw.setSpan(ForegroundColorSpan(Color.RED), 0, 5, Spanned.SPAN_EXCLUSIVE_INCLUSIVE)
-                        binding.wExeplan1.text = "레이저 충전: (오버 클럭): 7초동안 레이저 충전이 되며 지속 기간 동안 이온 레이저와 센트리 건의 레일건 피해량이 5/15/25%상승합니다. 센트리건은 레이저 충전 상태동안 일반 공격이 강화되어 레일건으로 공격합니다.\n" +
+                        binding.wExeplan1.text = "레이저 충전: (오버 클럭): 7초동안 레이저 충전이 되며 지속 기간 동안 이온 레이저와 센트리 건의 레일건 피해량이 5/10/15%상승합니다. 센트리건은 레이저 충전 상태동안 일반 공격이 강화되어 레일건으로 공격합니다.\n" +
                                 "이온 레이저(W)의 스태미너 소모량이 사라지고 쿨다운이 97% 감소합니다.\n"
-                        binding.wExeplan2.text = "피해량 : 40/80/120/160/200 (+공격력의 35%)\n" +
+                        binding.wExeplan2.text = "피해량 : 40/75/110/145/280 (+공격력의 25%)\n" +
                                 "레일건 피해량 : 55/100/145/190/235 (+센트리건 공격력의 50%)\n" +
                                 "사정거리 : 7m\n" +
                                 "스테미너 소모 : 50/60/70/80/90\n" +
@@ -113,20 +104,11 @@ class skill_information : AppCompatActivity() {
                         var spane: Spannable = binding.eName.text as Spannable
                         spane.setSpan(ForegroundColorSpan(Color.RED), 0, 5, Spanned.SPAN_EXCLUSIVE_INCLUSIVE)
                         binding.eExeplan1.text = "광자력 폭풍 (오버 클럭) : 자력 폭풍 범위가 유지시간 동안 점점 커집니다." +
-                                "스킬을 다시 사용시 or 4초 후, 범위 내의 적들에게 60/80/100/120/140(+공격력의 35%)의 피해와 1.25초 동안 스턴을 주며 자력 폭풍보다 추가로 20/25/30%의 보호막을 얻습니다."
+                                "스킬을 다시 사용시 or 5초 후, 범위 내의 적들에게 60/80/100/120/140(+공격력의 35%)의 피해와 1.25초 동안 스턴을 주며 자력 폭풍보다 추가로 20/25/30%의 보호막을 얻습니다."
                         binding.eExeplan2.text = "피해량 : 5/8/10/13/16 (+공격력의 5%) (+적 최대 체력의 1/1.5/2/2.5/3%)\n" +
                                 "폭발 피해 : 60/80/100/120/140 (+공격력의 35%)\n" +
                                 "스테미너 소모 : 80/90/100/110/120\n" +
                                 "쿨다운 : 20/18/16/14/12초"
-
-
-                        binding.skill5.setImageResource(R.drawable.barbara_r)
-                        binding.rName.text = "[ R ] 오버 클럭"
-                        var spanr: Spannable = binding.rName.text as Spannable
-                        spanr.setSpan(ForegroundColorSpan(Color.RED), 0, 5, Spanned.SPAN_EXCLUSIVE_INCLUSIVE)
-                        binding.rExeplan1.text = "'오버 클럭 스킬을 사용하면 즉시 다음 Q, W, E 스킬을 사용할 수 있으며, 각 스킬에 따라 추가효과가 발동됩니다."
-                        binding.rExeplan2.text = "스테미너 소모 : 100(모든 구간)\n" +
-                                "쿨다운 : 100/85/70초"
                     }
                 }
 
@@ -190,61 +172,61 @@ class skill_information : AppCompatActivity() {
                 }
 
                 else if(name == "바바라"){
-                    binding.skill1.setImageResource(R.drawable.barbara_t)
-                    binding.passiveName.text = "[ Passive ] 개조"
-                    var span: Spannable = binding.passiveName.text as Spannable
-                    span.setSpan(ForegroundColorSpan(Color.RED), 0, 11, Spanned.SPAN_EXCLUSIVE_INCLUSIVE)
-                    binding.passiveExeplan1.text = "'바바라 레벨에 비례하여 공격력의 6%, 방어력의 4%만큼 센트리건이 강화됩니다.'\n" +
-                            "'센트리건이 레일건에 적중하거나 자력 폭풍을 생성할 때마다 공격속도가 상승하며, 최대 3번 중첩됩니다.'"
-                    binding.passiveExeplan2.text = "공격속도 : 15/20/25%"
-
-                    binding.skill2.setImageResource(R.drawable.barbara_q)
-                    binding.qName.text = "[ Q ] BT-Mk2 센트리건"
-                    var spanq: Spannable = binding.qName.text as Spannable
-                    spanq.setSpan(ForegroundColorSpan(Color.RED), 0, 5, Spanned.SPAN_EXCLUSIVE_INCLUSIVE)
-                    binding.qExeplan1.text = "바바라가 지정한 위치에 150(+바바라 최대 체력의 21/24/27/30/33%)의 체력을 가진 센트리건을 설치하여 범위 안의 적들에게 피해를 입힙니다.\n" +
-                            "센트리건은 15초 동안 유지하고 주위에 적에게 총알을 발사하여 15(+바바라 레벨 X 바바라 공격력의 7.5%)의 피해를 입힙니다.\n" +
-                            "센트리건이 설치될 때 전에 설치한 센트리건은 부서지며, 설치한 센트리건이 바바라와 멀어지면 센트리건을 회수하고 쿨다운이 50% 감소합니다."
-                    binding.qExeplan2.text = "피해량 : 15/30/45/60/75(+공격력의 15%)\n" +
-                            "사정거리 : 7m\n" +
-                            "포탑: 3.5m\n" +
-                            "스테미너 소모 : 60/70/80/90/100\n" +
-                            "쿨다운 : 12초"
-
-                    binding.skill3.setImageResource(R.drawable.barbara_w)
-                    binding.wName.text = "[ W ] 이온 레이저"
-                    var spanw: Spannable = binding.wName.text as Spannable
-                    spanw.setSpan(ForegroundColorSpan(Color.RED), 0, 5, Spanned.SPAN_EXCLUSIVE_INCLUSIVE)
-                    binding.wExeplan1.text = "'바바라가 고출력 포신으로 이온 레이저를 두 발 발사하여 경로상의 적들에게 각각 의 피해를 입히고, 이동속도를 1.5초 동안 20% 감소시킵니다.\n" +
-                            "두 발에 동시에 적중된 적에게는 각 레이저 피해량이 35%감소하고, 오버 클럭(R) 쿨다운이 1초 감소됩니다.\n" +
-                            "센트리건에 레이저가 적중하면 센트리건이 충전되고, 적에게 레일건을 발사하여 적들에게 피해를 입힙니다."
-                    binding.wExeplan2.text = "피해량 : 40/80/120/160/200 (+공격력의 35%)\n" +
-                            "레일건 피해량 : 55/100/145/190/235 (+센트리건 공격력의 50%)\n" +
-                            "사정거리 : 7m\n" +
-                            "스테미너 소모 : 50/60/70/80/90\n" +
-                            "쿨다운 : 4초"
-
-                    binding.skill4.setImageResource(R.drawable.barbara_e)
-                    binding.eName.text = "[ E ] 자력 폭풍"
-                    var spane: Spannable = binding.eName.text as Spannable
-                    spane.setSpan(ForegroundColorSpan(Color.RED), 0, 5, Spanned.SPAN_EXCLUSIVE_INCLUSIVE)
-                    binding.eExeplan1.text = "'바바라가 최대 4초 동안 유지되는 자력폭풍을 자신과 센트리건에 함께 생성하여 자신의 이동속도를 20% 증가시키고 범위 안의 적들에게 0.5초 마다 고정 피해를 입힙니다.'\n" +
-                            "스킬을 다시 사용하거나, 지속시간이 끝나면 자력 폭풍은 폭발하며 범위 안의 적들에게 피해를 입히고, 자력 폭풍이 유지한 동안 입힌 모든 피해량의 30%만큼 보호막을 획득합니다.\n" +
-                            "보호막은 바바라 최대 체력의 50% 까지 획득할 수 있습니다.\n" +
-                            "바바라와 센트리건의 자력 폭풍 폭발 피해를 동시에 받은 적은 0.75초 동안 기절합니다."
-                    binding.eExeplan2.text = "피해량 : 5/8/10/13/16 (+공격력의 5%) (+적 최대 체력의 1/1.5/2/2.5/3%)\n" +
-                            "폭발 피해 : 60/80/100/120/140 (+공격력의 35%)\n" +
-                            "스테미너 소모 : 80/90/100/110/120\n" +
-                            "쿨다운 : 20/18/16/14/12초"
+                        binding.skill1.setImageResource(R.drawable.barbara_t)
+                        binding.passiveName.text = "[ Passive ] 개조"
+                        var span: Spannable = binding.passiveName.text as Spannable
+                        span.setSpan(ForegroundColorSpan(Color.RED), 0, 11, Spanned.SPAN_EXCLUSIVE_INCLUSIVE)
+                        binding.passiveExeplan1.text = "'바바라 레벨에 비례하여 공격력의 6.5%, 방어력의 4.5%만큼 센트리건이 강화됩니다.'\n" +
+                                "'센트리건이 레일건에 적중하거나 자력 폭풍을 생성할 때마다 공격속도가 상승하며, 최대 3번 중첩됩니다.'"
+                        binding.passiveExeplan2.text = "공격속도 : 15/20/25%"
 
 
-                    binding.skill5.setImageResource(R.drawable.barbara_r)
-                    binding.rName.text = "[ R ] 오버 클럭"
-                    var spanr: Spannable = binding.rName.text as Spannable
-                    spanr.setSpan(ForegroundColorSpan(Color.RED), 0, 5, Spanned.SPAN_EXCLUSIVE_INCLUSIVE)
-                    binding.rExeplan1.text = "'오버 클럭 스킬을 사용하면 즉시 다음 Q, W, E 스킬을 사용할 수 있으며, 각 스킬에 따라 추가효과가 발동됩니다."
-                    binding.rExeplan2.text = "스테미너 소모 : 100(모든 구간)\n" +
-                            "쿨다운 : 100/85/70초"
+                        binding.skill2.setImageResource(R.drawable.barbara_q)
+                        binding.qName.text = "[ Q ] BT-Mk2 센트리건"
+                        var spanq: Spannable = binding.qName.text as Spannable
+                        spanq.setSpan(ForegroundColorSpan(Color.RED), 0, 5, Spanned.SPAN_EXCLUSIVE_INCLUSIVE)
+                        binding.qExeplan1.text = "바바라가 지정한 위치에 150(+바바라 최대 체력의 21/24/27/30/33%)의 체력을 가진 센트리건을 설치하여 범위 안의 적들에게 피해를 입힙니다.\n" +
+                                "센트리건은 15초 동안 유지하고 주위에 적에게 총알을 발사하여 15(+바바라 레벨 X 바바라 공격력의 7.5%)의 피해를 입힙니다.\n" +
+                                "센트리건이 설치될 때 전에 설치한 센트리건은 부서지며, 설치한 센트리건이 바바라와 멀어지면 센트리건을 회수하고 쿨다운이 50% 감소합니다."
+                        binding.qExeplan2.text = "피해량 : 15/30/45/60/75(+공격력의 15%)\n" +
+                                "사정거리 : 7m\n" +
+                                "포탑: 3.5m\n" +
+                                "스테미너 소모 : 60/70/80/90/100\n" +
+                                "쿨다운 : 12초"
+
+                        binding.skill3.setImageResource(R.drawable.barbara_w)
+                        binding.wName.text = "[ W ] 이온 레이저"
+                        var spanw: Spannable = binding.wName.text as Spannable
+                        spanw.setSpan(ForegroundColorSpan(Color.RED), 0, 5, Spanned.SPAN_EXCLUSIVE_INCLUSIVE)
+                        binding.wExeplan1.text = "'바바라가 고출력 포신으로 이온 레이저를 두 발 발사하여 경로상의 적들에게 각각 의 피해를 입히고, 이동속도를 1.5초 동안 20% 감소시킵니다.\n" +
+                                "두 발에 동시에 적중된 적에게는 각 레이저 피해량이 35%감소하고, 오버 클럭(R) 쿨다운이 1초 감소됩니다.\n" +
+                                "센트리건에 레이저가 적중하면 센트리건이 충전되고, 적에게 레일건을 발사하여 적들에게 피해를 입힙니다."
+                        binding.wExeplan2.text = "피해량 : 40/80/120/160/200 (+공격력의 35%)\n" +
+                                "레일건 피해량 : 55/100/145/190/235 (+센트리건 공격력의 50%)\n" +
+                                "사정거리 : 7m\n" +
+                                "스테미너 소모 : 50/60/70/80/90\n" +
+                                "쿨다운 : 4초"
+
+                        binding.skill4.setImageResource(R.drawable.barbara_e)
+                        binding.eName.text = "[ E ] 자력 폭풍"
+                        var spane: Spannable = binding.eName.text as Spannable
+                        spane.setSpan(ForegroundColorSpan(Color.RED), 0, 5, Spanned.SPAN_EXCLUSIVE_INCLUSIVE)
+                        binding.eExeplan1.text = "'바바라가 최대 4초 동안 유지되는 자력폭풍을 자신과 센트리건에 함께 생성하여 자신의 이동속도를 20% 증가시키고 범위 안의 적들에게 0.5초 마다 고정 피해를 입힙니다.'\n" +
+                                "스킬을 다시 사용하거나, 지속시간이 끝나면 자력 폭풍은 폭발하며 범위 안의 적들에게 피해를 입히고, 자력 폭풍이 유지한 동안 입힌 모든 피해량의 30%만큼 보호막을 획득합니다.\n" +
+                                "보호막은 바바라 최대 체력의 50% 까지 획득할 수 있습니다.\n" +
+                                "바바라와 센트리건의 자력 폭풍 폭발 피해를 동시에 받은 적은 0.75초 동안 기절합니다."
+                        binding.eExeplan2.text = "피해량 : 5/8/10/13/16 (+공격력의 5%) (+적 최대 체력의 1/1.5/2/2.5/3%)\n" +
+                                "폭발 피해 : 60/80/100/120/140 (+공격력의 35%)\n" +
+                                "스테미너 소모 : 80/90/100/110/120\n" +
+                                "쿨다운 : 20/18/16/14/12초"
+
+                        binding.skill5.setImageResource(R.drawable.barbara_r)
+                        binding.rName.text = "[ R ] 오버 클럭"
+                        var spanr: Spannable = binding.rName.text as Spannable
+                        spanr.setSpan(ForegroundColorSpan(Color.RED), 0, 5, Spanned.SPAN_EXCLUSIVE_INCLUSIVE)
+                        binding.rExeplan1.text = "'오버 클럭 스킬을 사용하면 즉시 다음 Q, W, E 스킬을 사용할 수 있으며, 각 스킬에 따라 추가효과가 발동됩니다."
+                        binding.rExeplan2.text = "스테미너 소모 : 100(모든 구간)\n" +
+                                "쿨다운 : 95/80/65초"
                 }
             }
         }
@@ -417,7 +399,8 @@ class skill_information : AppCompatActivity() {
             binding.eExeplan1.text = "재키가 지정한 위치로 점프하여 주변의 적들에게 피해를 입힙니다.\n" +
                     "'출혈' 에 걸린적은 몇초간 이동속도가 감소합니다.\n"
             binding.eExeplan2.text = "피해량: 10/70/130/190/250(+ 0.3/0.4/0.5/0.6/0.7 공격력)\n" +
-                    "출혈에 걸린 적 명중 시 둔화: -40%\n" +
+                    "일반 적중 시 둔화 : 25%\n"
+                    "출혈에 걸린 적 명중 시 둔화: 45%\n" +
                     "사정거리 : 6m\n" +
                     "스테미너 소모: 70/85/100/115/130\n" +
                     "시전시간: 즉시\n" +
@@ -669,7 +652,7 @@ class skill_information : AppCompatActivity() {
                     "피해량 : 80-160/100-200/120-240/140-280/160-320(+0.3-0.6 공격력)\n" +
                             "사정거리 : 8m\n" +
                             "스테미너 소모 : 100\n" +
-                            "진화 시 둔화: 35%/50%\n" +
+                            "진화 시 둔화: 30%/50%\n" +
                             "진화 시 둔화 지속 시간 : 1.5초\n" +
                             "시전 시간 : 즉시~4초\n" +
                             "쿨다운 : 4초"
@@ -685,7 +668,7 @@ class skill_information : AppCompatActivity() {
                     "적에게 발사하는 최초의 음파에 방어력 감소 효과가 추가 됩니다.\n" +
                     "진화 횟수에 따라 방어력 감소량이 증가합니다."
             binding.wExeplan2.text = "공격력 증가 : 12%/19%/26%/33%/40%\n" +
-                    "진화 시 첫 음파 방어력 감소 : 30%/40%\n" +
+                    "진화 시 첫 음파 방어력 감소 : 30%/45%\n" +
                     "스테미너 소모 : 85/90/95/100/105\n" +
                     "시전 시간 : 즉시\n" +
                     "지속 시간 : 7초\n" +
@@ -864,7 +847,7 @@ class skill_information : AppCompatActivity() {
                     "취기가 일정 이상 올라가면 취권을 획득하며, 취권을 사용하면 추가 데미지를 줄 수 있습니다.\n" +
                     "만약 리 다이린이 만취상태가 되면, 5초 동안 침묵 상태가 되며 맹호청권을 얻습니다.\n" +
                     "\n" +
-                    "맹호청권: 스킬을 사용한 후 기본 공격을 하면 두 번 연속 공격합니다. 두 번째 공격은 0.5/0.75/1.0 공격력의 피해를 입힙니다.\n" +
+                    "맹호청권: 스킬을 사용한 후 기본 공격을 하면 두 번 연속 공격합니다. 두 번째 공격은 0.4/0.6/0.8 공격력의 피해를 입힙니다.\n" +
                     "리화자 : 술 아이템을 사용하면 15초 동안 공격속도가 20%/30%/40% 증가합니다."
             binding.passiveExeplan2.text = "시전시간 : 즉시\n" +
                     "지속시간 : 10초"
@@ -1155,7 +1138,7 @@ class skill_information : AppCompatActivity() {
             var spanw: Spannable = binding.wName.text as Spannable
             spanw.setSpan(ForegroundColorSpan(Color.RED), 0, 5, Spanned.SPAN_EXCLUSIVE_INCLUSIVE)
             binding.wExeplan1.text =
-                    "쇼우가 큼직한 웍을 지면에 강하게 내리찍어 주변의 적들에게 피해를 주고, 이동속도를 1.5초간 10/20/30/40/50% 감소 시킵니다.\n" +
+                    "쇼우가 큼직한 웍을 지면에 강하게 내리찍어 주변의 적들에게 피해를 주고, 이동속도를 1.5초간 20/27.5/35/42.5/50% 감소 시킵니다.\n" +
                             "이동방해 효과가 걸린 대상에게는 추가 효과를 줍니다.\n" +
                             "\n" +
                             "추가 효과: 이동속도 감소 효과: 1.5초 추가\n" +
@@ -1185,7 +1168,7 @@ class skill_information : AppCompatActivity() {
             binding.rExeplan1.text = "쇼우가 화염을 뿜으며 범위안의 적에게 3초간 6번의 피해를 줍니다.\n" +
                     "이동방해가 걸린 대상에게는 추가로 3초간 10/15/20%의 방어력 감소 효과를 줍니다.\n" +
                     "대상이 이동방해에 걸려있을 시 방어력 감소 유지 시간은 공격할 때 마다 초기화 됩니다."
-            binding.rExeplan2.text = "피해량 : 20/65/110(+0.5 공격력)+(패시브 스택 x0.9)\n" +
+            binding.rExeplan2.text = "피해량 : 20/65/110(+0.5 공격력)+(패시브 스택 x 1.0)\n" +
                     "사정거리 : 6.5m(90도 범위)\n" +
                     "체력 소모 : 100/120/140\n" +
                     "지속 시간 : 3초\n" +
@@ -1200,7 +1183,7 @@ class skill_information : AppCompatActivity() {
                     "부당거래의 스택마다 치명타 확률이 5/7/9% 증가합니다.\n" +
                     "부당거래가 최대로 중첩되면 기본 공격 피해량이 10/15/20% 증가합니다.\n" +
                     "단검을 회수할때, 주변 적에게 추가로 피해를 입힙니다."
-            binding.passiveExeplan2.text = "피해량: 10/45/80(+0.3 공격력)\n" +
+            binding.passiveExeplan2.text = "피해량: 10/45/80(+0.4 공격력)\n" +
                     "사정거리: 5m"
 
             binding.skill2.setImageResource(R.drawable.s_shoichi_q)
@@ -1506,7 +1489,7 @@ class skill_information : AppCompatActivity() {
                     "사정거리: 4.5m\n" +
                     "가장자리 범위: 3m ~ 4.5m\n" +
                     "스태미너 소모: 30/50/70/90/110\n" +
-                    "쿨다운: 4.5초\n"
+                    "쿨다운: 4초\n"
 
             binding.skill3.setImageResource(R.drawable.c_lenox_w)
             binding.wName.text = "[ W ] 날카로운 독니"
@@ -1545,8 +1528,8 @@ class skill_information : AppCompatActivity() {
                     "스태미너 소모: 100/120/140\n" +
                     "쿨다운 120/100/80초\n" +
                     "푸른뱀 표식 지속시간: 4/4.5/5초\n" +
-                    "푸른뱀 고정 피해량: 1m 당 10/15/20\n" +
-                    "강화된 고정 피해량: 1m 당 20/30/40"
+                    "푸른뱀 고정 피해량: 1m 당 15/20/25\n" +
+                    "강화된 고정 피해량: 1m 당 30/35/40"
         }
 
         if (intent.hasExtra("로지")) {
@@ -1626,7 +1609,7 @@ class skill_information : AppCompatActivity() {
                     "10/30/50 중첩일 때 진화 포인트를 획득합니다.\n" +
                     "50 중첩 부터 10 중첩마다 만족감 효과가 1%씩 증가합니다."
             binding.passiveExeplan2.text = "재생 : 5/8/12 % 잃은 체력 회복 \n" +
-                    "위클라인 처치시 20/25/30% 잃은 체력 회복"
+                    "위클라인 처치시 10/15/20% 잃은 체력 회복"
 
             binding.skill2.setImageResource(R.drawable.luke_q)
             binding.qName.text = "[ Q ] 클리닝 서비스"
@@ -1637,7 +1620,7 @@ class skill_information : AppCompatActivity() {
             binding.qExeplan2.text = "피해량 : 투사체 15/40/65/90/150 (+0.5 공격력), 재사용 시 50/80/110/140/170(+1.0공격력)\n" +
             "사정거리 : 8m / 폭 0.6m, 재사용 가능거리 11m \n" +
                     "스태미너 소모 : 30/50/70/80/110 \n" +
-                    "쿨다운 : 16/14/12/10/8초 \n" +
+                    "쿨다운 : 18/15.5/13/10.5/8초 \n" +
                     "\n 진화 효과 \n" +
                     " - 재사용하는 클리닝 서비스 피해량의 80% 만큼 체력을 즉시 회복"
 
@@ -1645,10 +1628,10 @@ class skill_information : AppCompatActivity() {
             binding.wName.text = "[ W ] 강박증"
             var spanw: Spannable = binding.wName.text as Spannable
             spanw.setSpan(ForegroundColorSpan(Color.RED), 0, 5, Spanned.SPAN_EXCLUSIVE_INCLUSIVE)
-            binding.wExeplan1.text = "지속 효과: 루크에게 적용되는 방해효과(에어본/둔화/속박/기절/제압)의 지속시간이 15% 감소합니다.\n" +
+            binding.wExeplan1.text = "지속 효과: 루크에게 적용되는 방해효과(에어본/둔화/속박/기절/제압)의 지속시간이 12% 감소합니다.\n" +
                     "\n" +
                     "사용 효과: 5초동안 기본 공격을 강화하여 20/35/50/65/80(+공격력의 20%)의 스킬 피해를 추가로 입힙니다.\n" +
-                    "강화된 기본 공격으로 적에게 피해를 입히면 2초 동안 공격속도가 10% 증가하며, 최대 5번까지 중첩됩니다.\n"
+                    "강화된 기본 공격으로 적에게 피해를 입히면 2초 동안 공격속도가 8% 증가하며, 최대 5번까지 중첩됩니다.\n"
             binding.wExeplan2.text = "피해량 : 20/35/50/65/80(+0.2 공격력) \n" +
                     "스태미너 소모 : 70/85/100/115/130 \n" +
                     "지속시간 : 5초 \n" +
@@ -1689,7 +1672,7 @@ class skill_information : AppCompatActivity() {
             binding.passiveExeplan1.text = "외과 전문의: 캐시가 적에게 피해를 입히면 3초 동안 공격력의 20%의 고정 피해를 입히는 외상 상태가 됩니다.\n" +
                     "기본 공격은 1개, 스킬 공격은 2개의 외상 스택을 부여하여 5스택이 쌓이면 4초 동안 최대 체력의 4%(+공격력의 100%)만큼 고정 피해를 입히는 치명적 외상 상태가 됩니다.\n" +
                     "캐시는 치명적 외상 상태의 적에게 치명타를 입히면 10/25/40% 만큼 치명타 피해가 증가합니다."
-            binding.passiveExeplan2.text = "포스트옵 : 적에게 스킬피해를 입히면 2초간 100/150/200(공격력의 30%)의 피해를 막아주는 보호막을 획득하고, 이동 속도가 13/19/25% 증가합니다. 치명타 피해를 입히면 포스트옵의 쿨다운이 1초 감소합니다"
+            binding.passiveExeplan2.text = "포스트옵 : 적에게 스킬피해를 입히면 2초간 100/150/200(공격력의 20%)의 피해를 막아주는 보호막을 획득하고, 이동 속도가 13/19/25% 증가합니다. 치명타 피해를 입히면 포스트옵의 쿨다운이 1초 감소합니다"
 
             binding.skill2.setImageResource(R.drawable.cathy_q)
             binding.qName.text = "[ Q ] 동맥절제술"
@@ -1712,8 +1695,8 @@ class skill_information : AppCompatActivity() {
             spanw.setSpan(ForegroundColorSpan(Color.RED), 0, 5, Spanned.SPAN_EXCLUSIVE_INCLUSIVE)
             binding.wExeplan1.text = "캐시가 전방으로 톱을 날카롭게 휘둘러 피해를 입히고 이동속도를 2초 동안 30% 느려지게 합니다.\n" +
                     "스킬의 바깥 범위에 적중한 적은 2초 동안 이동 스킬을 사용할 수 없는 고정 상태가 됩니다."
-            binding.wExeplan2.text = "피해량 : 40/75/110/145/180 (+ 0.4 공격력) \n" +
-                    "가장자리 적중 시 추가 피해 +40 (+ 0.1 공격력)\n" +
+            binding.wExeplan2.text = "피해량 : 35/70/105/140/175 (+ 0.3 공격력) \n" +
+                    "가장자리 적중 시 추가 피해 +45 (+ 0.2 공격력)\n" +
                     "사정거리 : 4m, 부채꼴 범위 80도 \n" +
                     "스태미너 소모 : 70\n" +
                     "쿨다운 : 16/15/14/13/12초"
@@ -1751,7 +1734,7 @@ class skill_information : AppCompatActivity() {
             binding.passiveName.text = "[ Passive ] 퀸즈 갬빗 디클라인드"
             var span: Spannable = binding.passiveName.text as Spannable
             span.setSpan(ForegroundColorSpan(Color.RED), 0, 11, Spanned.SPAN_EXCLUSIVE_INCLUSIVE)
-            binding.passiveExeplan1.text = "아델라는 기본 공격의 사정거리가 2.5m 증가하는 대신 공격 속도가 고정되고, 공격 속도가 0.01 증가하면 공격력이 0.2/0.5/0.8 증가합니다.\n" +
+            binding.passiveExeplan1.text = "아델라는 기본 공격의 사정거리가 2.5m 증가하는 대신 공격 속도가 고정되고, 공격 속도가 0.01 증가하면 공격력이 0.2/0.6/1.0 증가합니다.\n" +
                     "또한 치명타 확률이 2/6/10% 증가하고, 치명타가 발동되면 이동속도가 2초 동안 4/8/12% 증가합니다."
             binding.passiveExeplan2.text = "이동속도 : 4/8/12% (2초) \n" +
                     "사정거리 : 2.5m 증가"

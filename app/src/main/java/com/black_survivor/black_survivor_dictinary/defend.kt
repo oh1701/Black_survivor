@@ -166,7 +166,7 @@ class defend(val defend_Item: ArrayList<defend_Item_list>) : RecyclerView.Adapte
                 item.down("투구", "고무", "", "", "")
             }
             if (defend_Item[i].name1 == "제국 왕관") {
-                item.te("제국 왕관", "방어력 +20, 최대 체력 +330, 스킬 증폭 +10%", "[제작] 왕관 + 루비\n보라색 항공 보급", "영웅")
+                item.te("제국 왕관", "방어력 +20, 최대 체력 +350, 스킬 증폭 +10%", "[제작] 왕관 + 루비\n보라색 항공 보급", "영웅")
                 item.up("", "", "", "", "")
                 item.down("왕관", "루비", "", "", "")
             }
@@ -176,7 +176,7 @@ class defend(val defend_Item: ArrayList<defend_Item_list>) : RecyclerView.Adapte
                 item.down("투구", "황금", "", "", "")
             }
             if (defend_Item[i].name1 == "변검") {
-                item.te("변검", "방어력 +10, 최대 스태미너 +300, 이동속도 +0.2, 생명력 흡수 +22%, 비전투중 이동속도 +0.35", "[제작] 가면 + VF 혈액 샘플\n보라색 항공 보급", "영웅")
+                item.te("변검", "방어력 +10, 최대 스태미너 +300, 이동속도 +0.2, 생명력 흡수 +22%, 비전투중 이동속도 +0.3", "[제작] 가면 + VF 혈액 샘플\n보라색 항공 보급", "영웅")
                 item.up("", "", "", "", "")
                 item.down("가면", "VF 혈액 샘플", "", "", "")
             }
@@ -301,7 +301,7 @@ class defend(val defend_Item: ArrayList<defend_Item_list>) : RecyclerView.Adapte
                 item.down("라이더 자켓", "소란 발생기", "", "", "")
             }
             if (defend_Item[i].name1 == "미스릴 갑옷") {
-                item.te("미스릴 갑옷", "방어력 +60, 공격속도 +12%, 이동속도 +0.2, 스킬 피해 고정 감소 +14", "[제작] 미스릴 + 가죽 갑옷\n보라색 항공 보급", "미스릴 갑옷")
+                item.te("미스릴 갑옷", "방어력 +65, 공격속도 +12%, 이동속도 +0.2, 스킬 피해 고정 감소 +14", "[제작] 미스릴 + 가죽 갑옷\n보라색 항공 보급", "미스릴 갑옷")
                 item.up("", "", "", "", "")
                 item.down("미스릴", "가죽 갑옷", "", "", "")
             }
@@ -424,7 +424,7 @@ class defend(val defend_Item: ArrayList<defend_Item_list>) : RecyclerView.Adapte
                 item.down("가죽 방패", "강철", "", "", "")
             }
             if (defend_Item[i].name1 == "큐브 워치") {
-                item.te("큐브 워치", "방어력 +22, 공격속도 +50%", "[제작] 고장난 시계 + 문스톤\n보란색 항공 보급", "영웅")
+                item.te("큐브 워치", "방어력 +22, 공격속도 +50%, 쿨다운 감소 + 8%", "[제작] 고장난 시계 + 문스톤\n보란색 항공 보급", "영웅")
                 item.up("", "", "", "", "")
                 item.down("고장난 시계", "문스톤", "", "", "")
             }
@@ -474,12 +474,12 @@ class defend(val defend_Item: ArrayList<defend_Item_list>) : RecyclerView.Adapte
                 item.down("진홍 팔찌", "가죽 방패", "", "", "")
             }
             if (defend_Item[i].name1 == "스카디의 팔찌") {
-                item.te("스카디의 팔찌", "최대 체력 +200, 최대 스태미너 +250, 체력 재생 +1.5, 스태미너 재생 +1.5, 스킬 증폭 +24", "[제작] 만년빙 + 진홍 팔찌\n노란색 항공 보급", "전설")
+                item.te("스카디의 팔찌", "최대 체력 +200, 최대 스태미너 +250, 체력 재생 +1.5, 스태미너 재생 +1.5, 스킬 증폭 +27", "[제작] 만년빙 + 진홍 팔찌\n노란색 항공 보급", "전설")
                 item.up("", "", "", "", "")
                 item.down("만년빙", "진홍 팔찌", "", "", "")
             }
             if (defend_Item[i].name1 == "레이더") {
-                item.te("레이더", "방어력 +18, 공격속도 +40%, 치명타 확률 +24%", "[제작] 바이탈 센서 + 유리판\n노란색 항공 보급", "전설")
+                item.te("레이더", "방어력 +15, 공격속도 +40%, 치명타 확률 +24%", "[제작] 바이탈 센서 + 유리판\n노란색 항공 보급", "전설")
                 item.up("", "", "", "", "")
                 item.down("바이탈 센서", "유리판", "", "", "")
             }
@@ -547,7 +547,7 @@ class defend(val defend_Item: ArrayList<defend_Item_list>) : RecyclerView.Adapte
                 item.down("강철", "무릎 보호대", "", "", "")
             }
             if (defend_Item[i].name1 == "매버릭 러너") {
-                item.te("매버릭 러너", "공격속도 +5%, 이동속도 +0.2, 비전투중 이동속도 +0.45", "[제작] 힐리스 + 전자 부품\n파란색 항공 보급", "희귀")
+                item.te("매버릭 러너", "공격속도 +5%, 이동속도 +0.25, 비전투중 이동속도 +0.35", "[제작] 힐리스 + 전자 부품\n파란색 항공 보급", "희귀")
                 item.up("", "", "", "", "")
                 item.down("힐리스", "전자 부품", "", "", "")
             }
@@ -562,7 +562,7 @@ class defend(val defend_Item: ArrayList<defend_Item_list>) : RecyclerView.Adapte
                 item.down("하이힐", "유리 조각", "", "", "")
             }
             if (defend_Item[i].name1 == "풍화륜") {
-                item.te("풍화륜", "스태미너 재생 +0.5, 스태미너 재생 +50%, 이동속도 +0.33, 스킬증폭 +10", "[제작] 덧댄 슬리퍼 + 재\n파란색 항공 보급", "희귀")
+                item.te("풍화륜", "스태미너 재생 +0.5, 스태미너 재생 +50%, 이동속도 +0.33, 스킬증폭 +12", "[제작] 덧댄 슬리퍼 + 재\n파란색 항공 보급", "희귀")
                 item.up("", "", "", "", "")
                 item.down("덧댄 슬리퍼", "재", "", "", "")
             }
@@ -572,7 +572,7 @@ class defend(val defend_Item: ArrayList<defend_Item_list>) : RecyclerView.Adapte
                 item.down("전투화", "깃털", "", "", "")
             }
             if (defend_Item[i].name1 == "미스릴 부츠") {
-                item.te("미스릴 부츠", "방어력 +22, 공격속도 +12%, 이동속도 +0.5", "[제작] 미스릴 + 체인 레깅스\n보라색 항공 보급", "영웅")
+                item.te("미스릴 부츠", "방어력 +20, 공격속도 +12%, 이동속도 +0.5", "[제작] 미스릴 + 체인 레깅스\n보라색 항공 보급", "영웅")
                 item.up("", "", "", "", "")
                 item.down("미스릴", "체인 레깅스", "", "", "")
             }
@@ -592,7 +592,7 @@ class defend(val defend_Item: ArrayList<defend_Item_list>) : RecyclerView.Adapte
                 item.down("부츠", "강철 무릎 보호대", "", "", "")
             }
             if (defend_Item[i].name1 == "글레이셜 슈즈") {
-                item.te("글레이셜 슈즈", "체력 재생 +1.5, 스태미너 재생 +1.5, 스태미너 재생 +60%, 이동속도 +0.25, 비전투중 이동속도 +0.4, 스킬증폭 +20", "[제작] 덧댄 슬리퍼 + 만년빙\n노란색 항공 보급", "전설")
+                item.te("글레이셜 슈즈", "체력 재생 +1.5, 스태미너 재생 +1.5, 스태미너 재생 +60%, 이동속도 +0.3, 비전투중 이동속도 +0.35, 스킬증폭 +24", "[제작] 덧댄 슬리퍼 + 만년빙\n노란색 항공 보급", "전설")
                 item.up("", "", "", "", "")
                 item.down("만년빙", "덧댄 슬리퍼", "", "", "")
             }
@@ -903,7 +903,7 @@ class defend(val defend_Item: ArrayList<defend_Item_list>) : RecyclerView.Adapte
                 item.down("생명의 가루", "라이터", "", "", "")
             }
             if (defend_Item[i].name1 == "에메랄드 타블렛") {
-                item.te("에메랄드 타블렛", "공격력 +15, 방어력 +15, 치명타 확률 +15%, 쿨다운 감소 +10%", "[제작] 포스 코어 + 운명의 꽃\n노라색 항공 보급", "전설")
+                item.te("에메랄드 타블렛", "공격력 +18, 방어력 +18, 치명타 확률 +15%, 쿨다운 감소 +10%", "[제작] 포스 코어 + 운명의 꽃\n노라색 항공 보급", "전설")
                 item.up("", "", "", "", "")
                 item.down("포스 코어", "운명의 꽃", "", "", "")
             }
@@ -923,7 +923,7 @@ class defend(val defend_Item: ArrayList<defend_Item_list>) : RecyclerView.Adapte
                 item.down("정화수", "문스톤", "", "", "")
             }
             if (defend_Item[i].name1 == "천사의 고리") {
-                item.te("천사의 고리", "공격력 +40, 방어력 +30, 최대 스태미너 +300, 치명타 피해량 감소 +10%", "[제작]\n머리테 + 포스 코어", "전설")
+                item.te("천사의 고리", "공격력 +35, 방어력 +30, 최대 스태미너 +300, 치명타 피해량 감소 +10%", "[제작]\n머리테 + 포스 코어", "전설")
                 item.up("", "", "", "", "")
                 item.down("머리테", "포스 코어", "", "", "")
             }
