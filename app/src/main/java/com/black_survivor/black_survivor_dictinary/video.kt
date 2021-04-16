@@ -104,7 +104,7 @@ class video : AppCompatActivity() {
                 weapon_Image.setImageResource(R.drawable.dualswordrampage)
                 skill_exeplan.text = "지정한 방향으로 돌진하며 경로상에 있는 모든 적들에게 피해를 입힙니다.\n" +
                         "공격에 성공하면 스킬을 한 번 더 사용할 수 있습니다."
-                skill_exeplan2.text = "피해량 : (0.3/0.5 공격력)×6\n" +
+                skill_exeplan2.text = "피해량 : (0.25/0.4 공격력)×6\n" +
                         "사정거리 : 1.5m\n" +
                         "시전 시간 : 0.66초\n" +
                         "지속 시간 : 0.75초\n" +
@@ -123,7 +123,7 @@ class video : AppCompatActivity() {
                 weapon_Image.setImageResource(R.drawable.revolber)
                 skill_exeplan.text = "이동속도가 증가하며 빠르게 재장전 합니다.\n" +
                         "패시브 스킬과 무기 스킬을 제외한 모든 스킬의 쿨다운이 감소합니다."
-                skill_exeplan2.text = "이동 속도증가 : 30%/60%\n" +
+                skill_exeplan2.text = "이동 속도증가 : 25%/50%\n" +
                         "시전 시간 : 즉시\n" +
                         "지속 시간 : 3초\n" +
                         "쿨다운 : 55/30초"
@@ -133,7 +133,7 @@ class video : AppCompatActivity() {
                 a = 1
                 b = 3.3
                 c = 4.1
-                d = 2.1
+                d = 2.6
                 table(a, b, c, d)
                 videouri =
                     Uri.parse("https://w.namu.la/s/648f24da9f36cd3427fba5301341c24014f0772d3299b1631791983b9d1f60ea888284c49ee9167fa57c2fde3d53c1d49179663c74b43d5dfa610c525953a56ddce5c4b201e067afd2acfa6ab5f4e483ffe28bbf86f14bb80377457bba2c8ec7")
@@ -142,11 +142,12 @@ class video : AppCompatActivity() {
                 weapon_Image.setImageResource(R.drawable.overheat)
                 skill_exeplan.text = "기본 공격력을 적을 타격하면 과열 중첩을 얻습니다.\n" +
                         "과열 중첩이 모두 충전된 순간 과열 스킬을 사용할 수 있습니다.\n" +
-                        "과열 상태에서는 공격속도 상한치가 무시되며 기본 공격시에 1타/3타모두 넉백 효과가 추가 됩니다."
+                        "과열 상태에서는 공격속도 상한치가 무시되며 기본 공격시에 1타/3타모두 추가피해 효과가 추가 됩니다."
                 skill_exeplan2.text = "공격 속도 증가 : 40%/60%\n" +
                         "기본 공격을 하지 않을 시 초당 중첩 감소량 : 10\n" +
                         "시전 시간 : 즉시\n" +
                         "지속 시간 : 5초\n" +
+                        "추가 피해 : 5/7\n" +
                         "쿨다운 : 30초"
                 binding.ImageName.text = "돌격소총"
                 binding.skillName.text = "과열"
@@ -196,7 +197,7 @@ class video : AppCompatActivity() {
             } else if (intent.hasExtra("톤파")) {
                 weapon_Image.setImageResource(R.drawable.tonpa)
                 skill_exeplan.text = "모든 방향에서 오는 피해를 막고, 공격한 대상에게 피해를 되돌려 줍니다."
-                skill_exeplan2.text = "피해 반사 : 받은 피해의 60%/90%\n" +
+                skill_exeplan2.text = "피해 반사 : 받은 피해의 60%/80%\n" +
                         "시전 시간 : 즉시\n" +
                         "지속 시간 : 0.75 초\n" +
                         "쿨다운 : 25/20초"
@@ -271,7 +272,7 @@ class video : AppCompatActivity() {
                 skill_exeplan.text = "지정한 방향으로 창을 강하게 내질러서 피해를 입히고 이동 속도를 감소 시킵니다.\n" +
                         "일정거리 안의 대상에게는 넉백 효과를 줍니다."
                 skill_exeplan2.text = "피해량 : (1.0/1.5 공격력)\n" +
-                        "이동 속도 감소 : 70%\n" +
+                        "이동 속도 감소 : 55%\n" +
                         "사정거리 : 2m/4m\n" +
                         "시전 시간 : 0.3초\n" +
                         "쿨다운 : 30초"

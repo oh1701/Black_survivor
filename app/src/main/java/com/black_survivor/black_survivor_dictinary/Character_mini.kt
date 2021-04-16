@@ -104,6 +104,34 @@ class Character_mini : AppCompatActivity() {
                     "창" -> intent.putExtra("창", "창")
                     "채찍" -> intent.putExtra("채찍", "채찍")
                 }
+                if(binding.chWeaName4.text != "없음" && binding.chWeaName1.text != null) {
+                    startActivity(intent)
+                }
+            }
+            if(i == 4){
+                when (binding.chWeaName4.text) {
+                    "권총" -> intent.putExtra("권총", "권총")
+                    "양손검" -> intent.putExtra("양손검", "양손검")
+                    "글러브" -> intent.putExtra("글러브" , "글러브" )
+                    "기타" -> intent.putExtra("기타", "기타")
+                    "단검" -> intent.putExtra("단검", "단검")
+                    "도끼" -> intent.putExtra("도끼", "도끼")
+                    "돌격소총" -> intent.putExtra("돌격소총", "돌격소총")
+                    "레이피어" -> intent.putExtra("레이피어", "레이피어")
+                    "망치" -> intent.putExtra("망치", "망치")
+                    "방망이" -> intent.putExtra("방망이", "방망이")
+                    "석궁" -> intent.putExtra("석궁" , "석궁" )
+                    "쌍검" -> intent.putExtra("쌍검", "쌍검")
+                    "쌍절곤" -> intent.putExtra("쌍절곤", "쌍절곤")
+                    "암기" -> intent.putExtra("암기", "암기")
+                    "양손검" -> intent.putExtra("양손검", "양손검")
+                    "저격총" -> intent.putExtra("저격총", "저격총")
+                    "톤파" -> intent.putExtra("톤파", "톤파")
+                    "투척" -> intent.putExtra("투척", "투척")
+                    "활" -> intent.putExtra("활", "활")
+                    "창" -> intent.putExtra("창", "창")
+                    "채찍" -> intent.putExtra("채찍", "채찍")
+                }
                 if(binding.chWeaName3.text != "없음" && binding.chWeaName1.text != null) {
                     startActivity(intent)
                 }
@@ -174,7 +202,7 @@ class Character_mini : AppCompatActivity() {
                 "유키" -> intent.putExtra("유키", "유키")
             }
             if(binding.text.text == "엠마" || binding.text.text == "로지" || binding.text.text == "레녹스" || binding.text.text == "루크" || binding.text.text == "캐시" || binding.text.text == "아델라" || binding.text.text == "버니스"
-                    || binding.text.text == "바바라") {
+                    || binding.text.text == "바바라" || binding.text.text == "알렉스") {
                 val dlg = AlertDialog.Builder(this)
                 dlg.setMessage("해당 캐릭터는 공략 글이 부족합니다.")
 
@@ -215,6 +243,7 @@ class Character_mini : AppCompatActivity() {
                 "아델라" -> intent.putExtra("아델라", "아델라")
                 "버니스" -> intent.putExtra("버니스","버니스")
                 "바바라" -> intent.putExtra("바바라","바바라")
+                "알렉스" -> intent.putExtra("알렉스","알렉스")
             }
             startActivity(intent)
         }
@@ -249,6 +278,7 @@ class Character_mini : AppCompatActivity() {
                 "아델라" -> intent.putExtra("아델라", "아델라")
                 "버니스" -> intent.putExtra("버니스","버니스")
                 "바바라" -> intent.putExtra("바바라","바바라")
+                "알렉스" -> intent.putExtra("알렉스","알렉스")
             }
             startActivity(intent)
         }
@@ -395,8 +425,8 @@ class Character_mini : AppCompatActivity() {
             binding.at3.text = "88.3"
             binding.at4.text = "2.7"
             binding.hp2.text = "590"
-            binding.hp3.text = "2053"
-            binding.hp4.text = "77"
+            binding.hp3.text = "2105"
+            binding.hp4.text = "80"
             binding.hpr2.text = "0.5"
             binding.hpr3.text = "1.07"
             binding.hpr4.text = "0.03"
@@ -711,8 +741,8 @@ class Character_mini : AppCompatActivity() {
             binding.at3.text = "76.5"
             binding.at4.text = "2.5"
             binding.hp2.text = "535"
-            binding.hp3.text = "1751"
-            binding.hp4.text = "64"
+            binding.hp3.text = "1827"
+            binding.hp4.text = "68"
             binding.hpr2.text = "0.8"
             binding.hpr3.text = "1.37"
             binding.hpr4.text = "0.03"
@@ -1089,8 +1119,8 @@ class Character_mini : AppCompatActivity() {
             binding.str3.text = "3.24"
             binding.str4.text = "0.06"
             binding.def2.text = "24"
-            binding.def3.text = "46.8"
-            binding.def4.text = "1.2"
+            binding.def3.text = "52.5"
+            binding.def4.text = "1.5"
             binding.ats2.text = "0.02"
             binding.ats3.text = "0.02"
             binding.ats4.text = "-"
@@ -1517,8 +1547,8 @@ class Character_mini : AppCompatActivity() {
             binding.str2.text = "2.1"
             binding.str3.text = "2.67"
             binding.str4.text = "0.03"
-            binding.def2.text = "20"
-            binding.def3.text = "46.6"
+            binding.def2.text = "22"
+            binding.def3.text = "48.6"
             binding.def4.text = "1.4"
             binding.ats2.text = "0.11"
             binding.ats3.text = "0.11"
@@ -1774,8 +1804,8 @@ class Character_mini : AppCompatActivity() {
             binding.sp2.text = "3.15"
             binding.sp3.text = "3.15"
             binding.sp4.text = "-"
-            binding.vi2.text = "8"
-            binding.vi3.text = "8"
+            binding.vi2.text = "9"
+            binding.vi3.text = "9"
             binding.vi4.text = "-"
 
             binding.chWeapon1.setImageResource(R.drawable.sniper)
@@ -1813,8 +1843,8 @@ class Character_mini : AppCompatActivity() {
             binding.at3.text = "44.6"
             binding.at4.text = "1.4"
             binding.hp2.text = "480"
-            binding.hp3.text = "1734"
-            binding.hp4.text = "66"
+            binding.hp3.text = "1829"
+            binding.hp4.text = "71"
             binding.hpr2.text = "0.4"
             binding.hpr3.text = "0.97"
             binding.hpr4.text = "0.03"
@@ -1854,6 +1884,74 @@ class Character_mini : AppCompatActivity() {
             }
             binding.chWeapon3.setOnClickListener(){
                 value(3)
+            }
+            noimage()
+            binding.recommend
+            binding.skillInformation
+            binding.profile
+            binding.movie
+        }
+
+        else if(intent.hasExtra("alex"))
+        {
+            binding.mini.setImageResource(R.drawable.alex)
+            binding.text.text = "알렉스"
+            binding.mini.setBackgroundResource(R.drawable.image_color)
+            binding.chWeapon4.visibility = View.VISIBLE
+            binding.chWeaName4.visibility = View.VISIBLE
+            binding.Image4.visibility = View.VISIBLE
+
+            binding.at2.text = "19"
+            binding.at3.text = "55.1"
+            binding.at4.text = "1.9"
+            binding.hp2.text = "490"
+            binding.hp3.text = "1953"
+            binding.hp4.text = "77"
+            binding.hpr2.text = "0.5"
+            binding.hpr3.text = "1.26"
+            binding.hpr4.text = "0.04"
+            binding.st2.text = "420"
+            binding.st3.text = "743"
+            binding.st4.text = "17"
+            binding.str2.text = "1.8"
+            binding.str3.text = "2.94"
+            binding.str4.text = "0.06"
+            binding.def2.text = "23"
+            binding.def3.text = "62.9"
+            binding.def4.text = "2.1"
+            binding.ats2.text = "0.12"
+            binding.ats3.text = "0.12"
+            binding.ats4.text = "-"
+            binding.cri2.text = "-"
+            binding.cri3.text = "-"
+            binding.cri4.text = "-"
+            binding.sp2.text = "3"
+            binding.sp3.text = "3"
+            binding.sp4.text = "-"
+            binding.vi2.text = "8"
+            binding.vi3.text = "8"
+            binding.vi4.text = "-"
+
+            binding.chWeapon1.setImageResource(R.drawable.revolber)
+            binding.chWeapon2.setImageResource(R.drawable.parry)
+            binding.chWeapon3.setImageResource(R.drawable.ninja)
+            binding.chWeapon4.setImageResource(R.drawable.tonpa)
+            binding.chWeaName1.setText("권총")
+            binding.chWeaName2.setText("양손검")
+            binding.chWeaName3.setText("암기")
+            binding.chWeaName4.setText("톤파")
+
+            binding.chWeapon1.setOnClickListener(){
+                value(1)
+            }
+            binding.chWeapon2.setOnClickListener(){
+                value(2)
+            }
+            binding.chWeapon3.setOnClickListener(){
+                value(3)
+            }
+            binding.chWeapon4.setOnClickListener {
+                value(4)
             }
             noimage()
             binding.recommend

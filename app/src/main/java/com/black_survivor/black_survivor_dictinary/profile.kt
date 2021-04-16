@@ -199,6 +199,12 @@ class profile : AppCompatActivity() {
             text("\"너희가 이게 얼마나 대단한 발명인지 알 리가 없지\"", "바바라 엘란바인", "방망이",
                     "36세", "--", "발명가", "?cm/?kg", "여성","8020 A코인 / 1075 NP")
         }
+        if(intent.hasExtra("알렉스")){
+            binding.name.text = "알렉스"
+            binding.image.setImageResource(R.drawable.alex)
+            text("\"Target Confirmed\"", "알렉스 파지노프", "원거리 + 근거리",
+                    "21세", "--", "번역가", "?cm/?kg", "남성","8020 A코인 / 1075 NP")
+        }
         /*
         if(intent.hasExtra("")){
             binding.name.text = ""

@@ -1992,8 +1992,10 @@ class material(val material_Item: ArrayList<material_Item_list>) : RecyclerView.
                                 item.imaup2.setImageResource(falselist[j].Image1)
                                 item.uptext2.text = falselist[j].name1
                             }
-                            item.imaup3.setImageResource(0)
-                            item.uptext3.text = ""
+                            if (falselist[j].name1 == "피스브링어") {
+                                item.imaup3.setImageResource(falselist[j].Image1)
+                                item.uptext3.text = falselist[j].name1
+                            }
                             item.imaup4.setImageResource(0)
                             item.uptext4.text = ""
                             item.imaup5.setImageResource(0)

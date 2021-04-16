@@ -16,8 +16,8 @@ android {
         minSdkVersion 26
         targetSdkVersion 30
         multiDexEnabled true
-        versionCode 20
-        versionName "1.30.0"
+        versionCode 21
+        versionName "1.31.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
