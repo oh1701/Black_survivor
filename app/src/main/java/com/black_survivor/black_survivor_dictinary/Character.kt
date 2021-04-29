@@ -154,5 +154,10 @@ class Character : AppCompatActivity() {
             intent.putExtra("alex", "alex")
             startActivity(intent)
         }
+        binding.sua.setOnClickListener{
+            val intent = Intent(this, Character_mini::class.java)
+            intent.putExtra("sua", "sua")
+            startActivity(intent)
+        }
     }
 }

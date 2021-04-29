@@ -77,7 +77,8 @@ class skill_information : AppCompatActivity() {
                         var spanq: Spannable = binding.qName.text as Spannable
                         spanq.setSpan(ForegroundColorSpan(Color.RED), 0, 5, Spanned.SPAN_EXCLUSIVE_INCLUSIVE)
                         binding.qExeplan1.text = "숏 서킷: (오버 클럭 Q): 바바라가 센트리건을 설치하고 해당 위치로 순간이동합니다. 기존에 설치되어 있던 센트리건은 자폭하며 50/75/100(+공격력의 40%)의 피해를 입힙니다.\n" +
-                                "바바라가 순간이동 후, 주위에 적들에게 50/75/100(+공격력의 60%)의 피해를 입히며 4초 동안 피해를 입은 적 당 센트리건의 공격속도가 10% 상승합니다.\n"
+                                "바바라가 순간이동 후, 주위에 적들에게 50/75/100(+공격력의 60%)의 피해를 입히며 4초 동안 피해를 입은 적 당 센트리건의 공격속도가 10% 상승합니다.\n" +
+                                "오버클럭 숏 서킷 사용 시 오버 클럭의 쿨다운이 20% 감소합니다."
                         binding.qExeplan2.text = "피해량 : 15/30/45/60/75(+공격력의 15%)\n" +
                                 "사정거리 : 7m\n" +
                                 "포탑: 3.5m\n" +
@@ -90,7 +91,7 @@ class skill_information : AppCompatActivity() {
                         spanw.setSpan(ForegroundColorSpan(Color.RED), 0, 5, Spanned.SPAN_EXCLUSIVE_INCLUSIVE)
                         binding.wExeplan1.text = "레이저 충전: (오버 클럭): 7초동안 레이저 충전이 되며 지속 기간 동안 이온 레이저와 센트리 건의 레일건 피해량이 5/10/15%상승합니다. 센트리건은 레이저 충전 상태동안 일반 공격이 강화되어 레일건으로 공격합니다.\n" +
                                 "이온 레이저(W)의 스태미너 소모량이 사라지고 쿨다운이 97% 감소합니다.\n"
-                        binding.wExeplan2.text = "피해량 : 40/75/110/145/280 (+공격력의 25%)\n" +
+                        binding.wExeplan2.text = "피해량 : 30/60/90/120/150 (+공격력의 25%)\n" +
                                 "레일건 피해량 : 40/80/120/160/200 (+센트리건 공격력의 50%)\n" +
                                 "사정거리 : 7m\n" +
                                 "스테미너 소모 : 50/60/70/80/90\n" +
@@ -116,10 +117,10 @@ class skill_information : AppCompatActivity() {
                         binding.qExeplan1.text = "알렉스가 대상에게 빠르게 돌진하여 의 피해를 입힙니다.\n" +
                                 "적중한 대상이 있다면 12초 동안 공격력이 4% 증가합니다.\n" +
                                 "이 효과는 최대 3회 중첩되며, 코일건(원거리 Q)과도 중첩됩니다."
-                        binding.qExeplan2.text = "피해량 : 30/65/100/135/170(+공격력의 30%)\n" +
+                        binding.qExeplan2.text = "피해량 : 30/65/100/135/170(+공격력의 40%)\n" +
                                 "사정거리 : 4m\n" +
                                 "스테미너 소모 : 50/55/60/65/70\n" +
-                                "쿨다운 : 9/8/7/6/5초"
+                                "쿨다운 : 8.5/7.5/6.5/5.5/4.5초"
 
                         binding.skill3.setImageResource(R.drawable.alex_melee_w)
                         binding.wName.text = "[ W ] 플라즈마 마인"
@@ -136,7 +137,7 @@ class skill_information : AppCompatActivity() {
                         binding.eName.text = "[ E ] 교란"
                         var spane: Spannable = binding.eName.text as Spannable
                         spane.setSpan(ForegroundColorSpan(Color.RED), 0, 5, Spanned.SPAN_EXCLUSIVE_INCLUSIVE)
-                        binding.eExeplan1.text = "지속 효과 : 알렉스의 치명타 확률이 3/6/9/12/15% 증가합니다.\n" +
+                        binding.eExeplan1.text = "지속 효과 : 알렉스의 치명타 확률이 6/9/12/15/18% 증가합니다.\n" +
                                 "알렉스가 5초 동안 유지되는 홀로그램 분신을 생성하고, 지정한 방향으로 빠르게 이동하며 즉시 잠입상태가 됩니다. 홀로그램 분신은 범위 안의 적들에게 도발을 하여 1초 동안 자신을 공격하게 합니다.\n" +
                                 "(도발 범위 2.5m)\n" +
                                 "분신이 지속되는 동안 교란의 기본 지속 효과가 2배로 적용됩니다.\n" +
@@ -146,7 +147,7 @@ class skill_information : AppCompatActivity() {
                                 "잠입 효과는 6레벨 이후에 적용됩니다."
                         binding.eExeplan2.text = "사정거리 : 2m\n" +
                                 "스테미너 소모 : 50/55/60/65/70\n" +
-                                "쿨다운 : 18초"
+                                "쿨다운 : 16초"
                     }
                 }
 
@@ -161,7 +162,7 @@ class skill_information : AppCompatActivity() {
                                 "바이크에 타지 않은 상태에서 3초 마다 1의 연료를 획득합니다."
                         binding.passiveExeplan2.text = "공격속도 증가량 1 / 2 / 3%\n" +
                                 "연료 획득량 7 / 9 / 11%\n" +
-                                "스킬 증폭 증가량 0.6 / 0.8 / 1%"
+                                "스킬 증폭 증가량 0.6 / 0.9 / 1.2 %"
 
                         binding.skill2.setImageResource(R.drawable.silvia_human_q)
                         binding.qName.text = "[ Q ] 스피드건"
@@ -221,7 +222,7 @@ class skill_information : AppCompatActivity() {
                         binding.qName.text = "[ Q ] BT-Mk2 센트리건"
                         var spanq: Spannable = binding.qName.text as Spannable
                         spanq.setSpan(ForegroundColorSpan(Color.RED), 0, 5, Spanned.SPAN_EXCLUSIVE_INCLUSIVE)
-                        binding.qExeplan1.text = "바바라가 지정한 위치에 150(+바바라 최대 체력의 21/24/27/30/33%)의 체력을 가진 센트리건을 설치하여 범위 안의 적들에게 피해를 입힙니다.\n" +
+                        binding.qExeplan1.text = "바바라가 지정한 위치에 150(+바바라 최대 체력의 12/16/20/24/28%)의 체력을 가진 센트리건을 설치하여 범위 안의 적들에게 피해를 입힙니다.\n" +
                                 "센트리건은 15초 동안 유지하고 주위에 적에게 총알을 발사하여 15(+바바라 레벨 X 바바라 공격력의 7.5%)의 피해를 입힙니다.\n" +
                                 "센트리건이 설치될 때 전에 설치한 센트리건은 부서지며, 설치한 센트리건이 바바라와 멀어지면 센트리건을 회수하고 쿨다운이 30% 감소합니다."
                         binding.qExeplan2.text = "피해량 : 15/30/45/60/75(+공격력의 15%)\n" +
@@ -237,8 +238,8 @@ class skill_information : AppCompatActivity() {
                         binding.wExeplan1.text = "'바바라가 고출력 포신으로 이온 레이저를 두 발 발사하여 경로상의 적들에게 각각 의 피해를 입히고, 이동속도를 1.5초 동안 20% 감소시킵니다.\n" +
                                 "두 발에 동시에 적중된 적에게는 각 레이저 피해량이 35%감소하고, 오버 클럭(R) 쿨다운이 1초 감소됩니다.\n" +
                                 "센트리건에 레이저가 적중하면 센트리건이 충전되고, 적에게 레일건을 발사하여 적들에게 피해를 입힙니다."
-                        binding.wExeplan2.text = "피해량 : 20/60/100/140/180 (+공격력의 25%)\n" +
-                                "레일건 피해량 : 55/100/145/190/235 (+센트리건 공격력의 50%)\n" +
+                        binding.wExeplan2.text = "피해량 : 30/60/90/120/150 (+공격력의 25%)\n" +
+                                "레일건 피해량 : 40/80/120/160/200 (+센트리건 공격력의 50%)\n" +
                                 "사정거리 : 7m\n" +
                                 "스테미너 소모 : 50/60/70/80/90\n" +
                                 "쿨다운 : 4초"
@@ -269,8 +270,7 @@ class skill_information : AppCompatActivity() {
                         binding.passiveName.text = "[ Passive ] 잠입"
                         var span: Spannable = binding.passiveName.text as Spannable
                         span.setSpan(ForegroundColorSpan(Color.RED), 0, 11, Spanned.SPAN_EXCLUSIVE_INCLUSIVE)
-                        binding.passiveExeplan1.text = "알렉스는 6레벨 부터 7초 동안 전투를 하지 않으면 잠입상태가 되어\n" +
-                                "탐지 범위 바깥의 적은 알렉스를 볼 수 없습니다.\n" +
+                        binding.passiveExeplan1.text = "알렉스는 6레벨 부터 7초 동안 전투를 하지 않으면 잠입상태가 되어 탐지 범위 바깥의 적은 알렉스를 볼 수 없습니다.\n" +
                                 "잠입 상태가 될 때, 탐지 범위 안에 적이 있으면 이동 속도가 증가합니다.\n" +
                                 "알렉스는 착용 가능한 모든 무기의 숙련도가 동일하게 증가합니다.\n" +
                                 "근접 무기(톤파, 양손검)를 장착하면 체력(50/100/150)과 방어력(5/10/15)이 증가합니다."
@@ -282,8 +282,8 @@ class skill_information : AppCompatActivity() {
                         var spanq: Spannable = binding.qName.text as Spannable
                         spanq.setSpan(ForegroundColorSpan(Color.RED), 0, 5, Spanned.SPAN_EXCLUSIVE_INCLUSIVE)
                         binding.qExeplan1.text = "알렉스가 코일건을 발사하여 적중한 적에게 피해를 입힙니다.\n" +
-                                "적중한 대상이 있다면 12초 동안 공격력이 4% 증가합니다. 이 효과는 최대 3회 중첩되며, 기습(근접 Q)과도 중첩됩니다.\n"
-                        binding.qExeplan2.text = "피해량 : 40/80/120/160/200(+공격력의 30%)\n" +
+                                "적중한 대상이 있다면 15초 동안 공격력이 4% 증가합니다. 이 효과는 최대 3회 중첩되며, 기습(근접 Q)과도 중첩됩니다.\n"
+                        binding.qExeplan2.text = "피해량 : 50/90/130/170/210(+공격력의 30%)\n" +
                                 "체력회복 : 40/60/80/100/120(+0.5 공격력)\n" +
                                 "사정거리 : 9m\n" +
                                 "스테미너 소모 : 50/60/70/80/90\n" +
@@ -295,8 +295,8 @@ class skill_information : AppCompatActivity() {
                         spanw.setSpan(ForegroundColorSpan(Color.RED), 0, 5, Spanned.SPAN_EXCLUSIVE_INCLUSIVE)
                         binding.wExeplan1.text = "알렉스가 지정한 지점에 타겟 마커를 발사하여 범위 안의 적들에게 피해를 입히고,\n" +
                                 "대상의 시야를 1.6/1.8/2.0/2.2/2.4초 동안 제공받습니다.\n" +
-                                "스킬이 적중되면 알렉스의 기본 공격 사거리가 1.6/1.8/2.0/2.2/2.4초 동안 1.5m만큼 증가합니다."
-                        binding.wExeplan2.text = "피해량 : 40/60/80/100/120(+공격력의 30%)\n" +
+                                "스킬이 적중되면 알렉스의 기본 공격 사거리가 2.0/2.2/2.4/2.6/2.8초 동안 1.5m만큼 증가합니다."
+                        binding.wExeplan2.text = "피해량 : 40/60/80/100/120(+공격력의 40%)\n" +
                                 "사정거리 : 6.5m\n" +
                                 "스테미너 소모 : 25/35/45/55/65\n" +
                                 "쿨다운 : 13초"
@@ -305,17 +305,17 @@ class skill_information : AppCompatActivity() {
                         binding.eName.text = "[ E ] 펄스 스팅"
                         var spane: Spannable = binding.eName.text as Spannable
                         spane.setSpan(ForegroundColorSpan(Color.RED), 0, 5, Spanned.SPAN_EXCLUSIVE_INCLUSIVE)
-                        binding.eExeplan1.text = "지속 효과 : 알렉스의 공격속도가 3/6/9/12/15% 증가합니다.\n" +
+                        binding.eExeplan1.text = "지속 효과 : 알렉스의 공격속도가 6/9/12/15/18% 증가합니다.\n" +
                                 "알렉스가 지정한 방향으로 펄스 스팅을 발사하여 적중한 대상에게 피해를 입히고\n" +
                                 "이동속도를 70%만큼 느려지게 했다가 1.5초에 걸쳐 서서히 회복시킵니다.\n" +
                                 "동시에, 반대 방향으로 빠르게 이동하며 즉시 잠입 상태가 됩니다.\n" +
                                 "스킬 사용 후 잠입 상태를 1초 동안 유지하면, 무기를 한 번 변경할 수 있는 상태가 됩니다.\n" +
                                 "이 상태는 5초 동안 지속되며, 잠입이 해제되거나 무기를 변경하면 즉시 사라집니다.\n" +
                                 "잠입 효과는 6레벨 이후에 적용됩니다.\n"
-                        binding.eExeplan2.text = "피해량 : 40/60/80/100/120(+공격력의 30%)\n" +
+                        binding.eExeplan2.text = "피해량 : 40/60/80/100/120(+공격력의 40%)\n" +
                                 "사정거리 : 6m\n" +
                                 "스테미너 소모 : 90\n" +
-                                "쿨다운 : 22/21/20/19/18초"
+                                "쿨다운 : 22/20/18/16/14초"
 
 
                         binding.skill5.setImageResource(R.drawable.alex_r)
@@ -324,7 +324,7 @@ class skill_information : AppCompatActivity() {
                         spanr.setSpan(ForegroundColorSpan(Color.RED), 0, 5, Spanned.SPAN_EXCLUSIVE_INCLUSIVE)
                         binding.rExeplan1.text = "알렉스가 지정한 지점에 위성 미사일을 유도하여\n" +
                                 "범위 안의 적들에게 피해를 입히고, 중심부의 적들에게는 더 많은 피해를 입힙니다.\n" +
-                                "모든 범위의 적중한 대상은 0.4초 동안 이동 속도가 40% 감소됩니다.\n" +
+                                "모든 범위의 적중한 대상은 0.6초 동안 이동 속도가 50% 감소됩니다.\n" +
                                 "이후 0.5초 간격으로 총 8회에 걸쳐 각각 40/60/80(+공격력의 30%)의 피해를 입히며,\n" +
                                 "중심부의 적들에게는 60/80/100(+공격력의 40%)의 피해를 입힙니다. 모든 범위의 적중한 대상은 0.4초 동안 이동 속도가 30% 감소됩니다."
                         binding.rExeplan2.text = "피해량 : 60/90/120 (+공격력의 40%)\n" +
@@ -334,7 +334,7 @@ class skill_information : AppCompatActivity() {
                                 "중심 범위 : 2m\n" +
                                 "스테미너 소모 : 100\n" +
                                 "시전시간 : 즉시 시전\n" +
-                                "쿨다운 : 160/140/120초"
+                                "쿨다운 : 140/130/120초"
                     }
             }
         }
@@ -357,7 +357,7 @@ class skill_information : AppCompatActivity() {
                 spanq.setSpan(ForegroundColorSpan(Color.RED), 0, 5, Spanned.SPAN_EXCLUSIVE_INCLUSIVE)
                 binding.qExeplan1.text = "아야가 대상을 향해 2번 빠르게 사격합니다.\n" +
                         "2번째 사격은 추가 피해를 줍니다."
-                binding.qExeplan2.text = "피해량 : 1.0 공격력 + 40/90/140/190/240(+0.2 공격력)\n" +
+                binding.qExeplan2.text = "피해량 : 1.0 공격력 + 35/90/145/200/255(+0.2 공격력)\n" +
                         "사정거리 : 기본 공격 사거리\n" +
                         "스테미너 소모 : 80/90/100/110/120\n" +
                         "쿨다운 : 7/6.5/6/5.5/5초"
@@ -521,14 +521,14 @@ class skill_information : AppCompatActivity() {
                 spanr.setSpan(ForegroundColorSpan(Color.RED), 0, 5, Spanned.SPAN_EXCLUSIVE_INCLUSIVE)
                 binding.rExeplan1.text = "재키가 몇초간 전기톱을 꺼내듭니다.\n" +
                         "공격속도가 증가하고 기본 공격으로 출혈을 걸 수 있습니다.\n" +
-                        "전기톱 살인마 효과가 끝날때 전기톱을 크게 휘둘러 재키 주변에 피해를 입히고\n" +
-                        "원래 무기로 돌아옵니다."
+                        "전기톱 살인마 효과가 끝날때 전기톱을 크게 휘둘러 재키 주변에 피해를 입히고 원래 무기로 돌아옵니다.\n" +
+                        "스킬 시전 7초 후 재사용 시 효과 종료 스킬 발동이 가능합니다."
                 binding.rExeplan2.text = "공격 속도 증가: 20%/25%/30%\n" +
                         "효과 종료 시 피해량: 300/500/700(+1.0 공격력)\n" +
                         "사정거리: 기본 공격 사거리 + 3m\n" +
                         "스테미너 소모 : 120/150/180\n" +
                         "시전시간: 즉시\n" +
-                        "지속시간: 10/15/20초\n" +
+                        "지속시간: 15초\n" +
                         "쿨다운 : 120/100/80초"
             }
             if (intent.hasExtra("현우")) {
@@ -556,7 +556,7 @@ class skill_information : AppCompatActivity() {
                         "스테미너 소모 : 60/70/80/90/100\n" +
                         "시전 시간 : 즉시\n" +
                         "둔화 지속 시간 : 2초\n" +
-                        "쿨다운 : 9/8/7/6/5초"
+                        "쿨다운 : 8.5/7.5/6.5/5.5/4.5초"
 
                 binding.skill3.setImageResource(R.drawable.hyunwoo_hyunwoo_w)
                 binding.wName.text = "[ W ] 허세"
@@ -569,7 +569,7 @@ class skill_information : AppCompatActivity() {
                         "시전 시간 : 즉시\n" +
                         "지속 시간(방어력 증가) : 2.5초\n" +
                         "지속 시간(방해 효과 무시) : 1초\n" +
-                        "쿨다운 : 36/30/24/18/12초"
+                        "쿨다운 : 32/27/22/17/12초"
 
                 binding.skill4.setImageResource(R.drawable.hyunwoo_hyunwoo_e)
                 binding.eName.text = "[ E ] 선빵필승"
@@ -647,7 +647,7 @@ class skill_information : AppCompatActivity() {
                         "아드리아나가 이동한 경로에 5초 간 유지되는 화염지대가 생성됩니다."
                 binding.eExeplan2.text = "사정거리 : 6m\n" +
                         "스태미너 소모 : 80\n" +
-                        "쿨다운 : 20/18.5/17/15.5/14초"
+                        "쿨다운 : 20/19/18/17/16초"
 
                 binding.skill5.setImageResource(R.drawable.adriana_adriana_r)
                 binding.rName.text = "[ R ] 화염 난사"
@@ -723,7 +723,7 @@ class skill_information : AppCompatActivity() {
                         "폭주 중인 키아라는 낙인이 최대 중첩까지 쌓인 적의 시야를 획득하며, 대상에게 심판을 시전 할 수 있습니다.\n" +
                         "\n심판 : 낙인이 최대 중첩인 대상에게 스킬을 다시 사용하면 대상에게 빠르게 낙하하여 고정 피해를 입히고 폭주 상태를 종료합니다. 심판으로 적을 처치하면 폭주의 재사용 대기시간이 50% 감소합니다."
                 binding.rExeplan2.text = "초 당 범위 피해량 : 20/27/34(+0.15 공격력)\n" +
-                        "심판 고정 피해량 : 200/300/400(+1.2 공격력),\n" +
+                        "심판 고정 피해량 : 200/300/400(+1.0 공격력),\n" +
                         "추가 체력 : 100/200/300\n" +
                         "체력 회복 : 피해량의 20%\n" +
                         "스테미너 소모 : 100/120/140\n" +
@@ -939,7 +939,7 @@ class skill_information : AppCompatActivity() {
                 var spanr: Spannable = binding.rName.text as Spannable
                 spanr.setSpan(ForegroundColorSpan(Color.RED), 0, 5, Spanned.SPAN_EXCLUSIVE_INCLUSIVE)
                 binding.rExeplan1.text = "아이솔이 Mok제 폭탄을 설치합니다.\n" +
-                        "Mok제 폭탄은 4m의 범위로 폭발하며 피해를 주고 이동속도를 2초동안 10 / 20 / 30% 저하 시킵니다"
+                        "Mok제 폭탄은 4m의 범위로 폭발하며 피해를 주고 이동속도를 2초동안 20 / 25 / 30% 저하 시킵니다"
                 binding.rExeplan2.text = "피해량 : 100/150/200(+0.3 공격력)\n" +
                         "사정거리 : 1m\n" +
                         "스테미너 소모 : 80\n" +
@@ -1039,14 +1039,16 @@ class skill_information : AppCompatActivity() {
                 var spanw: Spannable = binding.wName.text as Spannable
                 spanw.setSpan(ForegroundColorSpan(Color.RED), 0, 5, Spanned.SPAN_EXCLUSIVE_INCLUSIVE)
                 binding.wExeplan1.text = "매그너스가 몇 초간 무기를 휘둘러 피해를 입힙니다.\n" +
-                        "이동을 방해 받은 적에게는 1.5배의 피해를 입힙니다."
+                        "이동을 방해 받은 적에게는 1.5배의 피해를 입힙니다.\n" +
+                        "스킬 1회 명중 시 쿨다운이 1초 감소됩니다.\n" +
+                        "해당 스킬 사용 중에는 저지불가 상태가 됩니다."
                 binding.wExeplan2.text = "총 피해량 : 10×6/20×6/20×7/30×7/30×8(+0.2 방어력)(+0.4 공격력)\n" +
                         "사정거리 : 2.5m\n" +
-                        "사용 중 이동 속도 감소 : 15%\n" +
+                        "사용 중 이동 속도 감소 : 20%\n" +
                         "스테미너 소모 : 80/90/100/110/120\n" +
                         "시전 시간 : 즉시\n" +
                         "지속 시간 : 4초\n" +
-                        "쿨다운 : 8초\n"
+                        "쿨다운 : 8.5초\n"
 
                 binding.skill4.setImageResource(R.drawable.magnus_magnus_e)
                 binding.eName.text = "[ E ] 강타"
@@ -1212,7 +1214,7 @@ class skill_information : AppCompatActivity() {
                                 "[피해량 세부 규칙]\n" +
                                 "1. 시셀라 주변 10m 혹은 같은 지역: 100% 피해를 받습니다.\n" +
                                 "2. 시셀라의 10m 밖의 다른 지역 : 50% 피해를 받습니다.\n" +
-                                "해당 스킬로 가한 데미지는 무기 숙련도 증가에 20%만 반영됩니다."
+                                "해당 스킬로 가한 데미지는 무기 숙련도 증가에 30%만 반영됩니다."
                 binding.rExeplan2.text = "피해량 : 150/275/400(+1.0 공격력)\n" +
                         "스태미너 소모 : 120/150/180\n" +
                         "시전 시간 : 1초(채널링)\n" +
@@ -1228,9 +1230,9 @@ class skill_information : AppCompatActivity() {
                         "얻은 스택 1당 쇼우의 최대 체력이 8 증가 합니다."
                 binding.passiveExeplan2.text = "시전 시간 : 즉시\n" +
                         "제작 등급에 따른 획득 스택 (1,2,3레벨)\n" +
-                        "1레벨 : 1/1/2 \n" +
-                        "2레벨 : 2/2/3 \n" +
-                        "3레벨 : 3/3/4"
+                        "1레벨 : 1/1/3 \n" +
+                        "2레벨 : 2/2/4 \n" +
+                        "3레벨 : 3/3/5"
 
                 binding.skill2.setImageResource(R.drawable.xiukai_xiukaiq)
                 binding.qName.text = "[ Q ] 소스범벅"
@@ -1389,7 +1391,7 @@ class skill_information : AppCompatActivity() {
                 binding.wName.text = "[ W ] 옷매무새 정리"
                 var spanw: Spannable = binding.wName.text as Spannable
                 spanw.setSpan(ForegroundColorSpan(Color.RED), 0, 5, Spanned.SPAN_EXCLUSIVE_INCLUSIVE)
-                binding.wExeplan1.text = "지속 효과: 유키가 피해를 입을때마다 재사용 대기시간이 0.5초 감소합니다.\n" +
+                binding.wExeplan1.text = "지속 효과: 유키가 피해를 입을때마다 재사용 대기시간이 1초 감소합니다.\n" +
                         "\n" +
                         "사용 효과: 유키가 옷매무새를 정리하는 동안 빗겨치고 일격 (E)의 재사용 대기시간이 5.5/6/6.5/7/7.5초 감소합니다.\n" +
                         "스킬 시전중에는 방어력이 50% 증가합니다.\n" +
@@ -1537,7 +1539,7 @@ class skill_information : AppCompatActivity() {
                 spanw.setSpan(ForegroundColorSpan(Color.RED), 0, 5, Spanned.SPAN_EXCLUSIVE_INCLUSIVE)
                 binding.wExeplan1.text =
                         "엠마가 지정한 위치로 모자를 던지면, 잠시 후에 폭발하여 범위 안의 적들에게 피해를 입힙니다. 적을 적중시키면 폭죽 모자의 쿨다운이 3초 감소됩니다."
-                binding.wExeplan2.text = "피해량 : 100/150/200/250/300(+0.7 공격력)\n" +
+                binding.wExeplan2.text = "피해량 : 60/120/180/240/300(+0.75 공격력)\n" +
                         "사정거리 : 7m\n" +
                         "범위 : 1.7m\n" +
                         "스태미너 소모 : 60/70/80/90/100\n" +
@@ -1574,7 +1576,7 @@ class skill_information : AppCompatActivity() {
                         "토끼 효과\n" +
                         "토끼 지속시간 : 1초\n" +
                         "이동속도 감소 : 0.8\n\n" +
-                        "충전 : 2회, 18초" +
+                        "충전 : 2회, 24 / 21 / 18초" +
                         "쿨다운 : 3초"
             }
             if (intent.hasExtra("레녹스")) {
@@ -1594,7 +1596,7 @@ class skill_information : AppCompatActivity() {
                 spanq.setSpan(ForegroundColorSpan(Color.RED), 0, 5, Spanned.SPAN_EXCLUSIVE_INCLUSIVE)
                 binding.qExeplan1.text =
                         "레녹스가 원형 범위에 적들에게 피해를 입힙니다. 가장자리에는 레녹스의 최대 체력에 일정 비율 만큼 추가로 피해를 줍니다. 적에게 공격을 적중시키면 1스택을 얻고, 스택당 회오리 비늘의 쿨타임을 1초 감소시킵니다. (최대 2스택)\n" +
-                                "2명 이상의 적에게 스킬 적중 시 피해가 30% 감소됩니다."
+                                "2명 이상의 적에게 스킬 적중 시 피해가 45% 감소됩니다."
                 binding.qExeplan2.text = "피해량: 20/50/80/110/140 + (+공격력의 30%)\n" +
                         "가장자리 추가 피해량: 최대 체력의 /7/7.5/8/8.5/9%\n" +
                         "사정거리: 4.5m\n" +
@@ -1672,9 +1674,9 @@ class skill_information : AppCompatActivity() {
                 var spanw: Spannable = binding.wName.text as Spannable
                 spanw.setSpan(ForegroundColorSpan(Color.RED), 0, 5, Spanned.SPAN_EXCLUSIVE_INCLUSIVE)
                 binding.wExeplan1.text =
-                        "로지가 총을 난사하여 주변의 적들에게 피해를 입히고, 2.5초 동안 방어력을 12/14/16/18/20% 감소시키며 체력 재생 효과와 음식 회복 효과를 중지시킵니다."
+                        "로지가 총을 난사하여 주변의 적들에게 피해를 입히고, 3초동안 방어력 및 치유 효과를 40% 감소시킵니다."
                 binding.wExeplan2.text = "피해량 : 85/125/165/205/245(+공격력의 35%)\n" +
-                        "이동속도 : 0.4초간 +110% \n" +
+                        "이동속도 : 0.4초간 +100% \n" +
                         "사정거리 : 3m \n" +
                         "스태미너 소모 : 70/80/90/100/110 \n" +
                         "시전시간 : 0.27초 , 지속 시간 : 2.5초 \n" +
@@ -1698,7 +1700,10 @@ class skill_information : AppCompatActivity() {
                 spanr.setSpan(ForegroundColorSpan(Color.RED), 0, 5, Spanned.SPAN_EXCLUSIVE_INCLUSIVE)
                 binding.rExeplan1.text =
                         "로지가 적이나 지면에 부착되고 3초 후에 폭발하는 폭탄을 발사합니다.\n" +
-                                "폭탄을 적에게 붙였다면 이동속도가 20/25/30% 감소하고, 폭발할 때 피해를 입힙니다. 부착된 폭탄이 터지기 전에 대상에게 기본 공격을 5회 적중하면 즉시 터지며 대상 최대 체력의 3/6/9%만큼의 고정 피해를 추가로 입힙니다. 스킬을 적중하면 2회 공격으로 간주합니다.폭탄을 즉시 터트리면 셈텍스탄 Mk-II 스킬의 쿨다운이 45% 감소하고, 1초 동안 이동속도가 15% 증가합니다."
+                                "폭탄을 적에게 붙였다면 이동속도가 15/20/25% 감소하고, 폭발할 때 피해를 입힙니다.\n"+
+                                "부착된 폭탄이 터지기 전에 대상에게 기본 공격을 5회 적중하면 즉시 터지며 대상 최대 체력의 3/6/9%만큼의 고정 피해를 추가로 입힙니다.\n" +
+                                "스킬을 적중하면 2회 공격으로 간주합니다. 폭탄을 즉시 터트리면 셈텍스탄 Mk-II 스킬의 쿨다운이 45% 감소하고, 1초 동안 이동속도가 15% 증가합니다.\n" +
+                                "즉시 폭발 시 이동 속도가 1초간 20/25/30% 감소됩니다."
                 binding.rExeplan2.text = "피해량 : 100/175/250(+공격력의 35%) \n" +
                         "이동속도 : +0.2/0.25/0.3 \n" +
                         "사정거리 : 5m \n" +
@@ -1783,7 +1788,7 @@ class skill_information : AppCompatActivity() {
                 binding.passiveExeplan1.text = "외과 전문의: 캐시가 적에게 피해를 입히면 3초 동안 공격력의 20%의 고정 피해를 입히는 외상 상태가 됩니다.\n" +
                         "기본 공격은 1개, 스킬 공격은 2개의 외상 스택을 부여하여 5스택이 쌓이면 4초 동안 최대 체력의 3%(+공격력의 80%)만큼 고정 피해를 입히는 치명적 외상 상태가 됩니다.\n" +
                         "캐시는 치명적 외상 상태의 적에게 치명타를 입히면 10/25/40% 만큼 치명타 피해가 증가합니다."
-                binding.passiveExeplan2.text = "포스트옵 : 적에게 스킬피해를 입히면 2초간 100/125/150(공격력의 25%)의 피해를 막아주는 보호막을 획득하고, 이동 속도가 15/18/21% 증가합니다. 치명타 피해를 입히면 포스트옵의 쿨다운이 1초 감소합니다"
+                binding.passiveExeplan2.text = "포스트옵 : 적에게 스킬피해를 입히면 2초간 100/125/150(공격력의 25%)의 피해를 막아주는 보호막을 획득하고, 이동 속도가 12/15/18% 증가합니다. 치명타 피해를 입히면 포스트옵의 쿨다운이 1초 감소합니다"
 
                 binding.skill2.setImageResource(R.drawable.cathy_q)
                 binding.qName.text = "[ Q ] 동맥절제술"
@@ -1806,8 +1811,8 @@ class skill_information : AppCompatActivity() {
                 spanw.setSpan(ForegroundColorSpan(Color.RED), 0, 5, Spanned.SPAN_EXCLUSIVE_INCLUSIVE)
                 binding.wExeplan1.text = "캐시가 전방으로 톱을 날카롭게 휘둘러 피해를 입히고 이동속도를 2초 동안 30% 느려지게 합니다.\n" +
                         "스킬의 바깥 범위에 적중한 적은 2초 동안 이동 스킬을 사용할 수 없는 고정 상태가 됩니다."
-                binding.wExeplan2.text = "피해량 : 35/70/105/140/175 (+ 0.3 공격력) \n" +
-                        "가장자리 적중 시 추가 피해 +45 (+ 0.2 공격력)\n" +
+                binding.wExeplan2.text = "피해량 : 35/70/105/140/175 (+ 0.2 공격력) \n" +
+                        "가장자리 적중 시 추가 피해 +45 (+ 0.35 공격력)\n" +
                         "사정거리 : 4m, 부채꼴 범위 80도 \n" +
                         "스태미너 소모 : 70\n" +
                         "쿨다운 : 16/15/14/13/12초"
@@ -1855,7 +1860,7 @@ class skill_information : AppCompatActivity() {
                 var spanq: Spannable = binding.qName.text as Spannable
                 spanq.setSpan(ForegroundColorSpan(Color.RED), 0, 5, Spanned.SPAN_EXCLUSIVE_INCLUSIVE)
                 binding.qExeplan1.text = "아델라가 지정한 지점에 폰을 배치하여 피해를 입힙니다.\n" +
-                        "폰을 사용할 때마다 스택이 쌓이고 3스택이 되면 다음 스킬을 사용 할 때 퀸을 배치하여 피해를 입히고 1초 동안 기절시킵니다. 프로모션 스킬을 5초 안에 다시 사용하지 않으면 스택이 초기화됩니다.\n" +
+                        "폰을 사용할 때마다 스택이 쌓이고 3스택이 되면 다음 스킬을 사용 할 때 퀸을 배치하여 피해를 입히고 1초 동안 기절시킵니다. 프로모션 스킬을 6초 안에 다시 사용하지 않으면 스택이 초기화됩니다.\n" +
                         "폰과 퀸은 8초 동안 유지되며, 프로모션은 쿨다운 감소의 영향을 받지 않습니다."
                 binding.qExeplan2.text = "피해량 : <폰> 30/60/90/120/150(+0.6 공격력) \n" +
                         "<퀸> 40/80/120/160/200(+1.0 공격력) \n" +
@@ -1991,6 +1996,65 @@ class skill_information : AppCompatActivity() {
                     changeskill(a, "알렉스")
                 }
             }
+
+        if (intent.hasExtra("수아")) {
+            binding.skill1.setImageResource(R.drawable.sua_p)
+            binding.passiveName.text = "[ Passive ] 마음의 양식"
+            var span: Spannable = binding.passiveName.text as Spannable
+            span.setSpan(ForegroundColorSpan(Color.RED), 0, 11, Spanned.SPAN_EXCLUSIVE_INCLUSIVE)
+            binding.passiveExeplan1.text = "수아는 스킬을 사용하면 마음의 양식을 얻어 다음 기본 공격이 대상에게 피해를 입히고, 주변 2m 범위에 피해를 입힙니다.\n" +
+                    "마음의 양식으로 입힌 피해량의 30%만큼 체력을 즉시 회복합니다.\n" +
+                    "마음의 양식은 최대 3중첩까지 보유할 수 있으며, 중첩이 하나라도 있다면 공격속도가 상승합니다.\n" +
+                    "마음의 양식으로 적에게 피해를 입히면 모든 스킬의 쿨다운이 1.5초 감소합니다.\n" +
+                    "쿨다운 감소 효과는 피해를 입힌 대상의 수와 관계없이 한 번만 적용됩니다."
+            binding.passiveExeplan2.text = "피해량 : 20/60/100(+공격력의 60%)(+방어력의 60%)\n" +
+                    "주변 2m 범위 : 10/30/50(+공격력의 30%)(+방어력의 30%)\n" +
+                    "공격속도 : +40%"
+
+            binding.skill2.setImageResource(R.drawable.sua_q)
+            binding.qName.text = "[ Q ] 오딧세이"
+            var spanq: Spannable = binding.qName.text as Spannable
+            spanq.setSpan(ForegroundColorSpan(Color.RED), 0, 5, Spanned.SPAN_EXCLUSIVE_INCLUSIVE)
+            binding.qExeplan1.text = "수아가 지정한 위치에 두개의 책을 생성하여 잠시 후 중심부로 모으며 범위 안의 적들에게 피해를 입히고, 3.5초 동안 책갈피를 남깁니다. \n" +
+                    "책갈피가 남은 대상에게 새로운 책갈피를 남기면 20/40/60/80/100(+공격력의 60%)의 피해를 입히고, 기존의 책갈피는 사라집니다. 책의 충돌 지점에 있는 적들은 0.75초 동안 기절시킵니다."
+            binding.qExeplan2.text = "피해량 : 45/75/105/135/165 (+공격력의 40%)\n" +
+                    "사정거리 : 8m\n" +
+                    "스테미너 소모 : 50/60/70/80/90\n" +
+                    "쿨다운 : 14/12/10/8/6초"
+
+            binding.skill3.setImageResource(R.drawable.sua_w)
+            binding.wName.text = "[ W ] 파랑새"
+            var spanw: Spannable = binding.wName.text as Spannable
+            spanw.setSpan(ForegroundColorSpan(Color.RED), 0, 5, Spanned.SPAN_EXCLUSIVE_INCLUSIVE)
+            binding.wExeplan1.text = "아군 및 자신에게 사용하면 파랑새가 3초 동안\n" +
+                    "50/90/130/170/210(+공격력의 20%)의 스킬 피해를 흡수하고, 저지불가 상태가 되는 보호막을 씌워줍니다.\n" +
+                    "적에게 사용하면 파랑새가 피해를 입히고, 1.1/1.2/1.3/1.4/1.5초 동안 적 대상을 실명시킵니다."
+            binding.wExeplan2.text = "피해량 : 25/50/75/110/135 (+공격력의 40%)\n" +
+                    "사정거리 : 6m\n" +
+                    "스테미너 소모 : 70/85/100/115/130\n" +
+                    "쿨다운 : 26/24/22/20/18초"
+
+            binding.skill4.setImageResource(R.drawable.sua_e)
+            binding.eName.text = "[ E ] 돈키호테"
+            var spane: Spannable = binding.eName.text as Spannable
+            spane.setSpan(ForegroundColorSpan(Color.RED), 0, 5, Spanned.SPAN_EXCLUSIVE_INCLUSIVE)
+            binding.eExeplan1.text = "수아가 무기를 랜스로 바꿔 전방으로 돌진해 처음 적중한 적에게 피해를 입히고,\n" +
+                    "1초 동안 이동속도를 50%만큼 감소시킵니다.\n" +
+                    "책갈피 혹은 기절 상태의 적 대상에게는 피해를 입히고, 대상을 공중에 띄워올립니다.\n" +
+                    "적 대상에게 적중하면 돈키호테의 쿨다운이 20%만큼 감소합니다."
+            binding.eExeplan2.text = "피해량 : 90/120/150/180/210 (+공격력의 40%)\n" +
+                    "책갈피 대상: 120/160/200/240/280 (+공격력의 60%)\n" +
+                    "스테미너 소모 : 90/110/130/150/170\n" +
+                    "쿨다운 : 20/18.5/17/15.5/14초"
+
+
+            binding.skill5.setImageResource(R.drawable.sua_r)
+            binding.rName.text = "[ R ] 기억력"
+            var spanr: Spannable = binding.rName.text as Spannable
+            spanr.setSpan(ForegroundColorSpan(Color.RED), 0, 5, Spanned.SPAN_EXCLUSIVE_INCLUSIVE)
+            binding.rExeplan1.text = "한 번 읽은 책의 내용을 전부 기억하는 수아는 가장 최근에 사용한 스킬을 다시 기억하여 사용합니다."
+            binding.rExeplan2.text = "쿨다운 : 60/50/40초"
+        }
             /*
                 if (intent.hasExtra("")) {
             binding.skill1.setImageResource(R.drawable.)

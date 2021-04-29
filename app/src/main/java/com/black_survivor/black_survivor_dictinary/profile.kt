@@ -205,6 +205,12 @@ class profile : AppCompatActivity() {
             text("\"Target Confirmed\"", "알렉스 파지노프", "원거리 + 근거리",
                     "21세", "--", "번역가", "?cm/?kg", "남성","8020 A코인 / 1075 NP")
         }
+        if(intent.hasExtra("수아")){
+            binding.name.text = "수아"
+            binding.image.setImageResource(R.drawable.sua)
+            text("\"상냥한 동화를 읽어주고 싶어요.\"", "권수아", "망치",
+                "28세", "--", "사서", "?cm/?kg", "여성","8020 A코인 / 1075 NP")
+        }
         /*
         if(intent.hasExtra("")){
             binding.name.text = ""

@@ -49,7 +49,7 @@ class consume(val consume_Item: ArrayList<consume_Item_list>) : RecyclerView.Ada
             }
             if (consume_Item[i].name1 == "진짜 레몬") {
                 item.te("진짜 레몬", "체력 재생", "호텔(6개), 고급 주택가(5개), 병원(4개)의 상자", "일반")
-                item.up("레몬에이드", "칵테일", "시트러스 케이크", "레몬 아이스크림", "")
+                item.up("레몬에이드", "칵테일", "시트러스 케이크", "레몬 커스터드", "")
                 item.down("", "", "", "", "")
             }
             if (consume_Item[i].name1 == "마늘") {
@@ -189,7 +189,7 @@ class consume(val consume_Item: ArrayList<consume_Item_list>) : RecyclerView.Ada
                         item.imaup1.setImageResource(falselist[j].Image1)
                         item.uptext1.text = falselist[j].name1
                     }
-                    if (falselist[j].name1 == "레몬 아이스크림") {
+                    if (falselist[j].name1 == "레몬 커스터드") {
                         item.imaup2.setImageResource(falselist[j].Image1)
                         item.uptext2.text = falselist[j].name1
                     }
@@ -230,7 +230,7 @@ class consume(val consume_Item: ArrayList<consume_Item_list>) : RecyclerView.Ada
                                 item.imaup1.setImageResource(falselist[j].Image1)
                                 item.uptext1.text = falselist[j].name1
                             }
-                            if (falselist[j].name1 == "레몬 아이스크림") {
+                            if (falselist[j].name1 == "레몬 커스터드") {
                                 item.imaup2.setImageResource(falselist[j].Image1)
                                 item.uptext2.text = falselist[j].name1
                             }
@@ -380,7 +380,7 @@ class consume(val consume_Item: ArrayList<consume_Item_list>) : RecyclerView.Ada
                 item.down("", "", "", "", "")
             }
             if (consume_Item[i].name1 == "지혈제") {
-                item.te("지혈제", "체력 재생 +650", "[제작] 알코올 + 반창고\n초록색 항공 보급", "고급")
+                item.te("지혈제", "체력 재생 +700", "[제작] 알코올 + 반창고\n초록색 항공 보급", "고급")
                 item.up("구급상자", "", "", "", "")
                 item.down("반창고", "알코올", "", "", "")
             }
@@ -439,8 +439,8 @@ class consume(val consume_Item: ArrayList<consume_Item_list>) : RecyclerView.Ada
                 item.up("", "", "", "", "")
                 item.down("진짜 레몬", "빵", "", "", "")
             }
-            if (consume_Item[i].name1 == "레몬 아이스크림") {
-                item.te("레몬 아이스크림", "체력 재생 +500", "[제작] 레몬 + 달걀\n초록색 항공 보급", "고급")
+            if (consume_Item[i].name1 == "레몬 커스터드") {
+                item.te("레몬 커스터드", "체력 재생 +500", "[제작] 레몬 + 달걀\n초록색 항공 보급", "고급")
                 item.up("", "", "", "", "")
                 item.down("진짜 레몬", "달걀", "", "", "")
             }
@@ -510,7 +510,7 @@ class consume(val consume_Item: ArrayList<consume_Item_list>) : RecyclerView.Ada
                 item.down("빵", "커피 리큐르", "", "", "")
             }
             if (consume_Item[i].name1 == "스크램블 에그") {
-                item.te("스크램블 에그", "체력 재생 +550", "[제작] 달걀 + 뜨거운 오일\n파란색 항공 보급", "희귀")
+                item.te("스크램블 에그", "체력 재생 +600", "[제작] 달걀 + 뜨거운 오일\n파란색 항공 보급", "희귀")
                 item.up("", "", "", "", "")
                 item.down("달걀", "뜨거운 오일", "", "", "")
             }
@@ -1103,7 +1103,7 @@ class consume(val consume_Item: ArrayList<consume_Item_list>) : RecyclerView.Ada
                 }
             }
             if (consume_Item[i].name1 == "레몬에이드") {
-                item.te("레몬에이드", "스태미너 재생 +300", "[제작] 탄산수 + 레몬 \n 초록색 항공 보급", "고급")
+                item.te("레몬에이드", "스태미너 재생 +450", "[제작] 탄산수 + 레몬 \n 초록색 항공 보급", "고급")
                 item.up("", "", "", "", "")
                 item.down("탄산수", "진짜 레몬", "", "", "")
             }
@@ -1132,7 +1132,7 @@ class consume(val consume_Item: ArrayList<consume_Item_list>) : RecyclerView.Ada
                 item.down("얼음", "커피콩", "", "", "")
             }
             if (consume_Item[i].name1 == "칵테일") {
-                item.te("칵테일", "스태미너 재생 +300", "[제작] 위스키 + 레몬\n초록색 항공 보급", "고급")
+                item.te("칵테일", "스태미너 재생 +350", "[제작] 위스키 + 레몬\n초록색 항공 보급", "고급")
                 item.up("", "", "", "", "")
                 item.down("위스키", "진짜 레몬", "", "", "")
             }
@@ -1167,7 +1167,7 @@ class consume(val consume_Item: ArrayList<consume_Item_list>) : RecyclerView.Ada
                 item.down("위스키", "탄산수", "", "", "")
             }
             if (consume_Item[i].name1 == "초코 우유") {
-                item.te("초코 우유", "스태미너 재생 +400", "[제작] 초콜렛 + 우유\n" +
+                item.te("초코 우유", "스태미너 재생 +450", "[제작] 초콜렛 + 우유\n" +
                         "초록색 항공 보급", "고급")
                 item.up("", "", "", "", "")
                 item.down("초콜렛", "우유", "", "", "")
