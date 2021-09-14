@@ -17,7 +17,7 @@ Kotlin과 Android Studio 를 배움과 동시에 시작한 첫번째 프로젝�
 아이템 화면입니다.  
 게임에 존재하는 아이템들을 리사이클러뷰로 정렬하여 보여줍니다.  
 
-<img src="https://user-images.githubusercontent.com/74566094/133259066-d5673fbb-a85d-4587-99cb-e7ea535fe855.png" width = "40%|height = 20"/>
+<img src="https://user-images.githubusercontent.com/74566094/133259383-c5bac990-3079-4dc0-b3e6-14aea08660d8.jpg" width = "40%|height = 20"/>
 
 ### < 메인 화면 >
 
